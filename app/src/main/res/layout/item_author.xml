@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="top|start|start"
+    android:background="#e8e9ea"
+    android:gravity="top|start|start"
+    android:paddingBottom="2dp">
+
+    <View android:background="@color/button_primary"
+	    android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    
+    <TextView
+        android:id="@+id/tvAuthorDate"
+        style="@style/ItemAuthorStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:ellipsize="end"
+        android:gravity="start|start|center_vertical"
+        android:maxLines="1"
+        android:padding="4dp"
+        app:allow_size_adjustment="true"
+        tools:text="@string/story_item_short_source"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tvAuthorTime"
+        style="@style/ItemAuthorStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/tvAuthorDate"
+        android:background="#ffffff"
+        android:gravity="end|end|center_vertical"
+        android:padding="4dp"
+        app:allow_size_adjustment="true"
+        tools:text="@string/story_item_short_time" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            style="@style/ItemAuthorStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvAuthorDate"
+            android:layout_gravity="start|start|center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="#ffffff"
+            android:gravity="start|start"
+            android:padding="4dp"
+            app:allow_size_adjustment="true"
+            tools:text="@string/story_item_short_source"
+            android:textAllCaps="true" />
+            
+</RelativeLayout>
+

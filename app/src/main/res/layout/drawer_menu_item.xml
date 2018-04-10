@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/row_1"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawer_menu_item_background">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:maxWidth="60dp"
+            android:adjustViewBounds="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_filter_logo_placeholder"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/LeftSideMenuItemStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:maxHeight="96dp"
+            android:maxLines="3"
+            android:text="Medium Text" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/drawer_menu_item_background"
+            android:clickable="true"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_filter_refresh" />
+
+        <TextView
+            android:id="@+id/count"
+            style="@style/LeftSideMenuItemSubStyle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/feed_list_circle_background"
+            android:gravity="center"
+            tools:text="12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shortcut"
+        style="@style/LeftSideMenuShortcutItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/row_1"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/drawer_menu_shortcut_item_background"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:text="@string/menu_receive_share" />
+
+</RelativeLayout>

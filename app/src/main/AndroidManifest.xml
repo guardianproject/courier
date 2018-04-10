@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.guardianproject.securereaderinterface">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="info.guardianproject.securereaderinterface.App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:description="@string/app_description"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        >
+
+		<activity android:name="net.hockeyapp.android.UpdateActivity" />
+        
+		<service android:name="info.guardianproject.cacheword.CacheWordService" 
+		    android:enabled="true" android:exported="false" />
+        <activity
+            android:name="info.guardianproject.securereaderinterface.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppThemeNoActionBar"
+            android:noHistory="true"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:exported="true">
+        </activity>
+        <activity-alias
+            android:name=".Launcher"
+            android:targetActivity="${launcherActivity}" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="info.guardianproject.securereaderinterface.DownloadsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_downloads" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.AddFeedActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_add_feed" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.ImportOPMLActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_import_opml" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/octet-stream" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <!--<data android:pathPattern=".*\\.opml" />-->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/octet-stream" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <!-- <data android:pathPattern=".*\\.opml" /> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/xml" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <!-- <data android:pathPattern=".*\\.opml" /> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/xml" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <!-- <data android:pathPattern=".*\\.opml" /> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/x-opml" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <!-- <data android:pathPattern=".*\\.opml" /> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/x-opml" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <!-- <data android:pathPattern=".*\\.opml" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.AddFeedSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_add_feed"
+            android:windowSoftInputMode="stateVisible"
+            android:theme="@style/AppThemeSearch" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.PanicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_panic"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name=".PanicResponderActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="info.guardianproject.panic.action.TRIGGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.ViewMediaActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_view_media" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeSettings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.profiler.ProfilerWizardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.LockScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_lock_screen"
+            android:theme="@style/AppTheme.Transparent"
+            >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.installer.HTTPDAppSender"    
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="info.guardianproject.securereaderinterface.DownloadEpubReaderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">            
+        </activity>
+        <service android:name="info.guardianproject.securereader.SyncService" >
+        </service>
+	</application>
+
+</manifest>

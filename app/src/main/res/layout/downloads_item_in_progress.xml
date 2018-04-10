@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mediaContentView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        layout="@layout/media_downloading" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/mediaContentView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_context_menu" />
+        
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+        android:id="@+id/tvTitle"
+        style="@style/DownloadsItemTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/ivMenu"
+        android:layout_toEndOf="@id/mediaContentView"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        tools:text="@string/story_item_short_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/llOperationButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/mediaContentView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/popup_toolbar_background_dark"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/btnRefresh"
+            style="@style/DownloadsOperationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:drawableTop="@drawable/ic_downloads_refresh"
+            android:gravity="center_horizontal"
+            android:text="@string/downloads_operation_refresh" />
+
+        <TextView
+            android:id="@+id/btnCancel"
+            style="@style/DownloadsOperationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:drawableTop="@drawable/ic_downloads_cancel"
+            android:gravity="center_horizontal"
+            android:text="@string/downloads_operation_cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>

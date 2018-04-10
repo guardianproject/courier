@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Android has a rather rudimentary xml drawable support, so we cant
+    express "start drawing a gradient x dp from the bottom" unless we hardcode the
+    height of the drawable. To enable "wrap_content" and still have a shadow, we use
+    this background (which leaves 5 transparent dp at the bottom) in combination with a 
+    view that uses the light_grey_bottom_shadow background to create the shadow. -->
+    <item
+        android:top="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:bottom="5dp"
+        >
+        <shape android:shape="rectangle">
+		    <solid android:color="@color/grey_light_light" />
+		</shape>
+	</item>
+
+ </layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Dummy texts used in design mode -->
+    <string name="story_item_short_title">This is a Long Title of a Very Interesting News Story</string>
+    <string name="story_item_short_time">4 hours ago</string>
+    <string name="story_item_short_source">SOURCE</string>
+    <string name="story_comment_item_comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, ipsum dignissim laoreet facilisis, justo nunc adipiscing odio, dictum vestibulum lacus sapien at ante. Aenean sit amet metus lorem, ut</string>
+	<string name="story_list_error_description">Error: the error message is written here in a way that the user can understand what went wrong.\n\nSuggestion for fixing the problem&#8230;</string>
+</resources>

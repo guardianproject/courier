@@ -1,0 +1,78 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Onboarding styles       					   -->
+    <!--                                               -->
+    <!--                                               -->
+
+    <style name="OnboardingWelcomeStyle">
+        <item name="android:background">@color/claret</item>
+	</style>
+
+    <style name="OnboardingProxyStyle">
+        <item name="android:background">#eaf1f2</item>
+	</style>
+    	
+    <style name="OnboardingScreen3Style">
+        <item name="android:background">#f59d21</item>
+	</style>
+    
+    <style name="OnboardingScreen3TableStyle">
+        <item name="android:background">#f0f0f0</item>
+	</style>
+       
+    <style name="OnboardingBottomBarStyle">
+        <item name="android:background">#cccccc</item>
+	</style>
+		
+    <style name="OnboardingProxyBottomBarStyle">
+        <item name="android:background">#ffffff</item>
+	</style>
+	
+    <style name="OnboardingBottomBarTextStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/onboarding_bottom_bar_text_color_selector</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+    <style name="OnboardingSelectLanguageStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+	
+    <style name="OnboardingTitleTextStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+    <style name="OnboardingProxyTitleTextStyle" parent="OnboardingTitleTextStyle">
+        <item name="android:textColor">#4a4a4a</item>  
+    </style>
+    
+    <style name="OnboardingContentTextStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+    <style name="OnboardingProxyContentTextStyle" parent="OnboardingContentTextStyle">
+        <item name="android:textColor">#4a4a4a</item>  
+    </style>
+  
+    <style name="OnboardingProxyButtonStyle">
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+</resources>

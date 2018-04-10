@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/RelativeLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#ffffffff"
+	android:orientation="vertical">
+
+    <info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout
+        android:id="@+id/layout_media"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        >
+
+		<info.guardianproject.securereaderinterface.widgets.NestedViewPager
+			android:id="@+id/mediaPager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+		<info.guardianproject.securereaderinterface.widgets.DottedProgressView
+			android:id="@+id/mediaPagerIndicator"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_gravity="bottom"
+			android:layout_alignParentBottom="true"
+			android:background="#cdefefef"
+			app:dot_color="@color/grey_light_medium"
+			app:dot_color_current="@color/button_primary"
+			app:dot_distance="25"
+			app:dot_radius="6"
+			app:dot_rim_color="@color/grey_light_medium"
+			app:dot_rim_color_current="@color/button_primary" />
+    
+    </info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout>
+    
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView        
+        android:id="@+id/tvTitle"
+        style="@style/DownloadsItemTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/layout_media"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        tools:text="@string/story_item_short_title"
+		/>
+
+
+
+</RelativeLayout>

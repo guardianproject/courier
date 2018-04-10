@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="onboarding_screems">
+        <item>@layout/onboarding_welcome_fragment</item>
+        <item>@layout/onboarding_proxy_fragment</item>
+        <item>@layout/onboarding_curate_feeds_fragment</item>
+    </array>
+</resources>

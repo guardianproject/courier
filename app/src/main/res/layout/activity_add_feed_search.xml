@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    tools:context=".AddFeedSearchActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The action bar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/actionbar_search" />
+    
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/results_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="#efefef" />
+
+</RelativeLayout>

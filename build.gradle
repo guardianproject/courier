@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.1'
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url "https://mvnrepository.com/artifact/org.jsoup/jsoup"
+        }
+        google()
+    }
+}
+
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+            google()
+            maven {
+                url "https://jitpack.io"
+            }
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.1.1'
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:background="@color/lock_screen_background"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:filterTouchesWhenObscured="true">
+                
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_panel_background" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/lock_screen_create_passphrase_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/grey_light_medium" />
+
+                <EditText
+                    android:id="@+id/editNewPassphrase"
+                    style="@style/LockScreenEditCreateStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_lock_screen_background_selector"
+                    android:ems="10"
+                    android:hint="@string/lock_screen_passphrase_not_set_enter"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/editConfirmNewPassphrase"
+                    style="@style/LockScreenEditCreateStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_lock_screen_background_selector"
+                    android:ems="10"
+                    android:hint="@string/lock_screen_passphrase_not_set_confirm"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnCreate"
+                    style="@style/RoundedButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:minHeight="48dp"
+                    android:text="@string/lock_screen_create_passphrase" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>

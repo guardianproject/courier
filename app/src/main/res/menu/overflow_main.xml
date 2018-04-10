@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_media_downloads" android:title="@string/downloads_title" android:orderInCategory="111" app:showAsAction="never" android:icon="@drawable/ic_menu_downloads"/>
+    <item android:id="@+id/menu_manage_feeds" android:title="@string/feed_filter_add_new" android:orderInCategory="120" app:showAsAction="never" android:icon="@drawable/ic_action_add_feed"/>
+    <item android:id="@+id/menu_share_app" android:title="@string/menu_share_app" android:orderInCategory="130" app:showAsAction="never" />
+    <item android:id="@+id/menu_lock_app" android:title="@string/menu_lock_app" android:orderInCategory="140" app:showAsAction="never" />
+    <item android:id="@+id/menu_preferences" android:title="@string/menu_preferences" android:orderInCategory="150" app:showAsAction="never" android:icon="@drawable/ic_menu_pref"/>
+</menu>

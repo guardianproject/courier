@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    style="@style/OnboardingWelcomeStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/btnLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|end"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/OnboardingSelectLanguageStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/onboarding_select_language"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_launch_dropdown" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomBar"
+        style="@style/OnboardingBottomBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/OnboardingBottomBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical|end"
+            android:background="@null"
+            android:text="@string/onboarding_next" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/btnLanguage"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ivIllustration"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            style="@style/OnboardingTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_welcome_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/OnboardingContentTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_welcome_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Auto Sync</string>
+    <string name="pref_cat_priority">Priority</string>
+    <string name="pref_cat_save_storage">Save Storage</string>
+    <string name="pref_cat_preserve_power">Preserve Power</string>
+
+    <string name="pref_cat_mode">Mode</string>
+    <string name="pref_mode_optimized">Optimized</string>
+    <string name="pref_mode_optimized_title">Optimized Mode</string>
+    <string name="pref_mode_optimized_title_customized">Optimized Mode: Customized</string>
+    <string name="pref_mode_optimized_summary">Reduce power,data and storage use. Recommended if you have limited data.</string>
+    <string name="pref_mode_everything">Everything</string>
+    <string name="pref_mode_everything_title">Everything Mode</string>
+    <string name="pref_mode_everything_title_customized">Everything Mode: Customized</string>
+    <string name="pref_mode_everything_summary">Recommended if you have unlimited data and good connectivity.</string>
+    <string name="pref_mode_offline">Go Offline</string>
+
+    <string name="pref_cat_security">Security</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Do not use a proxy</string>
+    <string name="pref_security_proxy_tor">Sync news over Tor</string>
+    <string name="pref_security_proxy_psiphon">Sync news over Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Auto lock</string>
+    <string name="pref_security_autolock_immediately">None</string>
+    <string name="pref_security_autolock_5_minutes">5 minutes</string>
+    <string name="pref_security_autolock_1_hour">1 hour</string>
+    <string name="pref_security_autolock_1_day">1 day</string>
+    <string name="pref_security_autolock_summary_never">Do not lock app</string>
+    <string name="pref_security_autolock_summary_immediately">Lock immediately when not in use</string>
+    <string name="pref_security_autolock_summary_5_minutes">Lock after 5 minutes when not in use</string>
+    <string name="pref_security_autolock_summary_1_hour">Lock after 1 hour when not in use</string>
+    <string name="pref_security_autolock_summary_1_day">Lock after 1 day when not in use</string>
+
+    <string name="pref_security_block_screenshots">Block screenshots</string>
+    <string name="pref_security_block_screenshots_summary_off">Screenshots are enabled</string>
+    <string name="pref_security_block_screenshots_summary_on">To protect you privacy, screenshots are disabled.</string>
+    <string name="pref_security_show_panic_button">Show panic button</string>
+    <string name="pref_security_show_panic_button_on">Show icon in every app view</string>
+    <string name="pref_security_show_panic_button_off">Do not show the panic icon</string>
+    <string name="pref_security_panic_action">Panic</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Wipe app contents when triggered</item>
+        <item>Uninstall app when triggered</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Auto sync</string>
+    <string name="pref_over_wifi">Over wifi</string>
+    <string name="pref_over_data">Over data</string>
+    <string name="pref_media_rich">Photos first</string>
+    <string name="pref_media_rich_summary_on">Sync photos before full stories</string>
+    <string name="pref_media_rich_summary_off">Sync full stories before photos</string>
+    <string name="pref_save_keep_nothing">Keep nothing</string>
+    <string name="pref_save_keep_nothing_summary">Expire after reading</string>
+    <string name="pref_save_keep_day">Keep for 1 day</string>
+    <string name="pref_save_keep_day_summary">Remove articles after a day</string>
+    <string name="pref_save_keep_week">Keep for 1 week</string>
+    <string name="pref_save_keep_week_summary">Remove articles after a week</string>
+    <string name="pref_save_info">Bookmarked stories will be kept forever, unless you delete them or reinstall the app.</string>
+    <string name="pref_sleep_if_below">Sleep if battery is below %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Don\'t sync stories when my battery is low</string>
+    <string name="pref_sleep_if_below_summary_off">Sync stories even if my battery is low</string>
+    <string name="pref_reset_optimized_defaults">Restore Optimized defaults</string>
+    <string name="pref_reset_everything_defaults">Restore Everything defaults</string>
+
+    <string name="pref_language">Language</string>
+    <string name="pref_about">About</string>
+    <string name="pref_terms">Terms &amp; Licenses</string>
+    <string name="pref_customize">Customize</string>
+    <string name="pref_done">Done</string>
+
+    <string name="pref_summary_x_and_y">%s and %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s and %s</string>
+
+    <string name="pref_autolock_title">Auto lock</string>
+    <string name="pref_autolock_reset">Reset auto lock password</string>
+    <string name="pref_cat_timeout">Timeout</string>
+    <string name="pref_cat_wrong_attempts">Wrong Attempts</string>
+    <string name="pref_wrong_attempts">Wrong Attempts</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Remove app contents if the wrong password is entered</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Uninstall app if the wrong password is entered</string>
+    <string name="pref_wrong_attempts_summary_nothing">Do nothing</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 attempts</string>
+    <string name="pref_wrong_password_limit_3">3 attempts</string>
+    <string name="pref_wrong_password_limit_4">4 attempts</string>
+
+    <string name="pref_cat_kill_password">Kill Password</string>
+    <string name="pref_kill_password">Kill Password</string>
+    <string name="pref_kill_password_summary">Remove app contents if the kill password is entered</string>
+
+
+    <!-- Preference keys for UI settings -->
+    <string name="pref_key_content_font_size_adjustment">content_font_size_adjustment</string>
+    <string name="pref_key_security_block_screenshots">block_screenshots</string>
+    <string name="pref_key_security_show_panic_button">show_panic_button</string>
+    <string name="pref_key_has_shown_optimization_info">has_shown_optimization_info</string>
+
+    <string name="pref_key_autosync_on">InBackground</string>
+    <string name="pref_key_autosync_off">Manual</string>
+
+    <string-array name="pref_key_sync_entries">
+        <item>Story summaries (text)</item>
+        <item>Full stories (text)</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Story summaries</item>
+        <item>Full stories</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

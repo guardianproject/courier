@@ -1,0 +1,59 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Font sizes for the different elements of an Item -->
+    <dimen name="itemTitleSize">22sp</dimen>
+    <dimen name="itemTimeSize">14sp</dimen>
+    <dimen name="itemSourceSize">14sp</dimen>
+    <dimen name="itemAuthorSize">13sp</dimen>
+    <dimen name="itemContentSize">16sp</dimen>
+    <dimen name="itemOrwebLinkSize">14sp</dimen>
+    <dimen name="itemTagSize">16sp</dimen>
+    
+    <style name="ItemTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="fontName">Roboto-Medium</item>
+        <item name="android:lineSpacingMultiplier">1.0</item>
+        <item name="android:textSize">@dimen/itemTitleSize</item>
+        <item name="android:textColor">@color/grey_dark_dark</item>
+    </style>	
+    
+    <style name="ItemTimeStyle">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/itemTimeSize</item>
+		<item name="android:textColor">@color/grey</item>
+	</style>
+	
+    <style name="ItemSourceStyle">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/itemSourceSize</item>
+		<item name="android:textColor">@color/button_primary</item>
+	</style>
+
+    <style name="ItemAuthorStyle">
+        <item name="fontName">Roboto-Light</item>
+        <item name="android:textSize">@dimen/itemAuthorSize</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    
+    <style name="ItemContentStyle">
+        <item name="fontName">contentFont</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+<!--         <item name="android:lineSpacingExtra">10dp</item> -->
+        <item name="android:textSize">@dimen/itemContentSize</item>
+        <item name="android:textColor">@color/grey_dark_dark</item>
+    </style>
+    
+    <style name="ItemOrwebLinkStyle">
+        <item name="fontName">Roboto-Regular</item>
+        <item name="android:textSize">@dimen/itemOrwebLinkSize</item>
+        <item name="android:textColor">@color/orweb_link_selector</item>
+    </style>
+
+    <style name="ItemTagStyle">
+		<item name="android:padding">5dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/itemTagSize</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    		
+</resources>

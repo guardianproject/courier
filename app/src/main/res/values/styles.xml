@@ -1,0 +1,261 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/claret</item>
+        <item name="colorPrimaryDark">#444444</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">@color/claret</item>
+        <item name="colorAccent">@color/claret</item>
+                
+        <item name="actionBarStyle">@style/AppActionBarStyle</item>
+        <item name="actionBarTabStyle">@style/AppActionBarTabStyle</item>
+        <item name="actionBarTextStyle">@style/AppActionBarTitleStyle</item>
+        <!--<item name="android:alertDialogStyle">@style/ModalDialogStyleOld</item>
+        <item name="android:alertDialogTheme">@style/ModalDialogTheme</item>-->
+        <item name="android:searchViewStyle">@style/AppSearchViewStyle</item>
+        <item name="android:windowBackground">@drawable/background_news</item>
+    </style>
+    
+    <style name="AppActionBarStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="theme">@style/ThemeOverlayActionBar</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_material</item>
+    </style>
+
+    <style name="AppSearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="queryBackground">@null</item>
+        <item name="searchIcon">@null</item>
+    </style>
+
+    <style name="ThemeOverlayActionBar">
+        <item name="actionOverflowButtonStyle">@style/AppActionBarOverflowButtonStyle</item>
+        <item name="actionButtonStyle">@style/AppActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">@color/claret</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">@color/claret</item>
+    </style>
+
+    <style name="AppThemeSearch" parent="AppTheme">
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#aaaaaa</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="searchViewStyle">@style/AppSearchViewStyle</item>
+    </style>
+
+    <style name="AppActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">56dip</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+    
+    <style name="AppActionBarOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <!-- <item name="android:src">@drawable/ic_action_overflow</item> -->
+        <item name="android:minWidth">56dip</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <!-- style for the tabs -->
+    <style name="AppActionBarTabStyle" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_background_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/tab_foreground_selector</item>
+    </style>
+
+    <style name="AppActionBarTitleStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="fontName">Glegoo-Regular</item>
+    </style>
+
+    <!-- Shared styles -->
+    <!--  -->
+    <!--  -->
+
+    <style name="SearchFieldStyle" parent="android:Widget.Holo.Light.TextView">
+
+        <!-- <item name="android:padding">0dp</item> -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <style name="AddFeedUrlStyle" parent="SearchFieldStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="LockScreenEditStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_light_medium</item>
+        <item name="android:textColorHint">@color/grey_light_medium</item>
+    </style>
+
+    <style name="LockScreenEditCreateStyle" parent="LockScreenEditStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LockScreenErrorStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#E34136</item>
+        <item name="fontName">Roboto-Regular</item>
+    </style>
+
+    <style name="PopupListTitleStyle">
+        <item name="android:background">@color/grey_light_medium</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PopupListItemStyle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Left side menu -->
+    <!--  -->
+    <!--  -->
+
+    <style name="LeftSideMenuItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/LeftSideMenuItemAppearance</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="LeftSideMenuItemAppearance">
+        <item name="fontName">Lato-Light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="LeftSideMenuItemCurrentAppearance">
+        <item name="fontName">Lato-Bold</item>
+    </style>
+
+    <style name="LeftSideMenuShortcutItemStyle">
+        <item name="fontName">Lato-Light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="LeftSideMenuItemSubStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="LeftMenuLabelStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontName">Glegoo-Regular</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <!-- Bottom toolbar -->
+
+    <style name="StorySearchByTagItemStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:background">@color/grey_light_light</item>
+    </style>
+
+    <style name="HelpTitleStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="fontName">Glegoo-Regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="HelpTextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="HelpButtonStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/button_primary_background_selector</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowIsFloating">true</item> -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="AppTheme">
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowTitleSize">0dp</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@android:color/white</item>
+	</style>
+
+    <style name="AppThemeProgressDialog" parent="Theme.AppCompat.Light.Dialog.Alert" />
+
+    <style name="AppTheme.Dialog" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="RoundedButtonStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/rounded_button_background</item>
+    </style>
+
+</resources>

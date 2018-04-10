@@ -1,0 +1,29 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_favorites" />
+
+        <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+            style="@style/HelpTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/story_list_hint_add_favorite_text1" />
+
+        <TextView
+            style="@style/HelpTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/story_list_hint_add_favorite_text2" />
+
+    </LinearLayout>

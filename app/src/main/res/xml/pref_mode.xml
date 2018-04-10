@@ -1,0 +1,83 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="Optimized mode">
+
+    <PreferenceCategory android:title="@string/pref_cat_auto_sync">
+        <info.guardianproject.securereaderinterface.widgets.preference.SwitchPreferenceWithValues
+            android:key="@string/pref_key_sync_frequency"
+            android:title="@string/pref_auto_sync"
+            app:valueOn="@string/pref_key_autosync_on"
+            app:valueOff="@string/pref_key_autosync_off"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.SyncPreference
+            android:entries="@array/pref_key_sync_entries"
+            android:entryValues="@array/pref_key_sync_values"
+            android:key="@string/pref_key_sync_over_wifi"
+            android:title="@string/pref_over_wifi"
+            android:widgetLayout="@layout/settings_checkbox_widget"
+            app:summaries="@array/pref_key_sync_entries_summary"
+            app:screenColor="@color/settings_sync_wifi"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.SyncPreference
+            android:entries="@array/pref_key_sync_entries"
+            android:entryValues="@array/pref_key_sync_values"
+            android:key="@string/pref_key_sync_over_data"
+            android:title="@string/pref_over_data"
+            android:widgetLayout="@layout/settings_checkbox_widget"
+            app:summaries="@array/pref_key_sync_entries_summary"
+            app:screenColor="@color/settings_sync_data"
+            />
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_priority">
+        <SwitchPreference
+            android:key="@string/pref_key_sync_media_rich"
+            android:title="@string/pref_media_rich"
+            android:summaryOn="@string/pref_media_rich_summary_on"
+            android:summaryOff="@string/pref_media_rich_summary_off"
+            />
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_save_storage">
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:summary="@string/pref_save_keep_nothing_summary"
+            android:title="@string/pref_save_keep_nothing"
+            app:groupKey="@string/pref_key_article_expiration"
+            android:key="@string/pref_key_article_expiration_afterread"
+            app:useRadioButtons="true" />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:summary="@string/pref_save_keep_day_summary"
+            android:title="@string/pref_save_keep_day"
+            app:groupKey="@string/pref_key_article_expiration"
+            android:key="@string/pref_key_article_expiration_oneday"
+            app:useRadioButtons="true" />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:summary="@string/pref_save_keep_week_summary"
+            android:title="@string/pref_save_keep_week"
+            app:groupKey="@string/pref_key_article_expiration"
+            android:key="@string/pref_key_article_expiration_oneweek"
+            app:useRadioButtons="true" />
+        <Preference
+            android:key="invalid_key"
+            android:selectable="false"
+            android:persistent="false"
+            android:summary="@string/pref_save_info"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_preserve_power">
+        <info.guardianproject.securereaderinterface.widgets.preference.PowerSavePreference
+            android:key="@string/pref_key_save_power_enabled"
+            android:title="@string/pref_sleep_if_below"
+            android:summaryOn="@string/pref_sleep_if_below_summary_on"
+            android:summaryOff="@string/pref_sleep_if_below_summary_off"
+            />
+    </PreferenceCategory>
+
+    <Preference android:icon="@drawable/ic_settings_backup_restore_black_24dp" android:persistent="false" android:title="@string/pref_reset_optimized_defaults" android:key="reset" />
+</PreferenceScreen>

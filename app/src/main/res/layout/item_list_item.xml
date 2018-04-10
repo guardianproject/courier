@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/story_item_background_selector">
+    
+    <info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout
+        android:id="@+id/layout_media"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:height_limit="1.75" >
+        
+        <info.guardianproject.securereaderinterface.widgets.NestedViewPager
+        	android:id="@+id/mediaPager"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent" />
+
+    	<info.guardianproject.securereaderinterface.widgets.DottedProgressView
+        	android:id="@+id/mediaPagerIndicator"
+        	android:layout_width="match_parent"
+        	android:layout_height="30dp"
+        	android:layout_gravity="bottom"
+			android:layout_alignParentBottom="true"
+        	android:background="#cdefefef"
+        	app:dot_color="@color/grey_light_medium"
+        	app:dot_color_current="@color/button_primary"
+        	app:dot_distance="25"
+        	app:dot_radius="6"
+        	app:dot_rim_color="@color/grey_light_medium"
+        	app:dot_rim_color_current="@color/button_primary" />
+        
+
+	</info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout>
+
+    <include
+        android:id="@+id/layout_source"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_media"
+		android:layout_alignWithParentIfMissing="true"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginTop="@dimen/source_top_margin"
+        layout="@layout/item_source" />
+
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+        android:id="@+id/tvTitle"
+        style="@style/ItemTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_source"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:paddingBottom="@dimen/card_bottom_margin"
+		app:allow_size_adjustment="true"
+		tools:text="@string/story_item_short_title" />
+
+    <include
+        android:id="@+id/layout_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        layout="@layout/item_tags" />
+
+</RelativeLayout>

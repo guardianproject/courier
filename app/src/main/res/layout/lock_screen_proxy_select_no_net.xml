@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="32dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_toast_background"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:divider="@color/grey_light"
+        android:dividerHeight="1px"
+         >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_status_sad_white"
+            android:gravity="center"
+            android:text="@string/onboarding_proxy_no_net_info"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/onboarding_proxy_no_net_retry"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/button_toast_text_color_selector" />
+
+    </LinearLayout>
+
+</FrameLayout>

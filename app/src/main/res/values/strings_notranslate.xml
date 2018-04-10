@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="title_activity_downloads">@string/app_name</string>
+    <string name="title_activity_add_feed">@string/app_name</string>
+    <string name="title_activity_panic">@string/app_name</string>
+    <string name="title_activity_view_media">@string/app_name</string>
+    <string name="title_activity_settings">@string/app_name</string>
+    <string name="title_activity_lock_screen">@string/app_name</string>
+
+    <string name="settings_language_english_nt">English</string>
+    <string name="settings_language_spanish_nt">Español</string>
+    <string name="settings_language_spanish_us_nt">Español (Estados Unidos)</string>
+</resources>

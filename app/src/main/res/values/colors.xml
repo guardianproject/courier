@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+   <color name="grey_light">#dddddd</color>  
+   <color name="grey_light_light">#efefef</color>  
+   <color name="grey_light_medium">#aaaaaa</color>  
+   <color name="grey_dark">#4f4f4f</color>  
+   <color name="grey_dark_dark">#353535</color>  
+   <color name="accent">#dddddd</color>
+
+    <color name="button_primary">#94103C</color>
+   <color name="button_primary_selected">#8094103C</color>
+   <color name="button_secondary">#CECECC</color>
+   <color name="button_secondary_selected">#80CECECC</color>
+
+   <color name="drawer_menu_background_color">#000000</color>
+   <color name="drawer_menu_divider_color">#414042</color>
+
+   <color name="lock_screen_background">#dddddd</color>
+   
+   <color name="feed_list_title_normal">#000000</color>
+   <color name="feed_list_title_error">#ff0000</color>
+   
+   <color name="orweb_link_enabled">@color/button_primary</color>
+   <color name="orweb_link_disabled">@color/grey_light</color>
+   
+   <color name="grey">#808285</color>
+   <color name="claret">@color/button_primary</color>
+   
+   <color name="button_download_epub_reader">#231F20</color>
+   <color name="button_download_epub_reader_selected">#80231F20</color>
+   
+   <color name="button_tor">#c3cfd4</color>
+   <color name="button_tor_selected">@color/button_primary</color>
+   <color name="button_tor_text">#9099c0</color>
+   <color name="button_tor_text_selected">#ffffff</color>
+
+   <color name="button_photos">#9ba0b3</color>
+   <color name="button_photos_selected">#f92a2e</color>
+   <color name="button_photos_text">#c3cfd4</color>
+   <color name="button_photos_text_selected">#ffffff</color>
+
+   <color name="modal_caption_text_color">#a2a2a3</color>
+   <color name="modal_header_text_color">#414042</color>
+   <color name="modal_header_divider_color">#303030</color>
+   <color name="modal_list_divider_color">#e6e7e8</color>
+   <color name="modal_text_color">@color/modal_header_text_color</color>
+   <color name="modal_button_primary">#94103C</color>
+   <color name="modal_button_primary_selected">#FB2736</color>
+   <color name="modal_button_primary_disabled">#92938D</color>
+   <color name="modal_button_secondary">#92938D</color>
+   <color name="modal_button_secondary_selected">#303030</color>
+   <color name="modal_button_secondary_disabled">#303030</color>
+</resources>

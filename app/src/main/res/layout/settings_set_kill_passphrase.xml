@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editNewPassphrase"
+        style="@style/LockScreenEditCreateStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_lock_screen_background_selector"
+        android:ems="10"
+        android:hint="@string/settings_security_set_kill_passphrase_enter"
+        android:inputType="textPassword" >
+    </EditText>
+    <EditText
+        android:id="@+id/editConfirmNewPassphrase"
+        style="@style/LockScreenEditCreateStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_lock_screen_background_selector"
+        android:ems="10"
+        android:hint="@string/settings_security_set_kill_passphrase_confirm"
+        android:inputType="textPassword" >
+    </EditText>
+
+</LinearLayout>

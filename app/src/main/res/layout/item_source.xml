@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="start|start">
+
+        <ImageView
+            android:id="@+id/ivFeedIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:maxWidth="60dp"
+            android:adjustViewBounds="false"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_filter_logo_placeholder"
+            />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/ItemTimeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="end|end|center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="0dp"
+            app:allow_size_adjustment="true"
+            tools:text="@string/story_item_short_time" />
+
+        <TextView
+            android:id="@+id/tvSource"
+            style="@style/ItemSourceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toStartOf="@id/tvTime"
+            android:layout_toEndOf="@+id/ivFeedIcon"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:lines="1"
+            android:padding="4dp"
+            app:allow_size_adjustment="true"
+            tools:text="@string/story_item_short_source"
+            android:textAllCaps="true" />
+
+        <View android:background="#e8e9ea"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true" 
+             />
+            
+</RelativeLayout>
+

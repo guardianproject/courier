@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED231F20"
+    android:paddingBottom="19dp"
+    android:paddingStart="26dp"
+    android:paddingEnd="26dp"
+    android:paddingTop="19dp"
+    android:filterTouchesWhenObscured="true">
+
+    <ImageView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_panic_cancel"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/btnSettings"
+        style="@style/PanicSettingsStyle"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/btnCancel"
+        android:gravity="center_vertical"
+        android:text="@string/panic_settings"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="308dp"
+        android:layout_height="308dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/arrowSymbolView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_panic_down" />        
+
+        <TextView
+            android:id="@+id/textHint"
+            style="@style/PanicHintStyle"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_above="@id/arrowSymbolView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:text="@string/panic_hint"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+        
+                
+        <ImageView
+            android:id="@+id/radioactiveSymbolView"
+            android:layout_above="@id/textHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_panic_lg" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info.guardianproject.securereaderinterface.views.DownloadView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light_light"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivDownloadIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_load_photo"
+        />
+
+</info.guardianproject.securereaderinterface.views.DownloadView>

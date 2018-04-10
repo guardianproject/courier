@@ -1,0 +1,9 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/background_news"
+    android:divider="@null"
+    android:dividerHeight="0dp" >
+</android.support.v7.widget.RecyclerView>

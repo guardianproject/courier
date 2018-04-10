@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:id="@+id/tab_container"
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+    	android:layout_height="?attr/actionBarSize"        
+        >
+    	</LinearLayout>
+    
+    <info.guardianproject.securereaderinterface.widgets.NoSwipeScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_container"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="#ffffff"
+        tools:context=".AddFeedActivity" />
+        
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strange that the integer value has no meaning? -->
+    <integer name="command_news_list">0</integer>
+    <integer name="command_feed_add">0</integer>
+    <integer name="command_settings">0</integer>
+    <integer name="command_toggle_online">0</integer>
+    <integer name="command_downloads">0</integer>
+    <integer name="command_shareapp">100</integer>
+    <integer name="command_receiveshare">101</integer>
+
+    <!-- these have parameters -->
+    <integer name="command_view_media">0</integer>
+    <integer name="command_add_feed_manual">0</integer>
+    <integer name="command_read_more">0</integer>
+
+</resources>

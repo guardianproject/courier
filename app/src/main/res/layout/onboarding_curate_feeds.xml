@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    style="@style/OnboardingScreen3Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <FrameLayout
+        android:id="@+id/bottomBar"
+        style="@style/OnboardingBottomBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/OnboardingBottomBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical|end"
+            android:background="@null"
+            android:text="@string/onboarding_next" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottomBar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/OnboardingTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/onboarding_curate_feeds_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/lvFeeds"
+            style="@style/OnboardingScreen3TableStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

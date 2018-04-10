@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:background="@color/lock_screen_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:filterTouchesWhenObscured="true"
+    >
+                
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_panel_background" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/editEnterPassphrase"
+                    style="@style/LockScreenEditStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_lock_screen_background_selector"
+                    android:ems="10"
+                    android:hint="@string/lock_screen_passphrase_hint"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword" />
+
+                    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+                        android:id="@+id/tvError"
+                        style="@style/LockScreenErrorStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/lock_screen_wrong_password" />
+                    
+                <Button
+                    android:id="@+id/btnOpen"
+                    style="@style/RoundedButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:minHeight="48dp"
+                    android:text="@string/lock_screen_open" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="25.843" width="31.743" y="137.578" x="208.628" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<path fill="#CECECC" d="M16.258,11.079v8.103h-8.13v12.832c0.023,2.653,2.144,4.814,4.781,4.904v0.004h22.009
+		c2.73,0,4.953-2.221,4.953-4.953v-20.89H16.258z M16.258,23.404h-4.377v1.774h4.375v1.725h-4.375v1.775h4.375v3.291
+		c0.002,1.754-1.425,3.18-3.177,3.18c-1.753,0-3.176-1.426-3.176-3.18V20.954h6.355V23.404z M38.098,31.969
+		c0,1.754-1.427,3.18-3.18,3.18H16.876c0.72-0.861,1.156-1.969,1.156-3.18V12.854h20.065V31.969z"/>
+	<rect x="30.352" y="16.194" fill="#CECECC" width="5.998" height="1.774"/>
+	<rect x="30.352" y="19.746" fill="#CECECC" width="5.998" height="1.774"/>
+	<rect x="30.352" y="23.246" fill="#CECECC" width="5.998" height="1.773"/>
+	<rect x="19.619" y="26.876" fill="#CECECC" width="16.731" height="1.774"/>
+	<rect x="20.29" y="16.857" fill="#CECECC" width="7.526" height="7.435"/>
+</g>
+</svg>

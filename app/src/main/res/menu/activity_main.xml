@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_tag" android:title="@string/menu_tag" android:orderInCategory="101" android:icon="@drawable/ic_action_tag" app:showAsAction="ifRoom" android:enabled="true"/>
+    <item android:id="@+id/menu_favorite" android:orderInCategory="110" android:title="@string/menu_favorite" android:icon="@drawable/ic_bookmark_border_white_24dp" app:showAsAction="always" android:checkable="true" android:enabled="true"/>
+    <item android:id="@+id/menu_share" android:title="@string/menu_share" android:orderInCategory="120" android:icon="@drawable/ic_action_share" app:showAsAction="ifRoom" android:enabled="true"/>
+    <item android:id="@+id/menu_share_item" android:title="@string/menu_share" android:orderInCategory="130" android:icon="@drawable/ic_action_share" app:showAsAction="ifRoom" android:enabled="true"/>
+    <item android:id="@+id/menu_panic" android:title="@string/menu_panic" android:orderInCategory="140" app:showAsAction="always" android:icon="@drawable/ic_action_panic"/>
+    <item android:id="@+id/menu_show_full_text" android:title="@string/menu_show_full_text" android:checkable="true" android:orderInCategory="150" app:showAsAction="never" android:visible="false" />
+    <item android:id="@+id/menu_font_size" android:title="@string/font_size" android:orderInCategory="160" app:showAsAction="never" android:visible="false" />
+</menu>

@@ -1,0 +1,131 @@
+<info.guardianproject.securereaderinterface.widgets.AnimatedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animatedRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:paddingBottom="10dp">
+
+    <info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout
+        android:id="@+id/layout_media"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:height_limit="1.75" >
+
+        <info.guardianproject.securereaderinterface.widgets.NestedViewPager
+            android:id="@+id/mediaPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <info.guardianproject.securereaderinterface.widgets.DottedProgressView
+            android:id="@+id/mediaPagerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#cdefefef"
+            app:dot_color="@color/grey_light_medium"
+            app:dot_color_current="@color/button_primary"
+            app:dot_distance="25"
+            app:dot_radius="6"
+            app:dot_rim_color="@color/grey_light_medium"
+            app:dot_rim_color_current="@color/button_primary" />
+
+
+    </info.guardianproject.securereaderinterface.widgets.HeightLimitedRelativeLayout>
+
+    <include
+        android:id="@+id/layout_source"
+        layout="@layout/item_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/layout_media"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginTop="@dimen/source_top_margin" />
+
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+        android:id="@+id/tvTitle"
+        style="@style/ItemTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_source"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginTop="@dimen/title_top_margin"
+        app:allow_size_adjustment="true"
+        tools:text="@string/story_item_short_title" />
+
+    <include
+        android:id="@+id/layout_author"
+        layout="@layout/item_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginTop="@dimen/author_top_margin" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_author"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:layout_marginTop="@dimen/content_top_margin"
+        >
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+        android:id="@+id/tvContent"
+        style="@style/ItemContentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:allow_size_adjustment="true"
+        tools:text="This is the content of the article, it may span several lines." />
+
+    <net.etuldan.sparss.view.EntryView
+        android:id="@+id/tvWebContent"
+        style="@style/ItemContentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:allow_size_adjustment="true"
+        android:visibility="gone"
+        tools:text="This is the content of the article, it may span several lines." />
+    </LinearLayout>
+
+    <info.guardianproject.securereaderinterface.widgets.CustomFontTextView
+        android:id="@+id/tvReadMore"
+        style="@style/ItemOrwebLinkStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentLayout"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="@dimen/card_right_margin"
+        android:layout_marginStart="@dimen/card_left_margin"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_read_orweb"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        app:allow_size_adjustment="true"
+        android:text="@string/story_item_read_with_orweb"
+        android:visibility="gone"
+        />
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/btnFetchFullText"
+        android:layout_below="@id/contentLayout"
+        android:text="@string/fetch_full_story"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_file_download_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</info.guardianproject.securereaderinterface.widgets.AnimatedRelativeLayout>
+

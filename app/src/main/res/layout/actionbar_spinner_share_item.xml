@@ -1,0 +1,15 @@
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/image"
+                android:layout_width="56dp"
+                android:layout_height="32dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip"
+                android:adjustViewBounds="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_share" />
+
+    

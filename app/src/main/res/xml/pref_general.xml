@@ -1,0 +1,83 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="Settings"
+    >
+
+    <PreferenceCategory android:title="@string/pref_cat_mode">
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            app:groupKey="@string/pref_key_mode"
+            android:title="@string/pref_mode_optimized"
+            android:key="@string/pref_key_mode_optimized"
+            android:summary="@string/pref_mode_optimized_summary"
+            android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$OptimizedModePreferenceFragment"
+            />
+        <Preference android:title="@string/pref_customize"
+            android:layout="@layout/settings_customize_button"
+            android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$OptimizedModePreferenceFragment"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            app:groupKey="@string/pref_key_mode"
+            android:title="@string/pref_mode_everything"
+            android:key="@string/pref_key_mode_everything"
+            android:summary="@string/pref_mode_everything_summary"
+            android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$EverythingModePreferenceFragment"
+            />
+        <Preference android:title="@string/pref_customize"
+            android:layout="@layout/settings_customize_button"
+            android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$EverythingModePreferenceFragment"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            app:groupKey="@string/pref_key_mode"
+            android:title="@string/pref_mode_offline"
+            android:key="@string/pref_key_mode_offline"
+            />
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_security">
+        <info.guardianproject.securereaderinterface.widgets.preference.ListPreferenceWithSwitch
+            android:entries="@array/pref_security_proxy_entries"
+            android:entryValues="@array/pref_security_proxy_values"
+            android:key="@string/pref_key_security_proxy"
+            app:uncheckedIndex="0"
+            android:title="@string/pref_security_proxy"
+            android:summary="%s"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.AutoLockPreference
+            android:key="@string/pref_key_security_autolock"
+            android:title="@string/pref_security_autolock"
+            />
+        <SwitchPreference android:title="@string/pref_security_block_screenshots"
+            android:summaryOn="@string/pref_security_block_screenshots_summary_on"
+            android:summaryOff="@string/pref_security_block_screenshots_summary_off"
+            android:key="@string/pref_key_security_block_screenshots" />
+        <SwitchPreference android:title="@string/pref_security_show_panic_button"
+            android:summaryOn="@string/pref_security_show_panic_button_on"
+            android:summaryOff="@string/pref_security_show_panic_button_off"
+            android:key="@string/pref_key_security_show_panic_button" />
+        <ListPreference
+            android:entries="@array/pref_security_panic_action_entries"
+            android:entryValues="@array/pref_security_panic_action_values"
+            android:key="@string/pref_key_panic_action"
+            android:title="@string/pref_security_panic_action"
+            android:summary="%s"
+            />
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <info.guardianproject.securereaderinterface.widgets.preference.LanguagePreference
+        android:title="@string/pref_language"
+        android:key="@string/pref_key_language"
+        android:summary="%s" />
+
+    <Preference android:title="@string/pref_about"
+        android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$AboutFragment"
+        />
+    <Preference android:title="@string/pref_terms"
+        android:fragment="info.guardianproject.securereaderinterface.SettingsActivity$TermsFragment"
+        />
+
+
+</PreferenceScreen>

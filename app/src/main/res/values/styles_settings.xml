@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="settings_sync_wifi">#063939</color>
+    <color name="settings_sync_data">#00A86B</color>
+
+    <!-- Settings activity styles 					   -->
+    <!--                                               -->
+    <!--                                               -->
+
+    <style name="AppThemeSettings" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:listDivider">@null</item>
+        <item name="preferenceTheme">@style/SettingsPreferenceTheme</item>
+        <item name="colorPrimary">@color/claret</item>
+        <item name="colorPrimaryDark">#444444</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">@color/claret</item>
+        <item name="colorAccent">@color/claret</item>
+        <!--<item name="android:buttonStyle">@style/SettingsButton</item>-->
+        <item name="alertDialogTheme">@style/dialogAlertTheme</item>
+<!--        <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/SettingsButton</item>-->
+    </style>
+
+    <style name="dialogAlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/claret</item>
+        <item name="colorPrimaryDark">#444444</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">@color/claret</item>
+        <item name="colorAccent">@color/claret</item>
+        <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/SettingsButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/SettingsButton</item>
+    </style>
+
+    <style name="SettingsPreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+    </style>
+
+    <style name="SettingsButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+</resources>

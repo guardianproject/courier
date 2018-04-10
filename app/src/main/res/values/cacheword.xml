@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notification Settings -->
+    <!--<string name="cacheword_notification_cached_title">@strings/cacheword_notification_cached_title</string>
+    <string name="cacheword_notification_cached">@strings/cacheword_notification_cached</string>
+    <string name="cacheword_notification_cached_message">@strings/cacheword_notification_cached_message</string>-->
+
+    <!-- To configure the notification icon create a drawable resource named:
+           cacheword_notification_icon
+    -->
+
+    <!--
+          Timeout: How long to wait before automatically locking and wiping the secrets
+                   after all your activities are no longer visible
+                   This is the default setting, and can be changed at runtime via a preference
+                   A value of 0 represents instant timeout
+                   A value < 0  represents no timeout (or infinite timeout)
+    -->
+
+</resources>
+

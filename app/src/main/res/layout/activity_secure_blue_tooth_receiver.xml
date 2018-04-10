@@ -1,0 +1,204 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:id="@+id/llWait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/modal_background"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            style="@style/ModalImageStyle"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_receive_share" />
+
+        <TextView
+            style="@style/ModalCaptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="@string/bluetooth_receive_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/btReceiveText"
+            style="@style/ModalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_receive_info"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <FrameLayout
+            style="@style/ModalButtonContainerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btReceiveButton"
+                style="@style/ModalButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/bluetooth_receive_receive" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReceive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@drawable/modal_background"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:context=".SecureBluetoothSenderFragment" >
+
+        <ImageView
+            style="@style/ModalImageStyle"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_local_share" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressReceive"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bluetooth_send_sharing"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSharedStory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@drawable/modal_background"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        tools:context=".SecureBluetoothSenderFragment" >
+
+        <TextView
+            style="@style/ModalHeaderStyle"
+            android:gravity="center"
+            android:text="@string/bluetooth_send_success_1_story"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" >
+
+            <include layout="@layout/item_list_item"
+                android:id="@+id/sharedItemView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false" />
+        </ScrollView>
+
+        <LinearLayout
+            style="@style/ModalButtonContainerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/btnClose"
+                style="@style/ModalButtonSecondaryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/HelpButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:src="@drawable/ic_downloads_cancel" />
+
+                <TextView
+                    style="@style/HelpButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:text="@string/bluetooth_send_close"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnRead"
+                style="@style/ModalButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/HelpButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:src="@drawable/ic_share_read" />
+
+                <TextView
+                    style="@style/HelpButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:text="@string/bluetooth_send_read_now"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

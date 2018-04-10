@@ -1,0 +1,97 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/pref_autolock_title">
+
+    <Preference
+        android:key="@string/pref_autolock_reset"
+        android:selectable="true"
+        android:persistent="false"
+        android:title="@string/pref_autolock_reset"/>
+
+    <PreferenceCategory android:title="@string/pref_cat_timeout">
+
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_security_autolock_immediately"
+            app:groupKey="@string/pref_key_security_autolock"
+            android:key="1"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_security_autolock_5_minutes"
+            app:groupKey="@string/pref_key_security_autolock"
+            android:key="300"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_security_autolock_1_hour"
+            app:groupKey="@string/pref_key_security_autolock"
+            android:key="3600"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_security_autolock_1_day"
+            app:groupKey="@string/pref_key_security_autolock"
+            android:key="86400"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_wrong_attempts">
+        <info.guardianproject.securereaderinterface.widgets.preference.ListPreferenceWithSwitch
+            android:entries="@array/pref_wrong_password_action_entries"
+            android:entryValues="@array/pref_wrong_password_action_values"
+            android:key="@string/pref_key_wrong_password_action"
+            app:uncheckedValue="@string/pref_key_wrong_password_action_nothing"
+            app:uncheckedValueSummary="@string/pref_wrong_attempts_summary_nothing"
+            app:summaries="@array/pref_wrong_password_action_summaries"
+            android:title="@string/pref_wrong_attempts"
+        />
+
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_wrong_password_limit_2"
+            app:groupKey="@string/pref_key_wrong_password_limit"
+            android:key="2"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_wrong_password_limit_3"
+            app:groupKey="@string/pref_key_wrong_password_limit"
+            android:key="3"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+        <info.guardianproject.securereaderinterface.widgets.preference.GroupSwitchPreference
+            android:title="@string/pref_wrong_password_limit_4"
+            app:groupKey="@string/pref_key_wrong_password_limit"
+            android:key="4"
+            app:useRadioButtons="true"
+            app:useIntValues="true"
+            app:forwardAllClicksToWidget="true"
+            />
+
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settings_separator" />
+
+    <PreferenceCategory android:title="@string/pref_cat_kill_password">
+    <SwitchPreference
+        android:title="@string/pref_kill_password"
+        android:key="@string/pref_key_use_kill_passphrase"
+        android:summary="@string/pref_kill_password_summary"
+        />
+    </PreferenceCategory>
+</PreferenceScreen>

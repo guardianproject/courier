@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light_light"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:id="@+id/llRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_with_bottom_shadow"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:stretchMode="columnWidth" >
+
+            <TextView
+                style="@style/HelpTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/download_epub_reader_title"
+                android:textColor="@color/claret" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/claret" />
+
+            <TextView
+                style="@style/HelpTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/download_epub_reader_info" />
+
+            <Button
+                android:id="@+id/btnGetFromPlay"
+                style="@style/HelpButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_download_epub_reader_background_selector"
+                android:text="@string/download_epub_reader_play"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnGetFromWeb"
+                style="@style/HelpButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_download_epub_reader_background_selector"
+                android:text="@string/download_epub_reader_web"
+                android:textAllCaps="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/btnClose"
+                style="@style/HelpButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:padding="0dp"
+                android:text="@string/download_epub_reader_close"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

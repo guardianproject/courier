@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/story_item_tags_background"
+    android:fillViewport="true"
+    android:paddingStart="@dimen/card_left_margin"
+    android:paddingEnd="@dimen/card_right_margin"
+    android:paddingTop="1px"
+    android:scrollbars="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/llTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</HorizontalScrollView>

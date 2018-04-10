@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <item android:drawable="@android:color/transparent" />
+    
+    <item
+        android:top="@dimen/modalButtonMargin"
+        android:left="@dimen/modalButtonMargin"
+        android:right="@dimen/modalButtonMargin"
+        android:bottom="@dimen/modalButtonMargin"
+        >
+        <shape android:shape="rectangle">
+		    <solid android:color="@color/modal_button_secondary_disabled" />
+		    <padding android:left="@dimen/modalButtonMargin" android:right="@dimen/modalButtonMargin" android:top="@dimen/modalButtonMargin" android:bottom="@dimen/modalButtonMargin" />
+		</shape>
+	</item>
+	
+</layer-list>

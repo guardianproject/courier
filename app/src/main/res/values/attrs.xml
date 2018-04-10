@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    
+    <attr name="command" format="integer" />
+    <attr name="actionBarMenuIcon" format="reference" />
+    <attr name="actionBarMenuIconInset" format="dimension" />
+    <attr name="dot_total" format="integer" />
+    <attr name="dot_current" format="integer" />
+    <attr name="hide_if_only_one" format="boolean" defaultValue="true" />
+    <attr name="height_limit" format="float" default="0"/>
+    <attr name="settings_key" format="reference|string" />
+    <attr name="settings_value" format="reference|string" />
+
+    <declare-styleable name="CustomAppTheming">
+        <attr name="actionBarTextStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DottedProgressView">
+        <attr name="dot_distance" format="integer" />
+        <attr name="dot_radius" format="integer" />
+        <attr name="dot_color" format="color" />
+        <attr name="dot_rim_color" format="color" />
+        <attr name="dot_color_current" format="color" />
+        <attr name="dot_rim_color_current" format="color" />
+        <attr name="dot_total" />
+    	<attr name="dot_current" />
+    	<attr name="hide_if_only_one" />
+    	<attr name="android:gravity" />
+    </declare-styleable>
+    
+    <declare-styleable name="DropdownSpinner">
+        <attr name="dropdown_background" format="reference" />
+        <attr name="android:divider" />
+    </declare-styleable>
+
+    <declare-styleable name="Spinner">
+        <attr name="android:popupBackground" />
+        <attr name="android:divider" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView" parent="TextView">
+        <attr name="fontName" format="string" />
+        <attr name="linked_text_view" format="reference" />
+        <attr name="allow_size_adjustment" format="boolean" defaultValue="false" />
+        <attr name="android:maxLines" />
+        <attr name="android:lineSpacingExtra" />
+        <attr name="android:lineSpacingMultiplier" />
+        <attr name="android:ellipsize" />
+    </declare-styleable>
+
+    <declare-styleable name="StoryMediaContentView">
+        <attr name="show_placeholder" format="boolean" default="false"/>
+    </declare-styleable>
+       
+    <declare-styleable name="HeightLimitedLinearLayout">
+        <attr name="height_limit" />
+    </declare-styleable>    
+    
+    <declare-styleable name="HeightLimitedRelativeLayout">
+        <attr name="height_limit" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsControls">
+        <attr name="settings_key" />
+        <attr name="settings_value" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupSwitchPreference">
+        <attr name="groupKey" format="string|reference" />
+        <attr name="useRadioButtons" format="boolean" defaultValue="false" />
+        <attr name="useIntValues" format="boolean" defaultValue="false" />
+        <attr name="forwardAllClicksToWidget" format="boolean" defaultValue="false" />
+    </declare-styleable>
+
+    <attr name="summaries" format="reference" />
+
+    <declare-styleable name="SyncPreference">
+        <attr name="summaries" />
+        <attr name="screenColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ListPreferenceWithSwitch">
+        <attr name="uncheckedIndex" format="integer" />
+        <attr name="uncheckedValue" format="string|reference" />
+        <attr name="summaries" />
+        <attr name="uncheckedValueSummary" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchPreferenceWithValues">
+        <attr name="valueOn" format="string|reference" />
+        <attr name="valueOff" format="string|reference" />
+    </declare-styleable>
+
+</resources>

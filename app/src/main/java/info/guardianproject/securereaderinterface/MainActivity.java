@@ -545,6 +545,7 @@ public class MainActivity extends ItemExpandActivity implements ItemAdapterListe
 	}
 
 	private void showError(String error) {
+		/* Disable the error panel for now
 		if (errorLayout != null) {
 			TextView tv = (TextView) errorLayout.findViewById(R.id.tvError);
 			if (tv != null)
@@ -554,7 +555,7 @@ public class MainActivity extends ItemExpandActivity implements ItemAdapterListe
 			} else {
 				errorLayout.expand();
 			}
-		}
+		}*/
 	}
 
 	@SuppressLint({ "InlinedApi", "NewApi" })

@@ -2,7 +2,10 @@ package info.guardianproject.securereaderinterface.adapters;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
+import android.support.v4.content.ContextCompat;
+import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -65,7 +68,7 @@ public class DrawerMenuRecyclerViewAdapter
     }
 
     protected void addAllFeedsItem() {
-        add(new MenuEntry(R.drawable.ic_menu_news, R.string.feed_filter_all_feeds, 0, true, -1, new SimpleMenuItemCallback() {
+        MenuEntry menuEntry = new MenuEntry(R.drawable.ic_menu_news, R.string.feed_filter_all_feeds, 0, true, -1, new SimpleMenuItemCallback() {
             @Override
             public boolean isRefreshing() {
                 return App.getInstance().socialReader.manualSyncInProgress();
@@ -91,11 +94,13 @@ public class DrawerMenuRecyclerViewAdapter
             public boolean isSelected() {
                 return getContext() instanceof MainActivity && App.getInstance().getCurrentFeedSelection() == FeedSelection.ALL_FEEDS;
             }
-        }));
+        });
+        menuEntry.resIdIconTint = ContextCompat.getColor(getContext(), R.color.drawer_menu_icon_tint);
+        add(menuEntry);
     }
 
     protected void addFavoritesItem(int count) {
-        add(new MenuEntry(R.drawable.ic_filter_favorites, R.string.feed_filter_favorites, 0, false, count, new SimpleMenuItemCallback() {
+        MenuEntry menuEntry = new MenuEntry(R.drawable.ic_bookmark_white_24dp, R.string.feed_filter_favorites, 0, false, count, new SimpleMenuItemCallback() {
             @Override
             public void onClicked() {
                 mCallbacks.runAfterMenuClose(new Runnable() {
@@ -111,11 +116,13 @@ public class DrawerMenuRecyclerViewAdapter
             public boolean isSelected() {
                 return getContext() instanceof MainActivity && App.getInstance().getCurrentFeedSelection() == FeedSelection.FAVORITES;
             }
-        }));
+        });
+        menuEntry.resIdIconTint = ContextCompat.getColor(getContext(), R.color.drawer_menu_icon_tint);
+        add(menuEntry);
     }
 
     protected void addNearbyItem(int count) {
-        add(new MenuEntry(R.drawable.ic_filter_secure_share, R.string.feed_filter_shared_stories, R.string.menu_receive_share, false, count, new SimpleMenuItemCallback() {
+        MenuEntry menuEntry = new MenuEntry(R.drawable.ic_filter_secure_share, R.string.feed_filter_shared_stories, R.string.menu_receive_share, false, count, new SimpleMenuItemCallback() {
             @Override
             public void onClicked() {
                 mCallbacks.runAfterMenuClose(new Runnable() {
@@ -141,7 +148,9 @@ public class DrawerMenuRecyclerViewAdapter
             public boolean isSelected() {
                 return getContext() instanceof MainActivity && App.getInstance().getCurrentFeedSelection() == FeedSelection.SHARED;
             }
-        }));
+        });
+        menuEntry.resIdIconTint = ContextCompat.getColor(getContext(), R.color.drawer_menu_icon_tint);
+        add(menuEntry);
     }
 
     protected void addFeedItem(final Feed feed) {

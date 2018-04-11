@@ -14,6 +14,7 @@
 
    <color name="drawer_menu_background_color">#000000</color>
    <color name="drawer_menu_divider_color">#414042</color>
+   <color name="drawer_menu_icon_tint">#d7df23</color>
 
    <color name="lock_screen_background">#dddddd</color>
    

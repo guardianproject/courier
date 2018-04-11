@@ -182,17 +182,17 @@ public class UIHelpers
 
 		TypedValue outValue = new TypedValue();
 		context.getTheme().resolveAttribute(idAttr, outValue, true);
-		if ((outValue.data & 0xff000000) != 0)
-			drawable.setColorFilter(outValue.data, Mode.SRC_ATOP);
-		else
-			drawable.setColorFilter(null);
+		colorizeDrawableWithColor(context, outValue.data, drawable);
 	}
 
 	public static void colorizeDrawableWithColor(Context context, int color, Drawable drawable)
 	{
 		if (drawable == null)
 			return;
-		drawable.setColorFilter(color, Mode.MULTIPLY);
+		if ((color & 0xff000000) != 0)
+			drawable.setColorFilter(color, Mode.SRC_ATOP);
+		else
+			drawable.setColorFilter(null);
 	}
 	
 	public static void hideSoftKeyboard(Activity activity)

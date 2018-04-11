@@ -2,8 +2,10 @@ package info.guardianproject.securereaderinterface.adapters;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.TextViewCompat;
@@ -26,6 +28,7 @@ import info.guardianproject.securereader.Settings;
 import info.guardianproject.securereader.SocialReader;
 import info.guardianproject.securereaderinterface.App;
 import info.guardianproject.securereaderinterface.R;
+import info.guardianproject.securereaderinterface.uiutil.UIHelpers;
 
 public class DrawerMenuRecyclerViewAdapterBase extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     protected final Adorner mAdorner;
@@ -84,7 +87,13 @@ public class DrawerMenuRecyclerViewAdapterBase extends RecyclerView.Adapter<Recy
                             .placeholder(e.resIdIcon)
                             .into(viewHolder.icon);
             } else {
-                viewHolder.icon.setImageResource(e.resIdIcon);
+                if (e.resIdIconTint != Color.TRANSPARENT) {
+                    Drawable d = ContextCompat.getDrawable(getContext(), e.resIdIcon).mutate();
+                    UIHelpers.colorizeDrawableWithColor(getContext(), e.resIdIconTint, d);
+                    viewHolder.icon.setImageDrawable(d);
+                } else {
+                    viewHolder.icon.setImageResource(e.resIdIcon);
+                }
             }
             if (e.resIdTitle != 0)
                 viewHolder.title.setText(e.resIdTitle);
@@ -244,6 +253,7 @@ public class DrawerMenuRecyclerViewAdapterBase extends RecyclerView.Adapter<Recy
 
     protected class MenuEntry {
         public int resIdIcon;
+        public int resIdIconTint = Color.TRANSPARENT;
         public Uri uriIcon;
         public int resIdTitle;
         public String stringTitle;

@@ -4,7 +4,7 @@
 	    android:shape="oval">
 
 	   <solid 
-	       android:color="#d7df23"/>
+	       android:color="@color/drawer_menu_icon_tint"/>
 	   <size 
 	       android:width="24dp"
 	       android:height="24dp"/>

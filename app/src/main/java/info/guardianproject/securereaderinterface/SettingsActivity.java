@@ -512,8 +512,8 @@ public class SettingsActivity extends AppActivity implements ICacheWordSubscribe
 		    	Bundle arguments = new Bundle();
 		    	arguments.putString(SyncPreferenceFragment.ARG_PREF_FILE, App.getSettings().getModeFilename(mode));
 		    	arguments.putString(SyncPreferenceFragment.ARG_PREF_KEY, preference.getKey());
-		    	arguments.putString(SyncPreferenceFragment.ARG_TITLE, preference.getTitle().toString());
-		    	arguments.putInt(SyncPreferenceFragment.ARG_COLOR, ((SyncPreference)preference).getColor());
+		    	arguments.putString(SyncPreferenceFragment.ARG_TITLE, ((SyncPreference)preference).getScreenTitle());
+		    	arguments.putInt(SyncPreferenceFragment.ARG_COLOR, ((SyncPreference)preference).getScreenColor());
 				Fragment f = Fragment.instantiate(getActivity(), fragmentName, arguments);
 				getFragmentManager().beginTransaction().replace(R.id.settings_fragment,
 						f).addToBackStack(fragmentName).commit();

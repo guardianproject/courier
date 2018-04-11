@@ -2,7 +2,6 @@ package info.guardianproject.securereaderinterface.widgets.preference;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Build;
@@ -10,11 +9,9 @@ import android.os.Bundle;
 import android.preference.MultiSelectListPreference;
 import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
-import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,7 +32,8 @@ public class SyncPreference extends MultiSelectListPreference {
     private CheckBox checkBoxWidget;
     private AlertDialog currentDialog;
     private CharSequence[] summaries;
-    private int color;
+    private int screenColor;
+    private String screenTitle;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public SyncPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
@@ -60,19 +58,24 @@ public class SyncPreference extends MultiSelectListPreference {
     }
 
     private void init(AttributeSet attrs) {
-        color = Color.WHITE;
+        screenColor = Color.WHITE;
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.SyncPreference);
             if (a != null) {
                 summaries = a.getTextArray(R.styleable.SyncPreference_summaries);
-                color = a.getColor(R.styleable.SyncPreference_screenColor, color);
+                screenColor = a.getColor(R.styleable.SyncPreference_screenColor, screenColor);
+                screenTitle = a.getString(R.styleable.SyncPreference_screenTitle);
                 a.recycle();
             }
         }
     }
 
-    public int getColor() {
-        return color;
+    public int getScreenColor() {
+        return screenColor;
+    }
+
+    public String getScreenTitle() {
+        return screenTitle;
     }
 
     @Override

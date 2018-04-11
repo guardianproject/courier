@@ -77,6 +77,7 @@
     <declare-styleable name="SyncPreference">
         <attr name="summaries" />
         <attr name="screenColor" format="color|reference" />
+        <attr name="screenTitle" format="string|reference" />
     </declare-styleable>
 
     <declare-styleable name="ListPreferenceWithSwitch">

@@ -63,6 +63,8 @@
     <string name="pref_auto_sync">Auto sync</string>
     <string name="pref_over_wifi">Over wifi</string>
     <string name="pref_over_data">Over data</string>
+    <string name="pref_over_wifi_wizard_title">Choose what to sync over wifi</string>
+    <string name="pref_over_data_wizard_title">Choose what to sync over data</string>
     <string name="pref_media_rich">Photos first</string>
     <string name="pref_media_rich_summary_on">Sync photos before full stories</string>
     <string name="pref_media_rich_summary_off">Sync full stories before photos</string>

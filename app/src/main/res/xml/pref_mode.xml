@@ -17,6 +17,7 @@
             android:widgetLayout="@layout/settings_checkbox_widget"
             app:summaries="@array/pref_key_sync_entries_summary"
             app:screenColor="@color/settings_sync_wifi"
+            app:screenTitle="@string/pref_over_wifi_wizard_title"
             />
         <info.guardianproject.securereaderinterface.widgets.preference.SyncPreference
             android:entries="@array/pref_key_sync_entries"
@@ -26,6 +27,7 @@
             android:widgetLayout="@layout/settings_checkbox_widget"
             app:summaries="@array/pref_key_sync_entries_summary"
             app:screenColor="@color/settings_sync_data"
+            app:screenTitle="@string/pref_over_data_wizard_title"
             />
     </PreferenceCategory>
 

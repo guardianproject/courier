@@ -65,7 +65,7 @@ public class ProfilerWizardActivity extends AppActivity {
 			Bundle arguments = new Bundle();
 			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_PREF_FILE, App.getSettings().getModeFilename(Settings.Mode.Optimized));
 			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_PREF_KEY, getString(R.string.pref_key_sync_over_data));
-			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_TITLE, getString(R.string.pref_over_data));
+			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_TITLE, getString(R.string.pref_over_data_wizard_title));
 			arguments.putInt(SettingsActivity.SyncPreferenceFragment.ARG_COLOR, ContextCompat.getColor(this, R.color.settings_sync_data));
 			Fragment f = Fragment.instantiate(this, fragmentName, arguments);
 			getFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -77,7 +77,7 @@ public class ProfilerWizardActivity extends AppActivity {
 			Bundle arguments = new Bundle();
 			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_PREF_FILE, App.getSettings().getModeFilename(Settings.Mode.Optimized));
 			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_PREF_KEY, getString(R.string.pref_key_sync_over_wifi));
-			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_TITLE, getString(R.string.pref_over_wifi));
+			arguments.putString(SettingsActivity.SyncPreferenceFragment.ARG_TITLE, getString(R.string.pref_over_wifi_wizard_title));
 			arguments.putInt(SettingsActivity.SyncPreferenceFragment.ARG_COLOR, ContextCompat.getColor(this, R.color.settings_sync_wifi));
 			Fragment f = Fragment.instantiate(this, fragmentName, arguments);
 			getFragmentManager().beginTransaction().replace(R.id.fragment_container,

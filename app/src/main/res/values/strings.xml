@@ -151,6 +151,6 @@
     <string name="fetch_full_story">Fetch full story</string>
     <string name="fetch_full_story_queued">Download queued…</string>
     <string name="fetch_full_story_downloading">Downloading…</string>
-    <string name="optimization_info_text">We\'ve optimized your experience.</string>
+    <string name="optimization_info_text">Optimize your experience</string>
     <string name="optimization_info_more">More</string>
 </resources>

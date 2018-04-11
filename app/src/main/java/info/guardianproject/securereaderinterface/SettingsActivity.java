@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -16,6 +17,7 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
@@ -75,8 +77,22 @@ public class SettingsActivity extends AppActivity implements ICacheWordSubscribe
 				Fragment f = getFragmentManager().findFragmentById(R.id.settings_fragment);
 				if (f != null && f instanceof PreferenceFragment) {
 					PreferenceFragment pf = (PreferenceFragment)f;
-					if (pf.getPreferenceScreen() != null) {
-						setActionBarTitle(pf.getPreferenceScreen().getTitle());
+					if (f instanceof SyncPreferenceFragment) {
+						setActionBarColor(((SyncPreferenceFragment)f).getColor(), false);
+						setActionBarTitle(null);
+					} else {
+						if (pf.getPreferenceScreen() != null) {
+							setActionBarTitle(pf.getPreferenceScreen().getTitle());
+						}
+
+						// Restore to colorPrimary
+						int color = ContextCompat.getColor(SettingsActivity.this, R.color.claret);
+						TypedArray a = SettingsActivity.this.getTheme().obtainStyledAttributes(new int[] { R.attr.colorPrimary });
+						if (a != null) {
+							color = a.getColor(0, color);
+							a.recycle();
+						}
+						setActionBarColor(color, true);
 					}
 				}
 			}
@@ -605,6 +621,10 @@ public class SettingsActivity extends AppActivity implements ICacheWordSubscribe
 			syncPreference.setEntryValues(R.array.pref_key_sync_values);
 			syncPreference.setSummaries(R.array.pref_key_sync_entries_summary);
 			syncPreference.setValues(getPreferenceManager().getSharedPreferences().getStringSet(syncPreference.getKey(), null));
+		}
+
+		public int getColor() {
+			return getArguments().getInt(ARG_COLOR, Color.WHITE);
 		}
 
 		void updateSummary() {

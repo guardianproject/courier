@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,11 +18,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.LayoutInflaterCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchUIUtil;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -240,6 +243,19 @@ public class AppActivity extends LockableActivity implements DrawerMenuRecyclerV
             if (tvTitle != null) {
                 tvTitle.setText(title);
                 tvTitle.setSelected(true);
+            }
+        }
+    }
+
+    public void setActionBarColor(int color, boolean showShadow) {
+        if (mToolbar != null) {
+            mToolbar.setBackgroundColor(color);
+            AppBarLayout layout = (AppBarLayout)mToolbar.getParent();
+            layout.setBackgroundColor(color);
+            if (!showShadow) {
+                ViewCompat.setElevation(layout, 0);
+            } else {
+                ViewCompat.setElevation(layout, UIHelpers.dpToPx(4, layout.getContext()));
             }
         }
     }

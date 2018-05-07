@@ -209,6 +209,9 @@ public class ItemDetailContainerView extends FrameLayout
 			ItemViewModel itemViewModel = getCurrentStory();
 			if (itemViewModel != null && itemViewModel.item != null) {
 				App.getInstance().socialReader.addToItemViewCount(itemViewModel.item);
+				if (mItemAdapter != null && mItemCursor != null) {
+					mItemAdapter.notifyItemChanged(mItemCursor.getCurrentIndex());
+				}
 			}
 		}
 	}

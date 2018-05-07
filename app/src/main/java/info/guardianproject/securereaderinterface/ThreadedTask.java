@@ -42,15 +42,21 @@ public abstract class ThreadedTask<Params,Progress,Result> {
 			public void run() {
 				final Result r = doInBackground(mParams);
 				if (!isInterrupted()) {
+					boolean isCancelled = false;
 					synchronized (ThreadedTask.this) {
-						done = true;
-					}
-					mHandler.post(new Runnable() {
-						@Override
-						public void run() {
-							onPostExecute(r);
+						isCancelled = cancelled;
+						if (!isCancelled) {
+							done = true;
 						}
-					});
+					}
+					if (!isCancelled) {
+						mHandler.post(new Runnable() {
+							@Override
+							public void run() {
+								onPostExecute(r);
+							}
+						});
+					}
 				}
 			}
 		}.init(params);
@@ -61,7 +67,9 @@ public abstract class ThreadedTask<Params,Progress,Result> {
 	
 	public void cancel(boolean mayInterruptIfRunning)
 	{
-		cancelled = true;
+		synchronized (ThreadedTask.this) {
+			cancelled = true;
+		}
 
 		// TODO: heed the mayInterruptIfRunning param.
 		if (mThread != null)

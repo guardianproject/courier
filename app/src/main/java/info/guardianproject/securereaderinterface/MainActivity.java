@@ -563,7 +563,7 @@ public class MainActivity extends ItemExpandActivity implements ItemAdapterListe
 	{
 		if (!isUpdate)
 			setIsLoading(true);
-		mAdapter.setFeedSelection(getCurrentFeedSelection());
+		mAdapter.setFeedSelection(getCurrentFeedSelection(), isUpdate);
 		if (!isUpdate)
 			itemsRecyclerView.scrollToPosition(0);
 		syncSpinnerToCurrentItem();

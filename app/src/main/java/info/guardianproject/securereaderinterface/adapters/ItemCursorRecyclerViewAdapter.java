@@ -56,7 +56,7 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
         this.recyclerView = recyclerView;
-        updateCursor();
+        updateCursor(true);
     }
 
     @Override
@@ -79,9 +79,9 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         mListener = listener;
     }
 
-    public void setFeedSelection(FeedSelection feedSelection) {
+    public void setFeedSelection(FeedSelection feedSelection, boolean isUpdate) {
         mFeedSelection = feedSelection;
-        updateCursor();
+        updateCursor(isUpdate);
     }
 
     protected void update() {
@@ -90,7 +90,7 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
 
     public void setFilterString(String filterString) {
         mFilterString = filterString;
-        updateCursor();
+        updateCursor(true);
     }
 
     public View getHeaderView() {
@@ -220,17 +220,17 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         }
     }
 
-    private void updateCursor() {
+    private void updateCursor(boolean isUpdate) {
         if (mUpdateTask != null) {
             if (LOGGING)
                 Log.d(LOGTAG, "Cancel update task");
             mUpdateTask.cancel(true);
         }
         mUpdateTask = new UpdateTask();
-        mUpdateTask.execute();
+        mUpdateTask.execute(isUpdate);
     }
 
-    private class UpdateTask extends ThreadedTask<Void, Void, ItemCursor>
+    private class UpdateTask extends ThreadedTask<Boolean, Void, ItemCursor>
     {
         private ItemCursor itemCursor = null;
         private Cursor cursor = null;
@@ -241,8 +241,10 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         }
 
         @Override
-        protected ItemCursor doInBackground(Void... values)
+        protected ItemCursor doInBackground(Boolean... values)
         {
+            boolean isUpdate = values[0];
+
             if (ItemCursorRecyclerViewAdapter.LOGGING)
                 Log.v(ItemCursorRecyclerViewAdapter.LOGTAG, "UpdateFeedListTask: doInBackground");
 
@@ -251,9 +253,9 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
                 headerResourceId = 0;
 
                 Boolean viewed = null;
-                //if (App.getSettings().getCurrentMode().articleExpiration() == ModeSettings.ArticleExpiration.AfterRead) {
-                //    viewed = false;
-                //}
+                if (!isUpdate && App.getSettings().getCurrentMode().articleExpiration() == ModeSettings.ArticleExpiration.AfterRead) {
+                    viewed = false;
+                }
 
                 if (mFeedSelection == FeedSelection.SHARED) {
                     cursor = socialReader.getItemsCursor(-1, null, null, true, null, mFilterString, false, 0);
@@ -281,6 +283,9 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
                 }
 
                 if (isCancelled()) {
+                    if (cursor != null) {
+                        cursor.close();
+                    }
                     return null;
                 }
 
@@ -326,8 +331,15 @@ public class ItemCursorRecyclerViewAdapter extends RecyclerView.Adapter<Recycler
         protected void onPostExecute(ItemCursor cursor)
         {
             synchronized (ItemCursorRecyclerViewAdapter.this) {
-                if (mUpdateTask == this)
+                if (mUpdateTask == this) {
                     mUpdateTask = null;
+                } else {
+                    // We are not the current task anymore(?)
+                    if (cursor != null) {
+                        cursor.close();
+                    }
+                    return;
+                }
                 if (ItemCursorRecyclerViewAdapter.LOGGING)
                     Log.v(ItemCursorRecyclerViewAdapter.LOGTAG, "RefreshFeedsTask: finished");
                 //if (newCursor != null)

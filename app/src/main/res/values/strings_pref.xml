@@ -121,13 +121,13 @@
 
 
     <!-- Preference keys for UI settings -->
-    <string name="pref_key_content_font_size_adjustment">content_font_size_adjustment</string>
-    <string name="pref_key_security_block_screenshots">block_screenshots</string>
-    <string name="pref_key_security_show_panic_button">show_panic_button</string>
-    <string name="pref_key_has_shown_optimization_info">has_shown_optimization_info</string>
+    <string name="pref_key_content_font_size_adjustment" translatable="false">content_font_size_adjustment</string>
+    <string name="pref_key_security_block_screenshots" translatable="false">block_screenshots</string>
+    <string name="pref_key_security_show_panic_button" translatable="false">show_panic_button</string>
+    <string name="pref_key_has_shown_optimization_info" translatable="false">has_shown_optimization_info</string>
 
-    <string name="pref_key_autosync_on">InBackground</string>
-    <string name="pref_key_autosync_off">Manual</string>
+    <string name="pref_key_autosync_on" translatable="false">InBackground</string>
+    <string name="pref_key_autosync_off" translatable="false">Manual</string>
 
     <string-array name="pref_key_sync_entries">
         <item>Story summaries (text)</item>

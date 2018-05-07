@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_activity_main">@string/app_name</string>
-    <string name="title_activity_downloads">@string/app_name</string>
-    <string name="title_activity_add_feed">@string/app_name</string>
-    <string name="title_activity_panic">@string/app_name</string>
-    <string name="title_activity_view_media">@string/app_name</string>
-    <string name="title_activity_settings">@string/app_name</string>
-    <string name="title_activity_lock_screen">@string/app_name</string>
+    <string name="title_activity_main" translatable="false">@string/app_name</string>
+    <string name="title_activity_downloads" translatable="false">@string/app_name</string>
+    <string name="title_activity_add_feed" translatable="false">@string/app_name</string>
+    <string name="title_activity_panic" translatable="false">@string/app_name</string>
+    <string name="title_activity_view_media" translatable="false">@string/app_name</string>
+    <string name="title_activity_settings" translatable="false">@string/app_name</string>
+    <string name="title_activity_lock_screen" translatable="false">@string/app_name</string>
 
-    <string name="settings_language_english_nt">English</string>
-    <string name="settings_language_spanish_nt">Español</string>
-    <string name="settings_language_spanish_us_nt">Español (Estados Unidos)</string>
+    <string name="settings_language_english_nt" translatable="false">English</string>
+    <string name="settings_language_spanish_nt" translatable="false">Español</string>
+    <string name="settings_language_spanish_us_nt" translatable="false">Español (Estados Unidos)</string>
 </resources>

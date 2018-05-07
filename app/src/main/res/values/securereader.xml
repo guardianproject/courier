@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="opml_url"></string>
+	<string name="opml_url" translatable="false"></string>
     <!--<string name="opml_url">https://securereader.guardianproject.info/opml/opml.php</string>-->
 
 	<bool name="fulltextfeeds">false</bool>
@@ -27,17 +27,17 @@
 	<integer name="expiration_check_frequency">43200000</integer>
 
 	<!-- XMLRPC_ENDPOINT -->
-    <string name="xmlrpc_endpoint" />
+    <string name="xmlrpc_endpoint" translatable="false"/>
 
 	<!-- Default values that should be referenced in Settings.java -->
     <bool name="require_proxy_default">true</bool>
-    <string name="default_proxy_type">Tor</string>
+    <string name="default_proxy_type" translatable="false">Tor</string>
 
         <!-- Default values that should be referenced in Settings.java -->
-        <string name="article_expiration_default">OneMonth</string>
-        <string name="sync_mode_default">BitWise</string>       
-        <string name="sync_network_default">WifiAndMobile</string>
-        <string name="sync_frequency_default">InBackground</string>
+        <string name="article_expiration_default" translatable="false">OneMonth</string>
+        <string name="sync_mode_default" translatable="false">BitWise</string>
+        <string name="sync_network_default" translatable="false">WifiAndMobile</string>
+        <string name="sync_frequency_default" translatable="false">InBackground</string>
         
         <!-- Limit number of items to keep in database -1 for no limit -->
         <integer name="item_limit">-1</integer>
@@ -46,5 +46,5 @@
         <integer name="media_cache_size">-1</integer>
 
     <!-- Feed searching -->
-    <string name="feed_search_url">https://securereader.guardianproject.info/opml/find.php</string>
+    <string name="feed_search_url" translatable="false">https://securereader.guardianproject.info/opml/find.php</string>
 </resources>

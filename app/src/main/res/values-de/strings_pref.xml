@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Automatische Synchronisation</string>
+    <string name="pref_cat_priority">Priorität</string>
+    <string name="pref_cat_save_storage">Speicher sparen</string>
+    <string name="pref_cat_preserve_power">Energie sparen</string>
+
+    <string name="pref_cat_mode">Modus</string>
+    <string name="pref_mode_optimized">Optimiert</string>
+    <string name="pref_mode_optimized_title">Optimierter Modus</string>
+    <string name="pref_mode_optimized_title_customized">Optimierter Modus: Angepasst</string>
+    <string name="pref_mode_everything">Alles</string>
+    <string name="pref_cat_security">Sicherheit</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Proxy nicht verwenden</string>
+    <string name="pref_security_proxy_tor">Nachrichten über Tor synchronisieren</string>
+    <string name="pref_security_proxy_psiphon">Nachrichten über Psiphon synchronisieren</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Automatische Sperre</string>
+    <string name="pref_security_autolock_immediately">Keins</string>
+    <string name="pref_security_autolock_5_minutes">5 Minuten</string>
+    <string name="pref_security_autolock_1_hour">1 Stunde</string>
+    <string name="pref_security_autolock_1_day">1 Tag</string>
+    <string name="pref_security_autolock_summary_never">App nicht sperren</string>
+    <string name="pref_security_autolock_summary_immediately">Bei Nichtgebrauch sofort sperren</string>
+    <string name="pref_security_autolock_summary_5_minutes">Nach 5 Minuten bei Nichtgebrauch sperren</string>
+    <string name="pref_security_autolock_summary_1_hour">Nach 1 Stunde bei Nichtgebrauch sperren</string>
+    <string name="pref_security_autolock_summary_1_day">Nach 1 Tag bei Nichtgebrauch sperren</string>
+
+    <string name="pref_security_block_screenshots">Bildschirmfotos blockieren</string>
+    <string name="pref_security_block_screenshots_summary_off">Bildschirmfotos sind aktiviert</string>
+    <string name="pref_security_show_panic_button">Panik-Knopf anzeigen</string>
+    <string name="pref_security_show_panic_button_on">Symbol in jeder App-Ansicht anzeigen</string>
+    <string name="pref_security_show_panic_button_off">Panik-Symbol nicht anzeigen</string>
+    <string name="pref_security_panic_action">Panik</string>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Auto-Synchronisation</string>
+    <string name="pref_over_wifi">Über WiFi</string>
+    <string name="pref_over_data">Über Daten</string>
+    <string name="pref_media_rich">Fotos zuerst</string>
+    <string name="pref_save_keep_nothing">Nichts behalten</string>
+    <string name="pref_save_keep_day">Für 1 Tag behalten</string>
+    <string name="pref_save_keep_day_summary">Artikel nach einem Tag entfernen</string>
+    <string name="pref_save_keep_week">Für 1 Woche behalten</string>
+    <string name="pref_save_keep_week_summary">Artikel nach einer Woche entfernen</string>
+    <string name="pref_reset_optimized_defaults">Optimierte Standardeinstellungen wiederherstellen</string>
+    <string name="pref_language">Sprache</string>
+    <string name="pref_about">&Infos über VeraCrypt</string>
+    <string name="pref_customize">Anpassen</string>
+    <string name="pref_done">Fertig</string>
+
+    <string name="pref_summary_x_and_y">%s und %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s und %s</string>
+
+    <string name="pref_autolock_title">Automatische Sperre</string>
+    <string name="pref_cat_timeout">Zeitüberschreitung</string>
+    <string name="pref_cat_wrong_attempts">Falsche Versuche</string>
+    <string name="pref_wrong_attempts">Falsche Versuche</string>
+    <string name="pref_wrong_attempts_summary_nothing">Nichts machen</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 Versuche</string>
+    <string name="pref_wrong_password_limit_3">3 Versuche</string>
+    <string name="pref_wrong_password_limit_4">4 Versuche</string>
+
+    <string-array name="pref_key_sync_entries">
+        <item>Komplette Geschichten (Text)</item>
+        <item>Medien</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Komplette Geschichten</item>
+        <item>Medien</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

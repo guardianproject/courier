@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">تزامن تلقائي</string>
+    <string name="pref_cat_priority">الأولوية</string>
+    <string name="pref_cat_save_storage">حفظ التخزين</string>
+    <string name="pref_cat_preserve_power">الحفاظ على الطاقة</string>
+
+    <string name="pref_cat_mode">الوضع</string>
+    <string name="pref_mode_optimized">مُحسن</string>
+    <string name="pref_mode_optimized_title">الوضع المُحسن</string>
+    <string name="pref_mode_optimized_title_customized">الوضع المحسن: مُخصص</string>
+    <string name="pref_mode_optimized_summary">تقليل استهلاك الطاقة، البيانات والتخزين. موصى به إذا كان لديك بيانات محدودة.</string>
+    <string name="pref_mode_everything">كل شيء</string>
+    <string name="pref_mode_everything_title">وضع كل شيء</string>
+    <string name="pref_mode_everything_title_customized">وضع كل شيء: مُخصص</string>
+    <string name="pref_mode_everything_summary">موصى به إذا كان لديك بيانات غير محدودة واتصال جيد.</string>
+    <string name="pref_mode_offline">الذهاب لوضع بدون إتصال</string>
+
+    <string name="pref_cat_security">الأمان</string>
+    <string name="pref_security_proxy">الوكيل</string>
+    <string name="pref_security_proxy_none">لا تستخدم وكيل</string>
+    <string name="pref_security_proxy_tor">مزامنة الأخبار عبر Tor</string>
+    <string name="pref_security_proxy_psiphon">أخبار المزامنة على Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">القفل التلقائي</string>
+    <string name="pref_security_autolock_immediately">‮لا شيء</string>
+    <string name="pref_security_autolock_5_minutes">5 دقائق</string>
+    <string name="pref_security_autolock_1_hour">ساعة</string>
+    <string name="pref_security_autolock_1_day">1 يوم</string>
+    <string name="pref_security_autolock_summary_never">لا تقفل التطبيق</string>
+    <string name="pref_security_autolock_summary_immediately">قفل على الفور عندما لا يكون قيد الاستعمال</string>
+    <string name="pref_security_autolock_summary_5_minutes">قفل بعد 5 دقائق عندما لا يكون قيد الاستعمال</string>
+    <string name="pref_security_autolock_summary_1_hour">قفل بعد 1 ساعة عندما لا يكون قيد الاستعمال</string>
+    <string name="pref_security_autolock_summary_1_day">قفل بعد 1 يوم عندما لا يكون قيد الاستعمال</string>
+
+    <string name="pref_security_block_screenshots">حظر لقطات الشاشة</string>
+    <string name="pref_security_block_screenshots_summary_off">لقطات الشاشة مٌفعلة</string>
+    <string name="pref_security_block_screenshots_summary_on">لحماية خصوصيتك، لقطات الشاشة مُعطلة.</string>
+    <string name="pref_security_show_panic_button">إظهار زر الذعر</string>
+    <string name="pref_security_show_panic_button_on">عرض رمز في كل عرض للتطبيق</string>
+    <string name="pref_security_show_panic_button_off">لاتعرض رمز الذعر</string>
+    <string name="pref_security_panic_action">ذعر</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>مسح محتويات التطبيق عند الطلب</item>
+        <item>حذف التطبيق عند الطلب</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">تزامن تلقائي</string>
+    <string name="pref_over_wifi">على wifi</string>
+    <string name="pref_over_data">على وضع البيانات</string>
+    <string name="pref_over_wifi_wizard_title">اختر ما تريد مزامنته عبر wifi</string>
+    <string name="pref_over_data_wizard_title">اختر ما تريد مزامنته عبر وضع البيانات</string>
+    <string name="pref_media_rich">الصور أولًا</string>
+    <string name="pref_media_rich_summary_on">مزامنة الصور قبل القصص الكاملة</string>
+    <string name="pref_media_rich_summary_off">مزامنة القصص الكاملة قبل الصور</string>
+    <string name="pref_save_keep_nothing">لا تحتفظ بشيء</string>
+    <string name="pref_save_keep_nothing_summary">تنتهي بعد القراءة</string>
+    <string name="pref_save_keep_day">احتفظ لمدة 1 يوم</string>
+    <string name="pref_save_keep_day_summary">حذف المقالات بعد يوم</string>
+    <string name="pref_save_keep_week">احتفظ لمدة 1 أسبوع</string>
+    <string name="pref_save_keep_week_summary">حذف المقالات بعد أسبوع</string>
+    <string name="pref_save_info">سيتم الاحتفاظ بالقصص التي وُضع إشارة مرجعية لها إلى الأبد، ما لم تحذفها أو تعيد تثبيت التطبيق.</string>
+    <string name="pref_sleep_if_below">النوم إذا كانت البطارية أقل من %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">لا تقم بمزامنة الأخبار عندما تكون البطارية منخفضة</string>
+    <string name="pref_sleep_if_below_summary_off">مزامنة القصص حتى إذا كانت بطاريتي منخفضة</string>
+    <string name="pref_reset_optimized_defaults">استعادة الإعدادات الافتراضية لوضع المُحسن</string>
+    <string name="pref_reset_everything_defaults">استعادة الإعدادات الافتراضية لوضع كل شيء</string>
+
+    <string name="pref_language">اللغة</string>
+    <string name="pref_about">‮عن ڤيراكربت…</string>
+    <string name="pref_terms">الشروط &amp; التراخيص</string>
+    <string name="pref_customize">تخصيص</string>
+    <string name="pref_done">انتهاء</string>
+
+    <string name="pref_summary_x_and_y">%s و %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s، %s و %s</string>
+
+    <string name="pref_autolock_title">القفل التلقائي</string>
+    <string name="pref_autolock_reset">إعادة تعيين كلمة السر للقفل التقائي</string>
+    <string name="pref_cat_timeout">المهلة</string>
+    <string name="pref_cat_wrong_attempts">محاولات خاطئة</string>
+    <string name="pref_wrong_attempts">محاولات خاطئة</string>
+    <string name="pref_wrong_attempts_summary_wipedata">أزل محتويات التطبيق إذا أُدخلت كلمة سر خاطئة</string>
+    <string name="pref_wrong_attempts_summary_uninstall">إزالة التطبيق إذا أُدخلت كلمة سر خاطئة</string>
+    <string name="pref_wrong_attempts_summary_nothing">‮لا تفعل شيئا</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 محاولة</string>
+    <string name="pref_wrong_password_limit_3">3 محاولات</string>
+    <string name="pref_wrong_password_limit_4">4 محاولات</string>
+
+    <string name="pref_cat_kill_password">كلمة سر القتل</string>
+    <string name="pref_kill_password">كلمة سر القتل</string>
+    <string name="pref_kill_password_summary">أزل محتويات التطبيق إذا أُدخلت كلمة سر القتل</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>ملخصات القصة (النص)</item>
+        <item>القصص الكاملة (النص)</item>
+        <item>ميديا</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>ملخصات القصة</item>
+        <item>القصص الكاملة</item>
+        <item>ميديا</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

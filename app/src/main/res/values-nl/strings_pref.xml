@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Automatisch synchroniseren</string>
+    <string name="pref_cat_priority">Prioriteit</string>
+    <string name="pref_cat_save_storage">Bespaar opslagruimte</string>
+    <string name="pref_cat_preserve_power">Bespaar energie</string>
+
+    <string name="pref_cat_mode">Modus</string>
+    <string name="pref_mode_optimized">Geoptimaliseerd</string>
+    <string name="pref_mode_optimized_title">Optimalisatie Modus</string>
+    <string name="pref_mode_optimized_title_customized">Optimalisatie Modus: Aangepast</string>
+    <string name="pref_mode_optimized_summary">Verminder energie, data en opslag. Aanbevolen als uw data beperkt is.</string>
+    <string name="pref_mode_everything">Alles</string>
+    <string name="pref_mode_everything_title">Alles Modus</string>
+    <string name="pref_mode_everything_title_customized">Alles Modus: Aangepast</string>
+    <string name="pref_mode_everything_summary">Aanbevolen indien u onbeperkte data en goede verbinding heeft.</string>
+    <string name="pref_mode_offline">Ga Offline</string>
+
+    <string name="pref_cat_security">Beveiliging</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Gebruik geen proxy</string>
+    <string name="pref_security_proxy_tor">Sync nieuws over Tor</string>
+    <string name="pref_security_proxy_psiphon">Sync nieuws over Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Autovergrendelen</string>
+    <string name="pref_security_autolock_immediately">Geen</string>
+    <string name="pref_security_autolock_5_minutes">5 minuten</string>
+    <string name="pref_security_autolock_1_hour">1 uur</string>
+    <string name="pref_security_autolock_1_day">1 dag</string>
+    <string name="pref_security_autolock_summary_never">Niet vergrendelen</string>
+    <string name="pref_security_autolock_summary_immediately">Vergrendel onmiddelijk indien niet gebruikt</string>
+    <string name="pref_security_block_screenshots_summary_off">Screenshots toegelaten</string>
+    <string name="pref_security_panic_action">Paniek</string>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Automatisch synchroniseren</string>
+    <string name="pref_over_wifi">Over WiFi</string>
+    <string name="pref_over_data">Over gegevens</string>
+    <string name="pref_media_rich">Foto\'s eerst</string>
+    <string name="pref_language">Taal</string>
+    <string name="pref_about">Over</string>
+    <string name="pref_customize">Pas aan</string>
+    <string name="pref_done">Klaar</string>
+
+    <string name="pref_autolock_title">Autovergrendelen</string>
+    <string name="pref_cat_timeout">Time-out</string>
+    <string name="pref_wrong_attempts_summary_nothing">Doe niets</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_cat_kill_password">Vernietig-wachtwoord</string>
+    <string name="pref_kill_password">Vernietig-wachtwoord</string>
+    <string-array name="pref_key_sync_entries">
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

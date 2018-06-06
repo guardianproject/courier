@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Synchro automatique</string>
+    <string name="pref_cat_priority">Priorité</string>
+    <string name="pref_cat_save_storage">Économiser la mémoire</string>
+    <string name="pref_cat_preserve_power">Économiser l’énergie</string>
+
+    <string name="pref_cat_mode">Mode</string>
+    <string name="pref_mode_optimized">Optimisé</string>
+    <string name="pref_mode_optimized_title">Mode optimisé</string>
+    <string name="pref_mode_optimized_title_customized">Mode optimisé : personnalisé</string>
+    <string name="pref_mode_optimized_summary">Utilisation réduite de l’énergie, des données et de la mémoire. Recommandé si votre quota de données est limité.</string>
+    <string name="pref_mode_everything">Tout</string>
+    <string name="pref_mode_everything_title">Mode Tout</string>
+    <string name="pref_mode_everything_title_customized">Mode Tout : personnalisé</string>
+    <string name="pref_mode_everything_summary">Recommandé si votre quota de données est illimité avec une bonne connexion.</string>
+    <string name="pref_mode_offline">Aller Hors ligne</string>
+
+    <string name="pref_cat_security">Sécurité</string>
+    <string name="pref_security_proxy">Mandataire</string>
+    <string name="pref_security_proxy_none">Ne pas utiliser de mandaire</string>
+    <string name="pref_security_proxy_tor">Synchroniser les nouvelles avec Tor</string>
+    <string name="pref_security_proxy_psiphon">Synchroniser les nouvelles avec Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Verrouillage automatique</string>
+    <string name="pref_security_autolock_immediately">Aucun</string>
+    <string name="pref_security_autolock_5_minutes">5 minutes</string>
+    <string name="pref_security_autolock_1_hour">1 heure</string>
+    <string name="pref_security_autolock_1_day">1 jour</string>
+    <string name="pref_security_autolock_summary_never">Ne pas verrouiller l’appli</string>
+    <string name="pref_security_autolock_summary_immediately">Verrouiller immédiatement hors utilisation</string>
+    <string name="pref_security_autolock_summary_5_minutes">Verrouiller après 5 minutes hors utilisation</string>
+    <string name="pref_security_autolock_summary_1_hour">Verrouiller après 1 heure hors utilisation</string>
+    <string name="pref_security_autolock_summary_1_day">Verrouiller après 1 journée hors utilisation</string>
+
+    <string name="pref_security_block_screenshots">Bloquer les captures d’écran</string>
+    <string name="pref_security_block_screenshots_summary_off">Les captures d’écran sont activées</string>
+    <string name="pref_security_block_screenshots_summary_on">Afin de protéger votre confidentialité, les captures d’écran sont désactivées.</string>
+    <string name="pref_security_show_panic_button">Afficher le bouton d’urgence</string>
+    <string name="pref_security_show_panic_button_on">Afficher l’icône dans toutes les vues de l’appli</string>
+    <string name="pref_security_show_panic_button_off">Ne pas afficher le bouton d’urgence</string>
+    <string name="pref_security_panic_action">Urgence</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Effacer le contenu de l’appli si déclenché</item>
+        <item>Désinstaller l’appli si déclenché</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Synchro automatique</string>
+    <string name="pref_over_wifi">Par le Wi-Fi</string>
+    <string name="pref_over_data">Par les données cellulaires</string>
+    <string name="pref_over_wifi_wizard_title">Choisir quoi synchroniser par le Wi-Fi</string>
+    <string name="pref_over_data_wizard_title">Choisir quoi synchroniser par les données cellulaires</string>
+    <string name="pref_media_rich">Les photos d’abord</string>
+    <string name="pref_media_rich_summary_on">Synchroniser les photos avant les histoires entières</string>
+    <string name="pref_media_rich_summary_off">Synchroniser les histoires entières avant les photos</string>
+    <string name="pref_save_keep_nothing">Ne rien conserver</string>
+    <string name="pref_save_keep_nothing_summary">Expirer après lecture</string>
+    <string name="pref_save_keep_day">Conserver une journée</string>
+    <string name="pref_save_keep_day_summary">Supprimer les articles après une journée</string>
+    <string name="pref_save_keep_week">Conserver 1 semaine</string>
+    <string name="pref_save_keep_week_summary">Supprimer les articles après une semaine</string>
+    <string name="pref_save_info">Les histoires en signet seront gardées pour une durée illimitée, à moins que vous ne les supprimiez ou réinstalliez l’appli.</string>
+    <string name="pref_sleep_if_below">Mettre en veille si le niveau de la pile est inférieur à %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Ne pas synchroniser les histoires si le niveau de la pile est faible</string>
+    <string name="pref_sleep_if_below_summary_off">Synchroniser les histoires même si le niveau de la pile est faible</string>
+    <string name="pref_reset_optimized_defaults">Restaurer les valeurs par défaut Optimisé</string>
+    <string name="pref_reset_everything_defaults">Restaurer les valeurs par défaut Tout</string>
+
+    <string name="pref_language">Langue</string>
+    <string name="pref_about">À propos</string>
+    <string name="pref_terms">Conditions et licences</string>
+    <string name="pref_customize">Personnaliser</string>
+    <string name="pref_done">Fait</string>
+
+    <string name="pref_summary_x_and_y">%s et %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s et %s</string>
+
+    <string name="pref_autolock_title">Verrouillage automatique</string>
+    <string name="pref_autolock_reset">Réinitialiser le mot de passe du verrouillage automatique</string>
+    <string name="pref_cat_timeout">Temporisation</string>
+    <string name="pref_cat_wrong_attempts">Tentatives erronées</string>
+    <string name="pref_wrong_attempts">Tentatives erronées</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Supprimer le contenu de l’appli si un mot de passe erroné est saisi</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Désinstaller l’appli si un mot de passe erroné est saisi</string>
+    <string name="pref_wrong_attempts_summary_nothing">Ne rien faire</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 tentatives</string>
+    <string name="pref_wrong_password_limit_3">3 tentatives</string>
+    <string name="pref_wrong_password_limit_4">4 tentatives</string>
+
+    <string name="pref_cat_kill_password">Mot de passe effaceur</string>
+    <string name="pref_kill_password">Mot de passe effaceur</string>
+    <string name="pref_kill_password_summary">Supprimer le contenu de l’appli si le mot de passe effaceur est saisi</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Résumés des histoires (texte)</item>
+        <item>Histoires entières (texte)</item>
+        <item>Média</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Résumés des histoires</item>
+        <item>Histoires entières</item>
+        <item>Média</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

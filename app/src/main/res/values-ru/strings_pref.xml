@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_priority">Приоритет</string>
+    <string name="pref_cat_preserve_power">Экономить заряд батареи</string>
+
+    <string name="pref_cat_mode">Режим</string>
+    <string name="pref_cat_security">Безопасность</string>
+    <string name="pref_security_proxy">Прокси-сервер</string>
+    <string name="pref_security_proxy_none">Не использовать прокси</string>
+    <string name="pref_security_proxy_tor">Синхронизировать новости через Tor</string>
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Автоматическая блокировка</string>
+    <string name="pref_security_autolock_immediately">Нет</string>
+    <string name="pref_security_autolock_5_minutes">5 минут</string>
+    <string name="pref_security_autolock_1_hour">1 час</string>
+    <string name="pref_security_autolock_1_day">1 день</string>
+    <string name="pref_security_autolock_summary_never">Не блокировать приложение</string>
+    <string name="pref_security_autolock_summary_immediately">Блокировать немедленно после использования</string>
+    <string name="pref_security_autolock_summary_5_minutes">Блокировать через 5 минут простоя</string>
+    <string name="pref_security_autolock_summary_1_hour">Блокировать через 1 час простоя</string>
+    <string name="pref_security_autolock_summary_1_day">Блокировать через 1 день простоя</string>
+
+    <string name="pref_security_block_screenshots">Не допускать скриншоты</string>
+    <string name="pref_security_block_screenshots_summary_off">Скриншоты разрешены</string>
+    <string name="pref_security_block_screenshots_summary_on">Для вашей безопасности скриншоты запрещены</string>
+    <string name="pref_security_show_panic_button">Отображать кнопку паники</string>
+    <string name="pref_security_show_panic_button_off">Не отображать кнопку паники</string>
+    <string name="pref_security_panic_action">Тревога</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Стирать данные приложения при активации</item>
+        <item>Удалять приложение при активации</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Автоматическая синхронизация</string>
+    <string name="pref_over_wifi">По Wi-Fi</string>
+    <string name="pref_over_data">По мобильной сети</string>
+    <string name="pref_over_wifi_wizard_title">Выберете, что синхронизировать по Wi-Fi</string>
+    <string name="pref_over_data_wizard_title">Выберете, что синхронизировать через мобильный трафик</string>
+    <string name="pref_language">Язык</string>
+    <string name="pref_about">О приложении</string>
+    <string name="pref_terms">Условия и лицензии</string>
+    <string name="pref_customize">Настроить</string>
+    <string name="pref_done">Готово</string>
+
+    <string name="pref_autolock_title">Автоматическая блокировка</string>
+    <string name="pref_cat_timeout">Ожидание</string>
+    <string name="pref_cat_wrong_attempts">Неудачные попытки ввода фразы-пароля</string>
+    <string name="pref_wrong_attempts">Неудачные попытки ввода фразы-пароля</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Стереть данные приложения при вводе неверного пароля</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Удалить приложение при вводе неверного пароля</string>
+    <string name="pref_wrong_attempts_summary_nothing">Нет действий</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries">
+        <item>Средства информации</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Средства информации</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

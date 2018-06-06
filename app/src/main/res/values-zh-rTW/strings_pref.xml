@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">自動同步</string>
+    <string name="pref_cat_priority">優先度</string>
+    <string name="pref_cat_save_storage">儲存容量</string>
+    <string name="pref_cat_preserve_power">保存電力</string>
+
+    <string name="pref_cat_mode">模式</string>
+    <string name="pref_mode_optimized">最適化</string>
+    <string name="pref_mode_optimized_title">最適化模式</string>
+    <string name="pref_mode_optimized_title_customized">最適化模式：自定</string>
+    <string name="pref_mode_optimized_summary">滅少電量，行動數據與空間使用。適用為行動數據用量有限者。</string>
+    <string name="pref_mode_everything">全部</string>
+    <string name="pref_mode_everything_title">全部模式</string>
+    <string name="pref_mode_everything_title_customized">全部模式：自定</string>
+    <string name="pref_mode_everything_summary">適用於吃到飽行動數據方案與連線狀況良好者。</string>
+    <string name="pref_mode_offline">離線　</string>
+
+    <string name="pref_cat_security">安全</string>
+    <string name="pref_security_proxy">代理</string>
+    <string name="pref_security_proxy_none">不要使用代理</string>
+    <string name="pref_security_proxy_tor">通過 TOR  網路同步新聞</string>
+    <string name="pref_security_proxy_psiphon">通過 Psiphone  網路同步新聞</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">自定鎖定 </string>
+    <string name="pref_security_autolock_immediately">無</string>
+    <string name="pref_security_autolock_5_minutes">5 分鐘</string>
+    <string name="pref_security_autolock_1_hour">1 小時</string>
+    <string name="pref_security_autolock_1_day">1 天</string>
+    <string name="pref_security_autolock_summary_never">不要鎖住應用</string>
+    <string name="pref_security_autolock_summary_immediately">當未使用時立即鎖住</string>
+    <string name="pref_security_autolock_summary_5_minutes">當 5 分鐘未使用時即鎖住</string>
+    <string name="pref_security_autolock_summary_1_hour">當聞置超過 1 小時後即鎖住</string>
+    <string name="pref_security_autolock_summary_1_day">當聞置超過 1 天後即鎖住</string>
+
+    <string name="pref_security_block_screenshots">關閉螢幕截圖</string>
+    <string name="pref_security_block_screenshots_summary_off">啟用螢幕截圖</string>
+    <string name="pref_security_block_screenshots_summary_on">為保護隱私，己關閉螢幕截圖功能。</string>
+    <string name="pref_security_show_panic_button">顯示緊急按鈕</string>
+    <string name="pref_security_show_panic_button_on">在應用檢視模式下顯示圖標</string>
+    <string name="pref_security_show_panic_button_off">不要顯示緊急圖示</string>
+    <string name="pref_security_panic_action">緊急</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>當被啟動時清除內容</item>
+        <item>當被啟動時解安裝應用</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">自動同步</string>
+    <string name="pref_over_wifi">透過  WiFi 連線 </string>
+    <string name="pref_over_data">透過行動數據</string>
+    <string name="pref_over_wifi_wizard_title">選擇透過 WiFi 連線欲同步的東西</string>
+    <string name="pref_over_data_wizard_title">選擇透過行動數據欲同步的東西</string>
+    <string name="pref_media_rich">圖片優先</string>
+    <string name="pref_media_rich_summary_on">照片優先再同步全文</string>
+    <string name="pref_media_rich_summary_off">先同步全部文章再同步照片</string>
+    <string name="pref_save_keep_nothing">不保留</string>
+    <string name="pref_save_keep_nothing_summary">已讀後即失效</string>
+    <string name="pref_save_keep_day">保留 1 天</string>
+    <string name="pref_save_keep_day_summary">1 天後移除文章</string>
+    <string name="pref_save_keep_week">保留 1 週</string>
+    <string name="pref_save_keep_week_summary">1 週後移除文章</string>
+    <string name="pref_save_info">已收藏的文章會永久保留，除非主動刪除或重安裝軟體。</string>
+    <string name="pref_sleep_if_below">如果電力低於 %d%%，請休眠。</string>
+    <string name="pref_sleep_if_below_summary_on">當電力不足時取消同步消息</string>
+    <string name="pref_sleep_if_below_summary_off">即便電力快用完仍繼續進行消息同步</string>
+    <string name="pref_reset_optimized_defaults">回復為最適化預設值</string>
+    <string name="pref_reset_everything_defaults">全部回復為預設值</string>
+
+    <string name="pref_language">語言</string>
+    <string name="pref_about">關於 VeraCrypt...</string>
+    <string name="pref_terms">條款 &amp; 版權</string>
+    <string name="pref_customize">自定化</string>
+    <string name="pref_done">完成</string>
+
+    <string name="pref_summary_x_and_y">%s 和 %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s 和 %s</string>
+
+    <string name="pref_autolock_title">自動鎖定 </string>
+    <string name="pref_autolock_reset">重設自動上鎖密碼</string>
+    <string name="pref_cat_timeout">超時</string>
+    <string name="pref_cat_wrong_attempts">錯誤嘗試</string>
+    <string name="pref_wrong_attempts">錯誤嘗試</string>
+    <string name="pref_wrong_attempts_summary_wipedata">若輸入錯過密碼將移除應用內容</string>
+    <string name="pref_wrong_attempts_summary_uninstall">若輸入錯過密碼將解除應用安裝</string>
+    <string name="pref_wrong_attempts_summary_nothing">什麼也不做</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 次嚐試</string>
+    <string name="pref_wrong_password_limit_3">3 次嚐試</string>
+    <string name="pref_wrong_password_limit_4">4 次嚐試</string>
+
+    <string name="pref_cat_kill_password">Kill Password</string>
+    <string name="pref_kill_password">Kill Password</string>
+    <string name="pref_kill_password_summary">若輸入錯過密碼將刪除應用內容</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>全文摘要 (text)</item>
+        <item>全部消息 (純文字)</item>
+        <item>媒體</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>摘要</item>
+        <item>全部消息</item>
+        <item>媒體</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

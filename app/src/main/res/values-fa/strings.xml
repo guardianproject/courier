@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">قاصد</string>
+    <string name="app_description">قاصد یک خبرخوان موبایل است که امنیت بالایی دارد و می‌توان آن را آفلاین هم خواند و به اشتراک گذاشت.</string>
+    <string name="title_activity_httpd_app_sender">اشتراک‌گذاری برنامه</string>
+    <string name="title_activity_import_opml">وارد کردن  OPML</string>
+    <string name="menu_tag">جست‌وجو از روی برچسب</string>
+    <string name="menu_share">به‌اشتراک گذاشتن</string>
+    <string name="menu_panic">هراس</string>
+    <string name="menu_favorite">نشان</string>
+    <string name="feed_filter_display_photos">نمایش تصاویر</string>
+    <string name="feed_filter_popular">پرخواننده</string>
+    <string name="feed_filter_favorites">بوکمارک‌ها</string>
+    <string name="feed_filter_all_feeds">همه خوراک‌ها</string>
+    <string name="feed_filter_add_new">مدیریت خوراک‌ها</string>
+    <string name="feed_share_popup_title">به‌اشتراک‌گذاری خوراک از طریق </string>
+    <string name="story_list_hint_no_shared_text2">برای این که چیزی از دوستانتان دریافت کنید، به منوی کناری بروید و روی «دریافت» کلیک کنید.</string>
+    <string name="about_guardian_title"> درباره پروژه نگهبان</string>
+    <string name="about_guardian_content">پروژه نگهبان برای افرادی که در پی حفاظت از ارتباطات و اطلاعات ذخیره‌شده خود در مقابل نفوذ و شنود هستند، برنامه‌های خوش‌دست، نرم‌افزارهای متن‌باز، تنظیمات سیستم‌های عامل، و دستگاه‌های همراه سفارشی درست می‌کند. به وبسایت ما سر بزنید: https://guardianproject.info</string>
+    <string name="help_terms_title">گواهی شرایط و نرم‌افزار</string>
+    <string name="help_terms_content">TODO: User-Submitted Materials
+
+BBG Websites may allow users to post, upload, transmit, or otherwise submit comments, messages, photos, images, story ideas, or other content or materials (collectively “User-Submitted Materials). You acknowledge that User-Submitted Materials may be routed through our servers, the servers of one or more third parties on our behalf, and the Internet. You acknowledge that BBG Websites are for public and not private communications.
+
+You may only submit materials to BBG Websites for which you have the copyright or other necessary rights and permission to distribute electronically. You may not violate, plagiarize, or infringe on the rights of third parties, including copyright, patent, trademark, trade secret, privacy, personal, publicity, moral or proprietary rights. You agree and represent that you own or have all necessary rights and permissions to use, distribute, and authorize BBG to use and distribute any materials you submit.
+
+You retain any copyright or other ownership rights you possess in any User-Submitted Materials that you submit on or through BBG Websites. However, by submitting any User-Submitted Materials on or through BBG Websites, you hereby grant BBG a non-exclusive, perpetual, royalty-free, fully paid up, worldwide, transferable license to use, copy, sublicense, modify, transmit, publicly perform, display, create derivative works of, host, index, cache, tag, encode, and/or adapt your User-Submitted Materials in any and all media formats or channels, whether now known or hereafter devised.
+
+Additional user-submitted material Rules Specific to Posting Comments
+
+BBG will make every effort to review and post comments within 48 hours, although BBG is under no obligation to post comments within any deadline or to post the comments at all. BBG encourages thoughtful discussion and will not censor comments based on ideology or political points of view. BBG will not edit comments - we will either post them or refuse to post them. All comments must follow these rules:
+
+- Stay on topic.
+- No obscenity, profanity, vulgarity, hate language, SHOUTING, or other bad behavior.
+- No personal attacks. No inflammatory language or calls for violence.
+- No advocating or providing instruction on how to conduct any illegal activity
+- No advertising, promotional materials, \"junk mail,\" \"spam,\" \"chain letters,\" \"pyramid schemes,\" or any other form of solicitation
+- Simple text only, no html or other code.</string>
+    <string name="downloads_title">دانلود تصاویر</string>
+    <string name="downloads_complete">انجام شد</string>
+    <string name="downloads_in_progress">در جریان است</string>
+    <string name="downloads_operation_refresh">به روز رسانی</string>
+    <string name="downloads_operation_cancel">انصراف</string>
+    <string name="menu_share_app">به‌اشتراک‌گذاشتن برنامه</string>
+    <string name="menu_receive_share">دریافت</string>
+    <string name="menu_tor_connected">متصل به Tor</string>
+    <string name="menu_preferences">تنظیمات</string>
+    <string name="story_item_short_author">از %1s</string>
+    <string name="story_item_short_published_never" />
+    <string name="story_item_short_published_recently">کمتر از یک دقیقه پیش</string>
+    <string name="story_item_short_published_minutes">%1$d دقیقه پیش</string>
+    <string name="story_item_short_published_minute">%1$d دقیقه پیش</string>
+    <string name="story_item_short_published_hours">%1$d ساعت پیش</string>
+    <string name="story_item_short_published_hour">%1$d ساعت پیش</string>
+    <string name="story_item_short_published_days">%1$d روز پیش</string>
+    <string name="story_item_short_published_day">%1$d روز پیش</string>
+    <string name="story_item_short_tag_results">نمایش یافته‌ها برای  ##%1s##</string>
+    <string name="story_item_share_popup_title">به‌اشتراک‌گذاری گزارش از طریق</string>
+    <string name="story_item_search_by_tag_hint">جست‌وجو بر اساس #برچسب</string>
+    <string name="story_item_read_with_orweb">با اوروب، آنلاین بخوانید</string>
+    <string name="error_feed_404">خوراک پیدا نشد</string>
+    <string name="error_feed_bad_url">آدرس خوراک، درست نیست. لطفا به «مدیریت خوراک‌ها» بروید تا آن را اصلاح یا حذف کنید.‏</string>
+    <string name="error_feed_unknown">خطا در به‌روزرسانی خوراک؛ لطفا دوباره امتحان کنید</string>
+    <string name="panic_settings">تنظیمات هراس</string>
+    <string name="panic_hint">پایین بکشید تا کل برنامه حذف شود</string>
+    <string name="panic_hint_wipe_content">پایین بکشید تا اطلاعات شخصی پاک شود</string>
+    <string name="panic_test_successful">آفرین! در حالت واقعی، با موفقیت پاک‌سازی کرده بودید.‏</string>
+    <string name="add_feed_add">افزودن</string>
+    <string name="add_feed_manual_label">آدرس خوراک RSS را وارد کنید:‏</string>
+    <string name="add_feed_manual_hint">figandquince.com/feed/</string>
+    <string name="add_feed_not_loaded">اطلاعات خوراک، دریافت نشد</string>
+    <string name="add_feed_error_loading">نتوانستیم این خوراک را بگیریم. بررسی کنید که آدرس خوراک RSS صحیح است.‏</string>
+    <string name="menu_search">جستجو</string>
+    <string name="add_feed_tab_following">ذیل</string>
+    <string name="settings_panic_wipe_app">پاک‌کردن کل برنامه</string>
+    <string name="settings_panic_wipe_content">پاک‌کردن محتوای من</string>
+    <string name="settings_security_change_passphrase">تغییر رمز عبور</string>
+    <string name="settings_security_enter_passphrase">رمزعبور را وارد کنید</string>
+    <string name="settings_security_set_kill_passphrase_enter">رمزعبور را وارد کنید</string>
+    <string name="settings_security_set_kill_passphrase_confirm">تایید رمز</string>
+    <string name="lock_screen_open">بازکردن</string>
+    <string name="lock_screen_create_passphrase">بازکردن برنامه</string>
+    <string name="lock_screen_passphrase_not_set_enter">رمز عبور جدید را وارد کنید</string>
+    <string name="change_passphrase_incorrect">رمز عبور اشتباه </string>
+    <string name="lock_screen_wrong_password">اوخ! دوباره امتحان کنید.‏</string>
+    <string name="httpd_app_sender_instructions">برای به‌اشتراک‌گذاشتن برنامه قاصد یا برنامه‌های مورد حمایت آن (اوربوت و ChatSecure) بدون استفاده از اینترنت، لطف این اقدامات را انجام دهید:‏</string>
+    <string name="httpd_app_sender_sender">به‌اشتراک‌گذاری</string>
+    <string name="httpd_app_sender_sender_title">‏۱. یک هات‌اسپات وای‌فای قابل‌حمل درست کنید</string>
+    <string name="httpd_app_sender_sender_part1">می‌توانید یک هات اسپات را در بخش تنظیمات گوشی خود فعال کنید. این امن‌تری روش برای به اشتراک گذاشتن این برنامه است. اگر هات اسپات را فعال نمی‌کنید، می‌توانید با استفاده از یک وای فای عمومی که به آن اعتماد دارید این کار را بکنید.</string>
+    <string name="httpd_app_sender_receiver">دریافت</string>
+    <string name="httpd_app_sender_receiver_part1">۲. پیوستن به هات‌اسپات وای‌فای قابل‌حمل</string>
+    <string name="httpd_app_sender_receiver_part3">۳. یک مرورگر را برای این آدرس باز کن:‏</string>
+    <string name="bluetooth_no_devices_found">هیچ دستگاهی پیدا نشد</string>
+    <string name="bluetooth_receive_info">بلوتوث گوش‌به‌زنگ است.</string>
+    <string name="bluetooth_receive_receive">به بلوتوث بگویید گوش‌به‌زنگ باشد</string>
+    <string name="bluetooth_receive_connected">وصل شد</string>
+    <string name="bluetooth_send_connected">وصل شد</string>
+    <string name="bluetooth_send_connect_error">وسل نیست</string>
+    <string name="bluetooth_send_disconnected">قطع است</string>
+    <string name="bluetooth_send_sent_item">ارسال‌شده</string>
+    <string name="bluetooth_send_error">خطا در ارسال</string>
+    <string name="bluetooth_send_close">بستن</string>
+    <string name="bluetooth_send_read_now">حالا بخوانید</string>
+    <string name="bluetooth_send_success_1_story">موفق شدید! یک گزارش را به اشتراک گذاشتید.‏</string>
+    <string name="story_list_error_title">اوخ! خوراک‌های شما به‌روز نمی‌شوند.</string>
+    <string name="download_epub_hint">Download ePub</string>
+    <string name="download_epub_reader_title">Download ePub Reader</string>
+    <string name="download_epub_reader_info">شما به یک ePub برای دیدن گزارش نیاز دارید، ما FBReader را پیشنهاد می‌کنیم که می‌توانید آن را اینجا دریافت کنید: </string>
+    <string name="download_epub_reader_play">Google Play</string>
+    <string name="download_epub_reader_web">FBReader Website</string>
+    <string name="download_epub_reader_close">بستن</string>
+    <string name="onboarding_select_language">زبان</string>
+    <string name="onboarding_next">بعدی </string>
+    <string name="onboarding_proxy_skip">از قلم بینداز</string>
+    <string name="onboarding_proxy_no_net_retry">تلاش دوباره</string>
+    <string name="feed_category_sports">ورزشی</string>
+    <string name="feed_category_technology">تکنولوژی</string>
+    <string name="feed_category_security">امنیت</string>
+    <string name="fetch_full_story_downloading">درحال دانلود ...</string>
+    <string name="optimization_info_more">بیشتر</string>
+</resources>

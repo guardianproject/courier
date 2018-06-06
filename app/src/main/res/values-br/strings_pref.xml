@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Emsinkro</string>
+    <string name="pref_cat_priority">Priorelezh</string>
+    <string name="pref_cat_save_storage">Enrollañ ar stokadur</string>
+    <string name="pref_cat_preserve_power">Espern bateri</string>
+
+    <string name="pref_cat_mode">Mod</string>
+    <string name="pref_mode_optimized">Gwellakaet</string>
+    <string name="pref_mode_optimized_title">Mod gwellekaet</string>
+    <string name="pref_mode_optimized_title_customized">Mod gwellekaet: Personelaet</string>
+    <string name="pref_mode_optimized_summary">Digreskiñ ar c\'halloudegezh, implij ar roadennoù hag ar stokadur. Aliet m\'ho peus roadennoù bevennet.</string>
+    <string name="pref_mode_everything">Pep-tra</string>
+    <string name="pref_mode_everything_title">Mod pep-tra</string>
+    <string name="pref_mode_everything_title_customized">Mod pep-tra: Personelaet</string>
+    <string name="pref_mode_everything_summary">Aliet m\'ho peus roadennoù divevenn hag ur gevreadusted mat.</string>
+    <string name="pref_mode_offline">Mont ezlinenn</string>
+
+    <string name="pref_cat_security">Surentez</string>
+    <string name="pref_security_proxy">Proksi</string>
+    <string name="pref_security_proxy_none">Chom hep implijout ur proksi</string>
+    <string name="pref_security_proxy_tor">Sinkro keleier dre dTor</string>
+    <string name="pref_security_proxy_psiphon">Sinkro keleier dre bPsiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Embrennañ</string>
+    <string name="pref_security_autolock_immediately">Hini ebet</string>
+    <string name="pref_security_autolock_5_minutes">5 munutenn</string>
+    <string name="pref_security_autolock_1_hour">1 eurvezh</string>
+    <string name="pref_security_autolock_1_day">1 devezh</string>
+    <string name="pref_security_autolock_summary_never">Chom hep prennañ an arload</string>
+    <string name="pref_security_autolock_summary_immediately">Prennañ kerkent ha diimplijet</string>
+    <string name="pref_security_autolock_summary_5_minutes">Prennañ goude 5 munutenn diimplij</string>
+    <string name="pref_security_autolock_summary_1_hour">Prennañ goude 1 eurvezh diimplij</string>
+    <string name="pref_security_autolock_summary_1_day">Prennañ goude 1 devezh diimplij</string>
+
+    <string name="pref_security_block_screenshots">Stankañ an tapadennoù-skramm</string>
+    <string name="pref_security_block_screenshots_summary_off">Enaouet eo an tapadennoù-skramm</string>
+    <string name="pref_security_block_screenshots_summary_on">Evit gwareziñ ho prevezded, an tapadennoù-skramm a zo lazhet.</string>
+    <string name="pref_security_show_panic_button">Diskouez ar bouton spont</string>
+    <string name="pref_security_show_panic_button_on">Diskouez an arlun e pep gwel arload</string>
+    <string name="pref_security_show_panic_button_off">Chom hep diskouez ar bouton spont</string>
+    <string name="pref_security_panic_action">Spont</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Flastrañ endalc\'had an arload pa vez distegnet</item>
+        <item>Distaliañ an arload pa vez distegnet</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Emskinkronelañ</string>
+    <string name="pref_over_wifi">Dre wifi</string>
+    <string name="pref_over_wifi_wizard_title">Dibabit petra sinkronelaat gant ar wifi</string>
+    <string name="pref_over_data_wizard_title">Dibabit petra sinkronelaat gant ar roadennoù</string>
+    <string name="pref_media_rich">Skeudennoù da gentañ</string>
+    <string name="pref_media_rich_summary_on">Sinkronelaat ar skeudennoù a-raok an istor klok</string>
+    <string name="pref_media_rich_summary_off">Sinkronelaat an istor klok a-raok ar skeudennoù</string>
+    <string name="pref_save_keep_nothing">Chom hep mirout netra</string>
+    <string name="pref_save_keep_nothing_summary">Deuet e vo e dermen ur wech lennet</string>
+    <string name="pref_save_keep_day">Mirout 1 devezh</string>
+    <string name="pref_save_keep_day_summary">Skarzhañ ar pennadoù goude un devezh</string>
+    <string name="pref_save_keep_week">Mirout 1 sizhun</string>
+    <string name="pref_save_keep_week_summary">Skarzhañ ar pennadoù goude ur sizhun</string>
+    <string name="pref_save_info">An istorioù sinedet a vo miret da viken, betek ma vint dilamet ganeoc\'h pe adstaliet an arload.</string>
+    <string name="pref_sleep_if_below">Kousket ma vez ar bateri izeloc\'h evit %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Chom hep sinkro istorioù ma vez izel ar bateri</string>
+    <string name="pref_sleep_if_below_summary_off">Sinkro istorioù ha pa vefe izel ar bateri</string>
+    <string name="pref_reset_optimized_defaults">Adlakaat an diouerioù gwellekaet</string>
+    <string name="pref_reset_everything_defaults">Adlakaat pep-tra dre ziouer</string>
+
+    <string name="pref_language">Yezh</string>
+    <string name="pref_about">Diwar-benn</string>
+    <string name="pref_terms">Termoù &amp; Lisañsoù</string>
+    <string name="pref_customize">Personelaat</string>
+    <string name="pref_done">Graet</string>
+
+    <string name="pref_summary_x_and_y">%s ha %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s ha %s</string>
+
+    <string name="pref_autolock_title">Embrennañ</string>
+    <string name="pref_autolock_reset">Adsevel ger-tremen an embrennañ</string>
+    <string name="pref_cat_timeout">Amzer-c\'hortoz</string>
+    <string name="pref_cat_wrong_attempts">Taolioù-esae fall</string>
+    <string name="pref_wrong_attempts">Taolioù-esae fall</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Dilemel endalc\'had an arload ma vez ebarzhet ar ger-tremen fall</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Distaliañ an arload ma vez ebarzhet ar ger-tremen fall</string>
+    <string name="pref_wrong_attempts_summary_nothing">Chom hep ober netra</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 daol-esae</string>
+    <string name="pref_wrong_password_limit_3">3 zaol-esae</string>
+    <string name="pref_wrong_password_limit_4">4 zaol-esae</string>
+
+    <string name="pref_cat_kill_password">Ger-tremen lazhañ</string>
+    <string name="pref_kill_password">Ger-tremen lazhañ</string>
+    <string name="pref_kill_password_summary">Dilemel endalc\'had an arload ma vez ebarzhet ar ger-tremen lazhañ</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Diverradenn an istorioù (testenn)</item>
+        <item>Istorioù klok (testenn)</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Diverradenn an istorioù</item>
+        <item>Istorioù klok</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

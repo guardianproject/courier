@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="pref_cat_auto_sync">Автоматична синхронізація</string>
     <string name="pref_cat_priority">Пріоритет</string>
+    <string name="pref_cat_save_storage">Економія місця</string>
+    <string name="pref_cat_preserve_power">Економія енергії</string>
+
+    <string name="pref_cat_mode">Режим</string>
+    <string name="pref_mode_optimized">Оптимальний</string>
+    <string name="pref_mode_optimized_title">Оптимальний режим</string>
+    <string name="pref_mode_optimized_title_customized">Оптимальний Режим: Індивідуальний</string>
+    <string name="pref_mode_optimized_summary">Знижує використання енергії, мобільний трафік та зменшує місце для збереження даних. Рекомендовано, якщо у вас є обмеженя по тарифному плану.</string>
+    <string name="pref_mode_everything">Повна синхронізація</string>
+    <string name="pref_mode_everything_title">Режим повної синхронізації</string>
+    <string name="pref_mode_everything_title_customized">Режим повної синхронізації: Індивідуальний</string>
+    <string name="pref_mode_everything_summary">Рекомендовано, якщо у вас є необмежені дані та хороший зв\'язок.</string>
+    <string name="pref_mode_offline">Перейти в автономний режим</string>
+
     <string name="pref_cat_security">Безпека</string>
     <string name="pref_security_proxy">Проксі</string>
+    <string name="pref_security_proxy_none">Не використовуйте проксі</string>
+    <string name="pref_security_proxy_tor">Синхронізація новин через Tor</string>
+    <string name="pref_security_proxy_psiphon">Синхронізація новин через Psiphon</string>
+
     <string-array name="pref_security_proxy_entries">
         <item>@string/pref_security_proxy_none</item>
         <item>@string/pref_security_proxy_tor</item>
@@ -14,21 +33,70 @@
         <item>@string/pref_key_security_proxy_psiphon</item>
     </string-array>
 
-    <string name="pref_security_autolock_immediately">Ні</string>
+    <string name="pref_security_autolock">Автоматичне блокування</string>
+    <string name="pref_security_autolock_immediately">Нічого</string>
     <string name="pref_security_autolock_5_minutes">5 хвилин</string>
     <string name="pref_security_autolock_1_hour">1 година</string>
     <string name="pref_security_autolock_1_day">1 день</string>
+    <string name="pref_security_autolock_summary_never">Не блокувати додаток</string>
+    <string name="pref_security_autolock_summary_immediately">Заблокувати негайно, коли не використовується</string>
+    <string name="pref_security_autolock_summary_5_minutes">Заблокувати через 5 хвилин, коли не використовується</string>
+    <string name="pref_security_autolock_summary_1_hour">Заблокувати через 1 годину, коли не використовується</string>
+    <string name="pref_security_autolock_summary_1_day">Заблокувати через 1 день, коли не використовується</string>
+
+    <string name="pref_security_block_screenshots">Блокувати скріншоти</string>
+    <string name="pref_security_block_screenshots_summary_off">Скріншоти дозволено</string>
+    <string name="pref_security_block_screenshots_summary_on">Щоб захистити вашу конфіденційність, скріншоти відключено.</string>
+    <string name="pref_security_show_panic_button">Показати тривожну кнопку</string>
+    <string name="pref_security_show_panic_button_on">Показати значок у кожному екрані додатку</string>
+    <string name="pref_security_show_panic_button_off">Не показувати значок тривоги</string>
     <string name="pref_security_panic_action">Tривога</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Витерти дані додатку при активації</item>
+        <item>Видалити додаток при активації</item>
+    </string-array>
     <string-array name="pref_security_panic_action_values">
         <item>@string/pref_key_panic_action_wipedata</item>
         <item>@string/pref_key_panic_action_uninstall</item>
     </string-array>
 
+    <string name="pref_auto_sync">Автоматична синхронізація</string>
+    <string name="pref_over_wifi">Через WiFi</string>
+    <string name="pref_over_data">Через мобільний інтернет</string>
+    <string name="pref_over_wifi_wizard_title">Виберіть, що потрібно синхронізувати через WiFi</string>
+    <string name="pref_over_data_wizard_title">Виберіть, що потрібно синхронізувати через мобільний інтернет</string>
+    <string name="pref_media_rich">Cпочатку фотографії </string>
+    <string name="pref_media_rich_summary_on">Синхронізувати фотографії перед статтями в повному обсязі</string>
+    <string name="pref_media_rich_summary_off">Синхронізувати статті в повному обсязі перед фотографіями</string>
+    <string name="pref_save_keep_nothing">Нічого не зберігати</string>
+    <string name="pref_save_keep_nothing_summary">Видалити після прочитання</string>
+    <string name="pref_save_keep_day">Зберігати впродовж 1 дня</string>
+    <string name="pref_save_keep_day_summary">Видалити статті через день</string>
+    <string name="pref_save_keep_week">Зберігати впродовж 1 тижня</string>
+    <string name="pref_save_keep_week_summary">Видалити статті через тиждень</string>
+    <string name="pref_save_info">Статті із закладками будуть зберігатися до тих пір, поки ви їх самі не витрете, або ж не переінсталюєте додаток</string>
+    <string name="pref_sleep_if_below"> Режим сну, якщо заряд батареї нижче %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Не синхронізувати статті, якщо батарея є розрядженою</string>
+    <string name="pref_sleep_if_below_summary_off">Синхронізувати статті, навіть якщо батарея є розрядженою</string>
+    <string name="pref_reset_optimized_defaults">Відновити оптимальні установки за замовчуванням</string>
+    <string name="pref_reset_everything_defaults">Відновити усі налаштування за замовчуванням</string>
+
     <string name="pref_language">Мова</string>
     <string name="pref_about">Про програму...</string>
+    <string name="pref_terms">Умови &amp; Ліцензії</string>
+    <string name="pref_customize">Налаштувати</string>
     <string name="pref_done">Зроблено</string>
 
+    <string name="pref_summary_x_and_y">%sі%s</string>
+    <string name="pref_summary_x_and_y_and_z">%s,%sі%s</string>
+
+    <string name="pref_autolock_title">Автоматичне блокування</string>
+    <string name="pref_autolock_reset">Скинути пароль автоматичного блокування</string>
     <string name="pref_cat_timeout">Час очікування</string>
+    <string name="pref_cat_wrong_attempts">Неправильні спроби</string>
+    <string name="pref_wrong_attempts">Неправильні спроби </string>
+    <string name="pref_wrong_attempts_summary_wipedata">Видалити дані додатку, якщо введено неправильний пароль</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Видалити додаток, якщо введено неправильний пароль</string>
     <string name="pref_wrong_attempts_summary_nothing">Немає дій</string>
 
     <string-array name="pref_wrong_password_action_entries">
@@ -42,6 +110,25 @@
     <string-array name="pref_wrong_password_action_summaries">
         <item>@string/pref_wrong_attempts_summary_wipedata</item>
         <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 спроби</string>
+    <string name="pref_wrong_password_limit_3">3 спроби</string>
+    <string name="pref_wrong_password_limit_4">4 спроби</string>
+
+    <string name="pref_cat_kill_password">Пароль для примусового закриття</string>
+    <string name="pref_kill_password">Пароль для примусового закриття</string>
+    <string name="pref_kill_password_summary">Видалити дані додатку, якщо введено пароль примусового закриття</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Стислий зміст статті (текст)</item>
+        <item>Статті у повному обсязі (текст)</item>
+        <item>Медіа</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Стислий зміст статті</item>
+        <item>Статті в повному обсязі </item>
+        <item>Медіа</item>
     </string-array>
     <string-array name="pref_key_sync_values">
         <item>@string/pref_key_sync_summaries</item>

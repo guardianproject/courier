@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">தானியங்கு ஒத்திசைவு</string>
+    <string name="pref_cat_priority">முன்னுரிமை</string>
+    <string name="pref_cat_save_storage">சேமிப்பு சேமி</string>
+    <string name="pref_cat_preserve_power">பவர் பாதுகாக்க</string>
+
+    <string name="pref_cat_mode">முறை</string>
+    <string name="pref_mode_optimized">சிறப்பான</string>
+    <string name="pref_mode_optimized_title">மேம்பட்ட பயன்முறை</string>
+    <string name="pref_mode_optimized_title_customized">சிறப்பான முறையில்: தனிப்பயனாக்கப்பட்டது</string>
+    <string name="pref_mode_optimized_summary">சக்தி, தரவு மற்றும் சேமிப்பக பயன்பாடு குறைக்க. உங்களுக்கு வரையறுக்கப்பட்ட தரவு இருந்தால் பரிந்துரைக்கப்படும்.</string>
+    <string name="pref_mode_everything">எல்லாம்</string>
+    <string name="pref_mode_everything_title">எல்லாம் முறை</string>
+    <string name="pref_mode_everything_title_customized">எல்லாம் முறை: தனிப்பயனாக்கப்பட்டது</string>
+    <string name="pref_mode_everything_summary">உங்களுக்கு வரம்பற்ற தரவு மற்றும் நல்ல இணைப்பு இருந்தால் பரிந்துரைக்கப்படும்.</string>
+    <string name="pref_mode_offline">ஆஃப்லைனில் செல்</string>
+
+    <string name="pref_cat_security">பாதுகாப்பு</string>
+    <string name="pref_security_proxy">பதிலாள்</string>
+    <string name="pref_security_proxy_none">ப்ராக்ஸி பயன்படுத்த வேண்டாம்</string>
+    <string name="pref_security_proxy_tor">Tor மீது செய்திகளை ஒத்திசை</string>
+    <string name="pref_security_proxy_psiphon">Psiphon வழியாக செய்திகள் ஒத்திசைக்க</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">தானியங்கி பூட்டு</string>
+    <string name="pref_security_autolock_immediately">யாரும்</string>
+    <string name="pref_security_autolock_5_minutes">5 நிமிடம்</string>
+    <string name="pref_security_autolock_1_hour">1 மணி நேரம்</string>
+    <string name="pref_security_autolock_1_day">1 நாள்</string>
+    <string name="pref_security_autolock_summary_never">பயன்பாட்டைப் பூட்ட வேண்டாம்</string>
+    <string name="pref_security_autolock_summary_immediately">பயன்பாட்டில் இல்லாதபோது உடனடியாக பூட்டவும்</string>
+    <string name="pref_security_autolock_summary_5_minutes">5 நிமிடங்களுக்குப் பிறகு பூட்டப்படாமல் பயன்படுத்துங்கள்</string>
+    <string name="pref_security_autolock_summary_1_hour">பயன்பாட்டில் இல்லாத சமயத்தில் 1 மணி நேரத்திற்குப் பிறகு பூட்டுங்கள்</string>
+    <string name="pref_security_autolock_summary_1_day">பயன்பாட்டில் இல்லாதபோது 1 நாள் கழித்து பூட்டு</string>
+
+    <string name="pref_security_block_screenshots">பிளாக் திரைக்காட்சிகளுடன்</string>
+    <string name="pref_security_block_screenshots_summary_off">திரைப்பிடிப்புகள் இயக்கப்பட்டன</string>
+    <string name="pref_security_block_screenshots_summary_on">தனியுரிமையைப் பாதுகாக்க, திரைக்காட்சிகள் முடக்கப்பட்டுள்ளன.</string>
+    <string name="pref_security_show_panic_button">பீதி பொத்தானைக் காட்டு</string>
+    <string name="pref_security_show_panic_button_on">ஒவ்வொரு பயன்பாட்டின் பார்வையிலும் ஐகானைக் காட்டு</string>
+    <string name="pref_security_show_panic_button_off">பீதி சின்னத்தை காட்ட வேண்டாம்</string>
+    <string name="pref_security_panic_action">பீதி</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>தூண்டப்பட்டபோது பயன்பாட்டு உள்ளடக்கங்களை அழிக்கவும்</item>
+        <item>தூண்டப்பட்டபோது பயன்பாட்டை நிறுவல் நீக்குக</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">தானியங்கு ஒத்திசைவு</string>
+    <string name="pref_over_wifi">WiFi க்கு மேல்</string>
+    <string name="pref_over_data">தரவு வழியாக</string>
+    <string name="pref_over_wifi_wizard_title">வைஃபை மீது ஒத்திசைவைத் தேர்வுசெய்யவும்</string>
+    <string name="pref_over_data_wizard_title">தரவை ஒத்திசைக்க என்ன என்பதை தேர்வு செய்யவும்</string>
+    <string name="pref_media_rich">முதலில் படங்கள்</string>
+    <string name="pref_media_rich_summary_on">முழு கதையூடுவதற்கு முன்பு புகைப்படங்களை ஒத்திசைக்கவும்</string>
+    <string name="pref_media_rich_summary_off">படங்களுக்கு முன் முழு கதையையும் ஒத்திசை</string>
+    <string name="pref_save_keep_nothing">ஒன்றுமில்லை</string>
+    <string name="pref_save_keep_nothing_summary">படித்த பிறகு முடிவடையும்</string>
+    <string name="pref_save_keep_day">1 நாள் வைக்கவும்</string>
+    <string name="pref_save_keep_day_summary">ஒரு நாள் கழித்து கட்டுரைகள் அகற்றவும்</string>
+    <string name="pref_save_keep_week">1 வாரம் வைத்திருங்கள்</string>
+    <string name="pref_save_keep_week_summary">ஒரு வாரம் கழித்து கட்டுரைகள் அகற்றவும்</string>
+    <string name="pref_save_info">நீங்கள் அவற்றை நீக்கிவிட்டாலோ அல்லது பயன்பாட்டை மீண்டும் நிறுவாவிட்டாலோ, புக்மார்க் செய்த கதைகள் எப்போதும் இருக்கும்.</string>
+    <string name="pref_sleep_if_below">பேட்டரி கீழே இருந்தால் தூங்க %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">எனது பேட்டரி குறைவாக இருக்கும்போது கதைகள் ஒத்திசைக்க வேண்டாம்</string>
+    <string name="pref_sleep_if_below_summary_off">எனது பேட்டரி குறைவாக இருக்கும்போது கதைகள் ஒத்திசைக்க வேண்டாம்</string>
+    <string name="pref_reset_optimized_defaults">மேம்பட்ட இயல்புநிலைகளை மீட்டமை</string>
+    <string name="pref_reset_everything_defaults">எல்லாவற்றையும் இயல்புநிலைக்கு மீட்டமைக்கவும்</string>
+
+    <string name="pref_language">மொழி</string>
+    <string name="pref_about">பற்றி</string>
+    <string name="pref_terms">விதிமுறைகள் &amp; உரிமங்கள்</string>
+    <string name="pref_customize">தனிப்பயனாக்கலாம்</string>
+    <string name="pref_done">முடிந்தது</string>
+
+    <string name="pref_summary_x_and_y">%s மற்றும்%s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s மற்றும்%s</string>
+
+    <string name="pref_autolock_title">தானியங்கி பூட்டு</string>
+    <string name="pref_autolock_reset">தானியக்க பூட்டு கடவுச்சொல்லை மீட்டமை</string>
+    <string name="pref_cat_timeout">நேரம் முடிந்தது</string>
+    <string name="pref_cat_wrong_attempts">தவறான முயற்சிகள்</string>
+    <string name="pref_wrong_attempts">தவறான முயற்சிகள்</string>
+    <string name="pref_wrong_attempts_summary_wipedata">தவறான கடவுச்சொல் உள்ளிட்டால் பயன்பாட்டு உள்ளடக்கங்களை அகற்றவும்</string>
+    <string name="pref_wrong_attempts_summary_uninstall">தவறான கடவுச்சொல் உள்ளிட்டால் பயன்பாட்டை நிறுவல் நீக்குக</string>
+    <string name="pref_wrong_attempts_summary_nothing">எதுவும் செய்யாதே</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 முயற்சிகள்</string>
+    <string name="pref_wrong_password_limit_3">3 முயற்சிகள்</string>
+    <string name="pref_wrong_password_limit_4">4 முயற்சிகள்</string>
+
+    <string name="pref_cat_kill_password">கடவுச்சொல்லைக் கொல்லவும்</string>
+    <string name="pref_kill_password">கடவுச்சொல்லைக் கொல்லவும்</string>
+    <string name="pref_kill_password_summary">கொலை கடவுச்சொல்லை உள்ளிட்டால் பயன்பாட்டு உள்ளடக்கங்களை அகற்றவும்</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>கதை சுருக்கங்கள் (உரை)</item>
+        <item>முழு கதைகள் (உரை)</item>
+        <item>ஊடகம்</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>கதை சுருக்கங்கள்</item>
+        <item>முழு கதைகள்</item>
+        <item>ஊடகம்</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Sincronização Automática</string>
+    <string name="pref_cat_priority">Prioridade</string>
+    <string name="pref_cat_save_storage">Salvar Armazenamento</string>
+    <string name="pref_cat_preserve_power">Preserve a Carga</string>
+
+    <string name="pref_cat_mode">Modo</string>
+    <string name="pref_mode_optimized">Otimizado</string>
+    <string name="pref_mode_optimized_title">Modo Otimizado</string>
+    <string name="pref_mode_optimized_title_customized">Modo otimizado: Personalizado</string>
+    <string name="pref_mode_optimized_summary">Reduza o consumo de energia, dados e armazenamento. Recomendado se você tiver dados limitados.</string>
+    <string name="pref_mode_everything">Tudo</string>
+    <string name="pref_mode_everything_title">Modo Completo</string>
+    <string name="pref_mode_everything_title_customized">Modo Completo: Personalizado</string>
+    <string name="pref_mode_everything_summary">Recomendado se você tiver dados ilimitados e boa conectividade.</string>
+    <string name="pref_mode_offline">Desconecte</string>
+
+    <string name="pref_cat_security">Segurança</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Não use um proxy</string>
+    <string name="pref_security_proxy_tor">Sincronizar notícias usando o Tor</string>
+    <string name="pref_security_proxy_psiphon">Sincronizar notícias usando o Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Bloqueio automático</string>
+    <string name="pref_security_autolock_immediately">Nenhum</string>
+    <string name="pref_security_autolock_5_minutes">5 minutos</string>
+    <string name="pref_security_autolock_1_hour">1 hora</string>
+    <string name="pref_security_autolock_1_day">1 dia</string>
+    <string name="pref_security_autolock_summary_never">Não bloqueie o aplicativo</string>
+    <string name="pref_security_autolock_summary_immediately">Bloqueie imediatamente quando não estiver em uso</string>
+    <string name="pref_security_autolock_summary_5_minutes">Bloqueio após 5 minutos quando não estiver em uso</string>
+    <string name="pref_security_autolock_summary_1_hour">Bloqueio após 1 hora quando não estiver em uso</string>
+    <string name="pref_security_autolock_summary_1_day">Bloqueio após 1 dia quando não estiver em uso</string>
+
+    <string name="pref_security_block_screenshots">Bloquear capturas de tela</string>
+    <string name="pref_security_block_screenshots_summary_off">As capturas de tela estão ativadas</string>
+    <string name="pref_security_block_screenshots_summary_on">Para proteger sua privacidade, as capturas de tela estão desativadas.</string>
+    <string name="pref_security_show_panic_button">Mostrar botão de pânico</string>
+    <string name="pref_security_show_panic_button_on">Mostrar ícone em todas as visualizações de aplicativos</string>
+    <string name="pref_security_show_panic_button_off">Não mostre o ícone de pânico</string>
+    <string name="pref_security_panic_action">Pânico</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Limpe o conteúdo do aplicativo quando acionado</item>
+        <item>Desinstalar aplicativo quando acionado</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Sincronização automática</string>
+    <string name="pref_over_wifi">Usando wifi</string>
+    <string name="pref_over_data">Sobre dados</string>
+    <string name="pref_over_wifi_wizard_title">Escolha o que sincronizar via wifi</string>
+    <string name="pref_over_data_wizard_title">Escolha o que sincronizar sobre dados</string>
+    <string name="pref_media_rich">Fotos primeiro</string>
+    <string name="pref_media_rich_summary_on">Sincronize fotos antes de completar o armazenamento</string>
+    <string name="pref_media_rich_summary_off">Sincronize todo o armazenamento antes das fotos</string>
+    <string name="pref_save_keep_nothing">Não manter nada</string>
+    <string name="pref_save_keep_nothing_summary">Expirar depois de ler</string>
+    <string name="pref_save_keep_day">Manter por 1 dia</string>
+    <string name="pref_save_keep_day_summary">Remover artigos após um dia</string>
+    <string name="pref_save_keep_week">Mantenha por 1 semana</string>
+    <string name="pref_save_keep_week_summary">Remova artigos após uma semana</string>
+    <string name="pref_save_info">Os favoritos marcados serão mantidos para sempre, a menos que você os exclua ou reinstale o aplicativo.</string>
+    <string name="pref_sleep_if_below">Hibernar se a bateria estiver baixa%d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Não sincronize armazenamento quando minha bateria estiver baixa</string>
+    <string name="pref_sleep_if_below_summary_off">Sincronize armazenamento mesmo se minha bateria estiver baixa</string>
+    <string name="pref_reset_optimized_defaults">Restaurar Padrões Otimizados</string>
+    <string name="pref_reset_everything_defaults">Restaurar Padrões do Tudo</string>
+
+    <string name="pref_language">Idioma</string>
+    <string name="pref_about">Sobre...</string>
+    <string name="pref_terms">Termos &amp; Licenças</string>
+    <string name="pref_customize">Customizar</string>
+    <string name="pref_done">Feito</string>
+
+    <string name="pref_summary_x_and_y">%s e %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s e %s</string>
+
+    <string name="pref_autolock_title">Bloqueio automático</string>
+    <string name="pref_autolock_reset">Redefinir senha de bloqueio automático</string>
+    <string name="pref_cat_timeout">Expiração</string>
+    <string name="pref_cat_wrong_attempts">Tentativas Erradas</string>
+    <string name="pref_wrong_attempts">Tentativas Erradas</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Remover conteúdo do aplicativo se a senha errada for inserida</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Desinstalar aplicativo se a senha errada for inserida</string>
+    <string name="pref_wrong_attempts_summary_nothing">Não executar</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 tentativas</string>
+    <string name="pref_wrong_password_limit_3">3 tentativas</string>
+    <string name="pref_wrong_password_limit_4">4 tentativas</string>
+
+    <string name="pref_cat_kill_password">Senha de exclusão</string>
+    <string name="pref_kill_password">Senha de exclusão</string>
+    <string name="pref_kill_password_summary">Remover conteúdos do aplicativo se a senha de exclusão for inserida</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Resumos dos armazenamentos (texto)</item>
+        <item>Armazenamentos completos (texto)</item>
+        <item>Mídia</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Resumos dos armazenamentos (texto)</item>
+        <item>Armazenamentos completos (texto)</item>
+        <item>Mídia</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

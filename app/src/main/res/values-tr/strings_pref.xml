@@ -2,18 +2,18 @@
 <resources>
     <string name="pref_cat_auto_sync">Otomatik Eşitle</string>
     <string name="pref_cat_priority">Öncelik</string>
-    <string name="pref_cat_save_storage">Saklama Alanı Kurtar</string>
-    <string name="pref_cat_preserve_power">Gücü Koru</string>
+    <string name="pref_cat_save_storage">Depolamaya Kaydet</string>
+    <string name="pref_cat_preserve_power">Güç Tasarrufu</string>
 
     <string name="pref_cat_mode">Mod</string>
-    <string name="pref_mode_optimized">Eniyileştirilmiş</string>
-    <string name="pref_mode_optimized_title">Eniyileştirilmiş Mod</string>
-    <string name="pref_mode_optimized_title_customized">Eniyileştirilmiş Mod: Özelleştirilmiş</string>
-    <string name="pref_mode_optimized_summary">Güç, veri ve depolama kullanımını azalt. Sınırlı veri planınız varsa önerilir.</string>
+    <string name="pref_mode_optimized">Optimize edilmiş</string>
+    <string name="pref_mode_optimized_title">Optimize Edilmiş Kip</string>
+    <string name="pref_mode_optimized_title_customized">Optimize Edilmiş Kip: Özelleştirilmiş</string>
+    <string name="pref_mode_optimized_summary">Güç, veri ve depolama kullanımını azalt. Sınırlı veri paketiniz varsa önerilir.</string>
     <string name="pref_mode_everything">Her Şey</string>
     <string name="pref_mode_everything_title">Her Şey Kipi</string>
     <string name="pref_mode_everything_title_customized">Her Şey Kipi: Özelleştirilmiş</string>
-    <string name="pref_mode_everything_summary">Sınırsız veri planı ve iyi bağlantıya sahipseniz önerilir.</string>
+    <string name="pref_mode_everything_summary">Sınırsız veri paketi ve iyi bir bağlantıya sahipseniz önerilir.</string>
     <string name="pref_mode_offline">Çevrimdışı Çalış</string>
 
     <string name="pref_cat_security">Güvenlik</string>
@@ -44,15 +44,15 @@
     <string name="pref_security_autolock_summary_1_hour">Kullanımda olmadığında 1 saat sonra kilitle</string>
     <string name="pref_security_autolock_summary_1_day">Kullanımda olmadığında 1 gün sonra kilitle</string>
 
-    <string name="pref_security_block_screenshots">Ekran görüntü alımını engelle</string>
+    <string name="pref_security_block_screenshots">Ekran görüntüsü alınmasını engelle</string>
     <string name="pref_security_block_screenshots_summary_off">Ekran görüntüleri etkin</string>
-    <string name="pref_security_block_screenshots_summary_on">Gizliliğinizi korumak için ekran görüntüleri devre dışı bırakıldı.</string>
+    <string name="pref_security_block_screenshots_summary_on">Gizliliğinizi korumak için, ekran görüntüsü alınması devre dışı bırakıldı.</string>
     <string name="pref_security_show_panic_button">Panik düğmesini göster</string>
     <string name="pref_security_show_panic_button_on">Her uygulama görünümünde simgeyi göster</string>
     <string name="pref_security_show_panic_button_off">Panik simgesini gösterme</string>
     <string name="pref_security_panic_action">Panik</string>
     <string-array name="pref_security_panic_action_entries">
-        <item>Tetiklendiğinde uygulama içeriklerini temizle</item>
+        <item>Tetiklendiğinde uygulama içeriğini temizle</item>
         <item>Tetiklendiğinde uygulamayı kaldır</item>
     </string-array>
     <string-array name="pref_security_panic_action_values">
@@ -62,24 +62,24 @@
 
     <string name="pref_auto_sync">Otomatik eşitle</string>
     <string name="pref_over_wifi">Kablosuz ile</string>
-    <string name="pref_over_data">Veri planı ile</string>
-    <string name="pref_over_wifi_wizard_title">Kablosuzdan hangileri eşitlenmeli</string>
-    <string name="pref_over_data_wizard_title">Veri üzerinden hangileri eşitlenmeli</string>
-    <string name="pref_media_rich">İlk fotoğraflar</string>
-    <string name="pref_media_rich_summary_on">Tüm hikayelerden önce fotoğrafları eşitle</string>
-    <string name="pref_media_rich_summary_off">Fotoğraflardan önce tüm hikayeleri eşitle</string>
+    <string name="pref_over_data">Veri paketi ile</string>
+    <string name="pref_over_wifi_wizard_title">Kablosuz üzerinden eşitlenecekleri seçin</string>
+    <string name="pref_over_data_wizard_title">Veri üzerinden eşitlenecekleri seçin</string>
+    <string name="pref_media_rich">Önce fotoğraflar</string>
+    <string name="pref_media_rich_summary_on">Hikayelerin tamamından önce fotoğrafları eşitle</string>
+    <string name="pref_media_rich_summary_off">Fotoğraflardan önce hikayelerin tamamını eşitle</string>
     <string name="pref_save_keep_nothing">Hiçbir şeyi saklama</string>
     <string name="pref_save_keep_nothing_summary">Okuduktan sonra sil</string>
     <string name="pref_save_keep_day">1 gün sakla</string>
     <string name="pref_save_keep_day_summary">Makaleleri bir gün sonra kaldır</string>
     <string name="pref_save_keep_week">1 hafta sakla</string>
     <string name="pref_save_keep_week_summary">Makaleleri bir hafta sonra kaldır</string>
-    <string name="pref_save_info">Yer imlerine eklenmiş hikayeler, siz silene veya uygulamayı yeniden yükleyene kadar sürekli saklanır.</string>
+    <string name="pref_save_info">Yer imlerine eklenmiş hikayeler, siz silene veya uygulamayı yeniden yükleyene kadar saklanır.</string>
     <string name="pref_sleep_if_below">Pil %d%% altındaysa uyu</string>
     <string name="pref_sleep_if_below_summary_on">Pil seviyem düşük ise hikayeleri eşitleme</string>
     <string name="pref_sleep_if_below_summary_off">Pil seviyem düşük bile olsa hikayeleri eşitle</string>
-    <string name="pref_reset_optimized_defaults">Eniyileştirilmiş varsayılanlarını geri yükle</string>
-    <string name="pref_reset_everything_defaults">Her Şey varsayılanlarını geri yükle</string>
+    <string name="pref_reset_optimized_defaults">Optimize Edilmiş varsayılanlarını Geri Yükle</string>
+    <string name="pref_reset_everything_defaults">Her Şey varsayılanlarını Geri Yükle</string>
 
     <string name="pref_language">Dil</string>
     <string name="pref_about">Hakkında</string>
@@ -93,8 +93,8 @@
     <string name="pref_autolock_title">Otomatik kilitle</string>
     <string name="pref_autolock_reset">Otomatik kilit parolasını sıfırla</string>
     <string name="pref_cat_timeout">Zaman aşımı</string>
-    <string name="pref_cat_wrong_attempts">Hatalı Denemeler</string>
-    <string name="pref_wrong_attempts">Hatalı Denemeler</string>
+    <string name="pref_cat_wrong_attempts">Hatalı Deneme</string>
+    <string name="pref_wrong_attempts">Hatalı Deneme</string>
     <string name="pref_wrong_attempts_summary_wipedata">Hatalı parola girilmişse uygulama içeriklerini kaldır</string>
     <string name="pref_wrong_attempts_summary_uninstall">Hatalı parola girilmişse uygulamayı kaldır</string>
     <string name="pref_wrong_attempts_summary_nothing">Bir şey yapma</string>
@@ -122,12 +122,12 @@
 
     <string-array name="pref_key_sync_entries">
         <item>Hikaye özetleri (metin)</item>
-        <item>Tüm hikayeler (metin)</item>
+        <item>Hikayelerin tamamı (metin)</item>
         <item>Ortam</item>
     </string-array>
     <string-array name="pref_key_sync_entries_summary">
         <item>Hikaye özetleri</item>
-        <item>Tüm hikayeler</item>
+        <item>Hikayelerin tamamı</item>
         <item>Ortam</item>
     </string-array>
     <string-array name="pref_key_sync_values">

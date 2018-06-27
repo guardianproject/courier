@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="pref_cat_auto_sync">همگام سازی خودکار</string>
-    <string name="pref_cat_priority">اولویت</string>
+    <string name="pref_cat_auto_sync">همگام‌سازی خودکار</string>
+    <string name="pref_cat_priority">اولویت‌بندی</string>
     <string name="pref_cat_save_storage">صرفه جویی در ذخیره سازی</string>
     <string name="pref_cat_preserve_power">حفظ توان</string>
 
@@ -10,8 +10,18 @@
     <string name="pref_mode_optimized_title">حالت بهینه شده</string>
     <string name="pref_mode_optimized_title_customized">حالت بهینه شده: سفارشی</string>
     <string name="pref_mode_optimized_summary">کاهش استفاده از قدرت، داده، و فضای ذخیره سازی. اگر محدودیت داده دارید پیشنهاد می شود.</string>
+    <string name="pref_mode_everything">همه چیز</string>
+    <string name="pref_mode_everything_title">حالت همه چیز</string>
+    <string name="pref_mode_everything_title_customized">حالت همه چیز: سفارشی</string>
+    <string name="pref_mode_everything_summary">اگر داده ی نامحدود و سرعت بالا دارید پیشنهاد می شود.</string>
+    <string name="pref_mode_offline">آفلاین شو</string>
+
     <string name="pref_cat_security">امنیت</string>
     <string name="pref_security_proxy">پروکسی</string>
+    <string name="pref_security_proxy_none">از پروکسی استفاده نکن</string>
+    <string name="pref_security_proxy_tor">اخبار را از طریق Tor همگام سازی کن</string>
+    <string name="pref_security_proxy_psiphon">اخبار را از طریق سایفون همگام سازی کن</string>
+
     <string-array name="pref_security_proxy_entries">
         <item>@string/pref_security_proxy_none</item>
         <item>@string/pref_security_proxy_tor</item>
@@ -23,20 +33,70 @@
         <item>@string/pref_key_security_proxy_psiphon</item>
     </string-array>
 
+    <string name="pref_security_autolock">قفل خودکار</string>
     <string name="pref_security_autolock_immediately">هیـچ</string>
+    <string name="pref_security_autolock_5_minutes">5 دقیقه</string>
     <string name="pref_security_autolock_1_hour">1 ساعت</string>
     <string name="pref_security_autolock_1_day">1 روز</string>
+    <string name="pref_security_autolock_summary_never">نرم افزار را فقل نکن</string>
+    <string name="pref_security_autolock_summary_immediately">وقتی استفاده نمی شود فورا قفل شود</string>
+    <string name="pref_security_autolock_summary_5_minutes">وقتی استفاده نمی شود پس از 5 دقیقه قفل شود</string>
+    <string name="pref_security_autolock_summary_1_hour">وقتی استفاده نمی شود پس از 1 ساعت قفل شود</string>
+    <string name="pref_security_autolock_summary_1_day">وقتی استفاده نمی شود پس از یک روز قفل شود</string>
+
+    <string name="pref_security_block_screenshots">جلوگیری از گرفتن اسکرین شات</string>
+    <string name="pref_security_block_screenshots_summary_off">اسکرین شات فعال است</string>
+    <string name="pref_security_block_screenshots_summary_on">برای حفاظت از حریم شخصی شما، اسکرین شات غیر فعال شده است</string>
+    <string name="pref_security_show_panic_button">نمایش کلید هراس</string>
+    <string name="pref_security_show_panic_button_on">نمایش آیکون در هر نمایی از برنامه</string>
+    <string name="pref_security_show_panic_button_off">عدم نمایش آیکون هراس</string>
     <string name="pref_security_panic_action">هراس</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>در زمان تحریک تمامی محتوای برنامه پاک شود</item>
+        <item>در زمان تحریک برنامه پاک شود</item>
+    </string-array>
     <string-array name="pref_security_panic_action_values">
         <item>@string/pref_key_panic_action_wipedata</item>
         <item>@string/pref_key_panic_action_uninstall</item>
     </string-array>
 
+    <string name="pref_auto_sync">همگام سازی خودکار</string>
+    <string name="pref_over_wifi">از طریق وای-فای</string>
+    <string name="pref_over_data">از طریق دیتا</string>
+    <string name="pref_over_wifi_wizard_title">انتخاب کنید که چه چیز هایی از طریق وای فای همگام سازی شوند</string>
+    <string name="pref_over_data_wizard_title">انتخاب کنید که چه چیز هایی از طریق دیتا همگام سازی شوند</string>
+    <string name="pref_media_rich">ابتدا عکس ها</string>
+    <string name="pref_media_rich_summary_on">عکس ها را قبل از مشروح داستان همگام سازی کن</string>
+    <string name="pref_media_rich_summary_off">مشروح داستان را قبل از عکس همگام سازی کن</string>
+    <string name="pref_save_keep_nothing">هیچ چیز را نگه ندار</string>
+    <string name="pref_save_keep_nothing_summary">پس از خواندن منقضی شود</string>
+    <string name="pref_save_keep_day">برای 1 روز نگه دار</string>
+    <string name="pref_save_keep_day_summary">مقالات را پس از یک روز حذف کن</string>
+    <string name="pref_save_keep_week">برای 1 هفته نگه دار</string>
+    <string name="pref_save_keep_week_summary">مقالات را پس از 1 هفته حذف کن</string>
+    <string name="pref_save_info">داستان های نشان شده برای همیشه نگه داشته می شوند، مگر اینکه خودتان آنها را پاک و یا برنامه را دوباره نصب کنید.</string>
+    <string name="pref_sleep_if_below">اگر باتری زیر %d%% بود به خواب برو</string>
+    <string name="pref_sleep_if_below_summary_on">زمانی که باتری کم است داستان ها را همگام سازی نکن</string>
+    <string name="pref_sleep_if_below_summary_off">داستان ها را حتی زمانی که باتری کم است هم همگام سازی کن</string>
+    <string name="pref_reset_optimized_defaults">بازگشت به پیشفرض های بهینه شده</string>
+    <string name="pref_reset_everything_defaults">همه چیز را به حالت پیشفرض برگردان</string>
+
     <string name="pref_language">زبان</string>
     <string name="pref_about">درباره‌</string>
+    <string name="pref_terms">مقررات &amp;؛ مجوزها</string>
+    <string name="pref_customize">سفارشی سازی</string>
     <string name="pref_done">انجام شد</string>
 
+    <string name="pref_summary_x_and_y">%sو%s</string>
+    <string name="pref_summary_x_and_y_and_z">%s، %s و %s</string>
+
+    <string name="pref_autolock_title">قفل خودکار</string>
+    <string name="pref_autolock_reset">ریست رمز قفل خودکار</string>
     <string name="pref_cat_timeout">وقفه</string>
+    <string name="pref_cat_wrong_attempts">تلاشهای اشتباه</string>
+    <string name="pref_wrong_attempts">تلاشهای اشتباه</string>
+    <string name="pref_wrong_attempts_summary_wipedata">اگر رمز اشتباه بود، محتوای نرم افزار را پاک کن</string>
+    <string name="pref_wrong_attempts_summary_uninstall">اگر رمز اشتباه بود، برنامه را پاک کن</string>
     <string name="pref_wrong_attempts_summary_nothing">هيچ كاري نكند</string>
 
     <string-array name="pref_wrong_password_action_entries">
@@ -51,10 +111,23 @@
         <item>@string/pref_wrong_attempts_summary_wipedata</item>
         <item>@string/pref_wrong_attempts_summary_uninstall</item>
     </string-array>
+    <string name="pref_wrong_password_limit_2">2 تلاش</string>
+    <string name="pref_wrong_password_limit_3">3 تلاش</string>
+    <string name="pref_wrong_password_limit_4">4 تلاش</string>
+
+    <string name="pref_cat_kill_password">نابودی رمز</string>
+    <string name="pref_kill_password">نابودی رمز</string>
+    <string name="pref_kill_password_summary">در صورتی که رمز کشتن وارد شد همه ی محتوای برنامه را پاک کن</string>
+
+
     <string-array name="pref_key_sync_entries">
+        <item>خلاصه ی داستانها (متن)</item>
+        <item>مشروح داستانها (متن)</item>
         <item>رسانه</item>
     </string-array>
     <string-array name="pref_key_sync_entries_summary">
+        <item>خلاصه ی داستانها</item>
+        <item>مشروح داستانها</item>
         <item>رسانه</item>
     </string-array>
     <string-array name="pref_key_sync_values">

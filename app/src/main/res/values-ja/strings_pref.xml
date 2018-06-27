@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">自動同期</string>
+    <string name="pref_cat_priority">優先度</string>
+    <string name="pref_cat_save_storage">ストレージの節約</string>
+    <string name="pref_cat_preserve_power">電力の保存</string>
+
+    <string name="pref_cat_mode">モード</string>
+    <string name="pref_mode_optimized">最適化</string>
+    <string name="pref_mode_optimized_title">最適化モード</string>
+    <string name="pref_mode_optimized_title_customized">最適化モード: カスタマイズ</string>
+    <string name="pref_mode_optimized_summary">電力、データ、ストレージの使用量を削減します。 データ量が限られている場合に推奨します。</string>
+    <string name="pref_mode_everything">全開</string>
+    <string name="pref_mode_everything_title">全開モード</string>
+    <string name="pref_mode_everything_title_customized">全開モード: カスタマイズ</string>
+    <string name="pref_mode_everything_summary">データ量が無制限で、接続環境が良好な場合に推奨されます。</string>
+    <string name="pref_mode_offline">オフラインにする</string>
+
+    <string name="pref_cat_security">セキュリティ</string>
+    <string name="pref_security_proxy">プロクシ設定</string>
+    <string name="pref_security_proxy_none">プロキシを使用しない</string>
+    <string name="pref_security_proxy_tor">Tor でニュースを同期</string>
+    <string name="pref_security_proxy_psiphon">Psiphon でニュースを同期</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">自動ロック</string>
+    <string name="pref_security_autolock_immediately">なし</string>
+    <string name="pref_security_autolock_5_minutes">5 分</string>
+    <string name="pref_security_autolock_1_hour">1 時間</string>
+    <string name="pref_security_autolock_1_day">1 日</string>
+    <string name="pref_security_autolock_summary_never">アプリをロックしない</string>
+    <string name="pref_security_autolock_summary_immediately">使用していないときはすぐにロックします</string>
+    <string name="pref_security_autolock_summary_5_minutes">使用していないときに5分後にロックします</string>
+    <string name="pref_security_autolock_summary_1_hour">使用していないときに1時間後にロックします</string>
+    <string name="pref_security_autolock_summary_1_day">使用していないときに1日後にロックします</string>
+
+    <string name="pref_security_block_screenshots">スクリーンショットをブロックする</string>
+    <string name="pref_security_block_screenshots_summary_off">スクリーンショットは有効です</string>
+    <string name="pref_security_block_screenshots_summary_on">プライバシーを守るため、スクリーンショットを無効にします。</string>
+    <string name="pref_security_show_panic_button">パニックボタンを表示</string>
+    <string name="pref_security_show_panic_button_on">それぞれのアプリ表示にアイコンを表示</string>
+    <string name="pref_security_show_panic_button_off">パニックアイコンを表示しない</string>
+    <string name="pref_security_panic_action">パニック</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>起動されたときにアプリのコンテンツを消去</item>
+        <item>起動されたときにアプリをアンインストール</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">自動同期</string>
+    <string name="pref_over_wifi">Wifi 接続時</string>
+    <string name="pref_over_data">データ通信時</string>
+    <string name="pref_over_wifi_wizard_title">Wifi 接続時に同期するものを選択</string>
+    <string name="pref_over_data_wizard_title">データ通信時に同期するものを選択</string>
+    <string name="pref_media_rich">写真優先</string>
+    <string name="pref_media_rich_summary_on">全文の前に写真を同期します</string>
+    <string name="pref_media_rich_summary_off">写真の前に全文を同期します</string>
+    <string name="pref_save_keep_nothing">何も残さない</string>
+    <string name="pref_save_keep_nothing_summary">読んだ後に期限切れにします</string>
+    <string name="pref_save_keep_day">1 日間保存</string>
+    <string name="pref_save_keep_day_summary">1 日後に記事を削除します</string>
+    <string name="pref_save_keep_week">1 週間保存</string>
+    <string name="pref_save_keep_week_summary">1 週間後に記事を削除します</string>
+    <string name="pref_save_info">あなたが削除したり、アプリを再インストールしない限り、ブックマークされたストーリーは永遠に保存されます。</string>
+    <string name="pref_sleep_if_below">バッテリーが %d%% を下回ったらスリープ</string>
+    <string name="pref_sleep_if_below_summary_on">バッテリー残量が少ないストーリーを同期しません</string>
+    <string name="pref_sleep_if_below_summary_off">バッテリー残量が少なくてもストーリーを同期します</string>
+    <string name="pref_reset_optimized_defaults">最適化のデフォルト設定に戻す</string>
+    <string name="pref_reset_everything_defaults">全開のデフォルト設定に戻す</string>
+
+    <string name="pref_language">言語</string>
+    <string name="pref_about">バージョン情報</string>
+    <string name="pref_terms">利用規約 &amp; ライセンス</string>
+    <string name="pref_customize">カスタマイズ</string>
+    <string name="pref_done">完了しました</string>
+
+    <string name="pref_summary_x_and_y">%s および %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s および %s</string>
+
+    <string name="pref_autolock_title">自動ロック</string>
+    <string name="pref_autolock_reset">自動ロックパスワードをリセット</string>
+    <string name="pref_cat_timeout">タイムアウト</string>
+    <string name="pref_cat_wrong_attempts">試行誤り</string>
+    <string name="pref_wrong_attempts">試行誤り</string>
+    <string name="pref_wrong_attempts_summary_wipedata">間違ったパスワードを入力した場合、アプリのコンテンツを削除します</string>
+    <string name="pref_wrong_attempts_summary_uninstall">間違ったパスワードを入力した場合、アプリをアンインストールします</string>
+    <string name="pref_wrong_attempts_summary_nothing">何もしない</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 回試行</string>
+    <string name="pref_wrong_password_limit_3">3 回試行</string>
+    <string name="pref_wrong_password_limit_4">4 回試行</string>
+
+    <string name="pref_cat_kill_password">キル パスワード</string>
+    <string name="pref_kill_password">キル パスワード</string>
+    <string name="pref_kill_password_summary">キル パスワードが入力された場合、アプリのコンテンツを削除します</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>ストーリーの要約 (テキスト)</item>
+        <item>全文 (テキスト)</item>
+        <item>メディア</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>ストーリーの要約</item>
+        <item>全文</item>
+        <item>メディア</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

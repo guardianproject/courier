@@ -15,6 +15,7 @@ import android.widget.PopupWindow;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 import info.guardianproject.securereader.Settings;
 import info.guardianproject.securereaderinterface.App;
@@ -70,7 +71,12 @@ public class OnboardingWelcomeFragment extends OnboardingFragment {
             {
                 final ArrayAdapter<SupportedLanguage> adapter = new ArrayAdapter<>(mRootView.getContext(), R.layout.language_picker_popup_item, R.id.tvItem,
                         SupportedLanguage.supportedLanguages());
-
+                adapter.sort(new Comparator<SupportedLanguage>() {
+                    @Override
+                    public int compare(SupportedLanguage o1, SupportedLanguage o2) {
+                        return o1.getCode().compareTo(o2.getCode());
+                    }
+                });
                 ListView lv = new ListView(mRootView.getContext());
                 lv.setBackgroundResource(R.drawable.panel_bg_holo_light);
                 lv.setChoiceMode(ListView.CHOICE_MODE_SINGLE);

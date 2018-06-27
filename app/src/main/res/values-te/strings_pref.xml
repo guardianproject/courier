@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">ఆటో సమకాలీకరణ</string>
+    <string name="pref_cat_priority">ప్రాధాన్యత</string>
+    <string name="pref_cat_save_storage">నిల్వను సేవ్ చేయండి</string>
+    <string name="pref_cat_preserve_power">పవర్ను రక్షించండి</string>
+
+    <string name="pref_cat_mode">మోడ్</string>
+    <string name="pref_mode_optimized">అనుకూలీకరించబడింది</string>
+    <string name="pref_mode_optimized_title">ఆప్టిమైజ్డ్ మోడ్</string>
+    <string name="pref_mode_optimized_title_customized">ఆప్టిమైజ్డ్ మోడ్: అనుకూలీకరించబడింది</string>
+    <string name="pref_mode_optimized_summary">శక్తి, డేటా మరియు నిల్వ వినియోగాన్ని తగ్గించండి. మీకు పరిమిత డేటా ఉంటే సిఫార్సు చేయబడింది.</string>
+    <string name="pref_mode_everything">అంతా</string>
+    <string name="pref_mode_everything_title">అంతా మోడ్</string>
+    <string name="pref_mode_everything_title_customized">అంతా మోడ్: అనుకూలీకరించబడింది</string>
+    <string name="pref_mode_everything_summary">మీకు అపరిమిత డేటా మరియు మంచి కనెక్టివిటీ ఉంటే సిఫార్సు.</string>
+    <string name="pref_mode_offline">ఆఫ్ లైన్ వెళ్ళండి</string>
+
+    <string name="pref_cat_security">సెక్యూరిటీ</string>
+    <string name="pref_security_proxy">ప్రాక్సీ</string>
+    <string name="pref_security_proxy_none">ప్రాక్సీని ఉపయోగించవద్దు</string>
+    <string name="pref_security_proxy_tor">Tor పైగా వార్తలను సమకాలీకరించండి</string>
+    <string name="pref_security_proxy_psiphon">Psiphon పైగా వార్తలను సమకాలీకరించండి</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">ఆటో సమకాలీకరణ</string>
+    <string name="pref_security_autolock_immediately"> ఏమీ కాదు</string>
+    <string name="pref_security_autolock_5_minutes">5 నిమిషాలు</string>
+    <string name="pref_security_autolock_1_hour">1 గంట</string>
+    <string name="pref_security_autolock_1_day">1 రోజు</string>
+    <string name="pref_security_autolock_summary_never">అనువర్తనాన్ని లాక్ చేయవద్దు</string>
+    <string name="pref_security_autolock_summary_immediately">ఉపయోగంలో లేనప్పుడు వెంటనే లాక్ చేయండి</string>
+    <string name="pref_security_autolock_summary_5_minutes">ఉపయోగంలో లేనప్పుడు 5 నిమిషాల తరువాత లాక్ చేయండి</string>
+    <string name="pref_security_autolock_summary_1_hour">ఉపయోగంలో లేనప్పుడు 1 గంట తర్వాత లాక్ చేయండి</string>
+    <string name="pref_security_autolock_summary_1_day">ఉపయోగంలో లేనప్పుడు 1 రోజు తర్వాత లాక్ చేయండి</string>
+
+    <string name="pref_security_block_screenshots">బ్లాక్ స్క్రీన్షాట్లు</string>
+    <string name="pref_security_block_screenshots_summary_off">స్క్రీన్షాట్లు ప్రారంభించబడ్డాయి</string>
+    <string name="pref_security_block_screenshots_summary_on">మీకు గోప్యతను కాపాడటానికి, స్క్రీన్షాట్లు నిలిపివేయబడ్డాయి.</string>
+    <string name="pref_security_show_panic_button">పానిక్ బటన్ను చూపించు</string>
+    <string name="pref_security_show_panic_button_on">ప్రతి అనువర్తనం వీక్షణలో చిహ్నం చూపించు</string>
+    <string name="pref_security_show_panic_button_off">పానిక్ చిహ్నం చూపవద్దు</string>
+    <string name="pref_security_panic_action">ఆందోళన</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>ప్రేరేపించినప్పుడు అనువర్తన కంటెంట్లను తుడవడం</item>
+        <item>ట్రిగ్గర్ అయినప్పుడు అనువర్తనాన్ని అన్ఇన్స్టాల్ చేయండి</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">స్వీయ సమకాలీకరణ</string>
+    <string name="pref_over_wifi">వైఫైలో</string>
+    <string name="pref_over_data">డేటా ఓవర్</string>
+    <string name="pref_over_wifi_wizard_title">వైఫైలో ఏమి సమకాలీకరించాలో ఎంచుకోండి</string>
+    <string name="pref_over_data_wizard_title">డేటాను ఏ విధంగా సమకాలీకరించాలో ఎంచుకోండి</string>
+    <string name="pref_media_rich">మొదటి ఫోటోలు</string>
+    <string name="pref_media_rich_summary_on">పూర్తి కథనాల ముందు ఫోటోలను సమకాలీకరించండి</string>
+    <string name="pref_media_rich_summary_off">ఫోటోల ముందు పూర్తి కథనాలను సమకాలీకరించండి</string>
+    <string name="pref_save_keep_nothing">ఏమీ లేదు</string>
+    <string name="pref_save_keep_nothing_summary">చదివిన తర్వాత గడువు ముగుస్తుంది</string>
+    <string name="pref_save_keep_day">1 రోజు ఉంచండి</string>
+    <string name="pref_save_keep_day_summary">ఒక రోజు తర్వాత కథనాలను తొలగించండి</string>
+    <string name="pref_save_keep_week">1 వారం పాటు ఉంచండి</string>
+    <string name="pref_save_keep_week_summary">ఒక వారం తర్వాత కథనాలను తీసివేయండి</string>
+    <string name="pref_save_info">బుక్మార్క్ కథలు మీరు వాటిని తొలగించకపోయినా లేదా అనువర్తనాన్ని తిరిగి ఇన్స్టాల్ చేయకపోయినా, శాశ్వతంగా ఉంచబడతాయి.</string>
+    <string name="pref_sleep_if_below">బ్యాటరీ విశ్రాంతి తీసుకొను %d%%క్రింద ఉన్నట్లయితే</string>
+    <string name="pref_sleep_if_below_summary_on">నా బ్యాటరీ తక్కువగా ఉన్నప్పుడు కథలను సమకాలీకరించవద్దు</string>
+    <string name="pref_sleep_if_below_summary_off">నా బ్యాటరీ తక్కువగా ఉన్నప్పటికీ కథలను సమకాలీకరించండి</string>
+    <string name="pref_reset_optimized_defaults">ఆప్టిమైజ్డ్ డిఫాల్ట్లను పునరుద్ధరించండి</string>
+    <string name="pref_reset_everything_defaults">అంతా డిఫాల్ట్లను పునరుద్ధరించండి</string>
+
+    <string name="pref_language">భాషా</string>
+    <string name="pref_about">గురించి</string>
+    <string name="pref_terms">నిబంధనలు &amp; లైసెన్సుల</string>
+    <string name="pref_customize">అనుకూలీకరించండి</string>
+    <string name="pref_done">పూర్తి</string>
+
+    <string name="pref_summary_x_and_y">%sమరియు%s</string>
+    <string name="pref_summary_x_and_y_and_z">%s,%sమరియు%s</string>
+
+    <string name="pref_autolock_title">ఆటో లాక్</string>
+    <string name="pref_autolock_reset">స్వీయ లాక్ పాస్వర్డ్ను రీసెట్ చేయండి</string>
+    <string name="pref_cat_timeout">సమయం ముగిసినది</string>
+    <string name="pref_cat_wrong_attempts">తప్పు ప్రయత్నాలు</string>
+    <string name="pref_wrong_attempts">తప్పు ప్రయత్నాలు</string>
+    <string name="pref_wrong_attempts_summary_wipedata">తప్పు పాస్వర్డ్ నమోదు చేయబడి ఉంటే అనువర్తనం కంటెంట్లను తీసివేయండి</string>
+    <string name="pref_wrong_attempts_summary_uninstall">తప్పు పాస్వర్డ్ నమోదు చేయబడి ఉంటే అనువర్తనాన్ని అన్ఇన్స్టాల్ చేయండి</string>
+    <string name="pref_wrong_attempts_summary_nothing">ఏమీ చేయకండి</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 ప్రయత్నాలు</string>
+    <string name="pref_wrong_password_limit_3">3 ప్రయత్నాలు</string>
+    <string name="pref_wrong_password_limit_4">4 ప్రయత్నాలు</string>
+
+    <string name="pref_cat_kill_password">పాస్వర్డ్ను కిల్</string>
+    <string name="pref_kill_password">పాస్వర్డ్ను కిల్</string>
+    <string name="pref_kill_password_summary">కిల్ పాస్వర్డ్ను నమోదు ఒకవేళ అనువర్తనం కంటెంట్లను తొలగించండి</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>కథ సారాంశాలు (టెక్స్ట్)</item>
+        <item>పూర్తి కథలు (టెక్స్ట్)</item>
+        <item>మీడియా</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>కథా సారాంశాలు</item>
+        <item>పూర్తి కథలు</item>
+        <item>మీడియా</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

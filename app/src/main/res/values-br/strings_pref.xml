@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="pref_cat_auto_sync">Emsinkro</string>
+    <string name="pref_cat_auto_sync">Sink. emgefreek</string>
     <string name="pref_cat_priority">Priorelezh</string>
-    <string name="pref_cat_save_storage">Enrollañ ar stokadur</string>
-    <string name="pref_cat_preserve_power">Espern bateri</string>
+    <string name="pref_cat_save_storage">Espern memor</string>
+    <string name="pref_cat_preserve_power">Espern batiri</string>
 
     <string name="pref_cat_mode">Mod</string>
-    <string name="pref_mode_optimized">Gwellakaet</string>
+    <string name="pref_mode_optimized">Gwellekaet</string>
     <string name="pref_mode_optimized_title">Mod gwellekaet</string>
     <string name="pref_mode_optimized_title_customized">Mod gwellekaet: Personelaet</string>
-    <string name="pref_mode_optimized_summary">Digreskiñ ar c\'halloudegezh, implij ar roadennoù hag ar stokadur. Aliet m\'ho peus roadennoù bevennet.</string>
+    <string name="pref_mode_optimized_summary">Digreskiñ ar c\'halloudegezh, implij ar roadennoù hag ar memor. Aliet eo m\'eo bevennet ho kementad roadennoù aotreet.</string>
     <string name="pref_mode_everything">Pep-tra</string>
     <string name="pref_mode_everything_title">Mod pep-tra</string>
     <string name="pref_mode_everything_title_customized">Mod pep-tra: Personelaet</string>
-    <string name="pref_mode_everything_summary">Aliet m\'ho peus roadennoù divevenn hag ur gevreadusted mat.</string>
+    <string name="pref_mode_everything_summary">Aliet eo ma n\'ho \'p eus ket a vevenn kementad roadennoù hag ur gevreadusted mat.</string>
     <string name="pref_mode_offline">Mont ezlinenn</string>
 
     <string name="pref_cat_security">Surentez</string>
@@ -33,7 +33,7 @@
         <item>@string/pref_key_security_proxy_psiphon</item>
     </string-array>
 
-    <string name="pref_security_autolock">Embrennañ</string>
+    <string name="pref_security_autolock">Prennañ emgefreek</string>
     <string name="pref_security_autolock_immediately">Hini ebet</string>
     <string name="pref_security_autolock_5_minutes">5 munutenn</string>
     <string name="pref_security_autolock_1_hour">1 eurvezh</string>
@@ -47,10 +47,10 @@
     <string name="pref_security_block_screenshots">Stankañ an tapadennoù-skramm</string>
     <string name="pref_security_block_screenshots_summary_off">Enaouet eo an tapadennoù-skramm</string>
     <string name="pref_security_block_screenshots_summary_on">Evit gwareziñ ho prevezded, an tapadennoù-skramm a zo lazhet.</string>
-    <string name="pref_security_show_panic_button">Diskouez ar bouton spont</string>
+    <string name="pref_security_show_panic_button">Diskouez ar bouton Trummad</string>
     <string name="pref_security_show_panic_button_on">Diskouez an arlun e pep gwel arload</string>
-    <string name="pref_security_show_panic_button_off">Chom hep diskouez ar bouton spont</string>
-    <string name="pref_security_panic_action">Spont</string>
+    <string name="pref_security_show_panic_button_off">Chom hep diskouez ar bouton Trummad</string>
+    <string name="pref_security_panic_action">Trummad</string>
     <string-array name="pref_security_panic_action_entries">
         <item>Flastrañ endalc\'had an arload pa vez distegnet</item>
         <item>Distaliañ an arload pa vez distegnet</item>
@@ -60,8 +60,9 @@
         <item>@string/pref_key_panic_action_uninstall</item>
     </string-array>
 
-    <string name="pref_auto_sync">Emskinkronelañ</string>
+    <string name="pref_auto_sync">Sink. Emgefreek</string>
     <string name="pref_over_wifi">Dre wifi</string>
+    <string name="pref_over_data">Dre ar roadennoù hezoug</string>
     <string name="pref_over_wifi_wizard_title">Dibabit petra sinkronelaat gant ar wifi</string>
     <string name="pref_over_data_wizard_title">Dibabit petra sinkronelaat gant ar roadennoù</string>
     <string name="pref_media_rich">Skeudennoù da gentañ</string>
@@ -74,10 +75,10 @@
     <string name="pref_save_keep_week">Mirout 1 sizhun</string>
     <string name="pref_save_keep_week_summary">Skarzhañ ar pennadoù goude ur sizhun</string>
     <string name="pref_save_info">An istorioù sinedet a vo miret da viken, betek ma vint dilamet ganeoc\'h pe adstaliet an arload.</string>
-    <string name="pref_sleep_if_below">Kousket ma vez ar bateri izeloc\'h evit %d%%</string>
+    <string name="pref_sleep_if_below">Kousket: batiri izeloc\'h evit %d%%</string>
     <string name="pref_sleep_if_below_summary_on">Chom hep sinkro istorioù ma vez izel ar bateri</string>
     <string name="pref_sleep_if_below_summary_off">Sinkro istorioù ha pa vefe izel ar bateri</string>
-    <string name="pref_reset_optimized_defaults">Adlakaat an diouerioù gwellekaet</string>
+    <string name="pref_reset_optimized_defaults">Assav an arventennoù dre ziouer</string>
     <string name="pref_reset_everything_defaults">Adlakaat pep-tra dre ziouer</string>
 
     <string name="pref_language">Yezh</string>
@@ -89,8 +90,8 @@
     <string name="pref_summary_x_and_y">%s ha %s</string>
     <string name="pref_summary_x_and_y_and_z">%s, %s ha %s</string>
 
-    <string name="pref_autolock_title">Embrennañ</string>
-    <string name="pref_autolock_reset">Adsevel ger-tremen an embrennañ</string>
+    <string name="pref_autolock_title">Prennañ emgefreek</string>
+    <string name="pref_autolock_reset">Adderaouekaat ger-tremen ar prennañ emgefreek</string>
     <string name="pref_cat_timeout">Amzer-c\'hortoz</string>
     <string name="pref_cat_wrong_attempts">Taolioù-esae fall</string>
     <string name="pref_wrong_attempts">Taolioù-esae fall</string>

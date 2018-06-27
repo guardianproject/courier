@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">自动同步</string>
+    <string name="pref_cat_priority">优先级</string>
+    <string name="pref_cat_save_storage">节省容量</string>
+    <string name="pref_cat_preserve_power">保留电量</string>
+
+    <string name="pref_cat_mode">模式</string>
+    <string name="pref_mode_optimized">优化</string>
+    <string name="pref_mode_optimized_title">优化模式</string>
+    <string name="pref_mode_optimized_title_customized">优化模式：自定义</string>
+    <string name="pref_mode_optimized_summary">节省电量、流量和容量。如果您流量有限，推荐使用此选项。</string>
+    <string name="pref_mode_everything">全部</string>
+    <string name="pref_mode_everything_title">全部模式</string>
+    <string name="pref_mode_everything_title_customized">全部模式：自定义</string>
+    <string name="pref_mode_everything_summary">如果您有无限流量和良好的连接状况，推荐使用此选项。</string>
+    <string name="pref_mode_offline">离线使用</string>
+
+    <string name="pref_cat_security">安全　</string>
+    <string name="pref_security_proxy">代理</string>
+    <string name="pref_security_proxy_none">不使用代理</string>
+    <string name="pref_security_proxy_tor">通过 Tor 同步新闻</string>
+    <string name="pref_security_proxy_psiphon">通过 Psiphon 同步新闻</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">自动锁定</string>
+    <string name="pref_security_autolock_immediately">无</string>
+    <string name="pref_security_autolock_5_minutes">5 分钟</string>
+    <string name="pref_security_autolock_1_hour">1 小时</string>
+    <string name="pref_security_autolock_1_day">1 天</string>
+    <string name="pref_security_autolock_summary_never">不锁定应用</string>
+    <string name="pref_security_autolock_summary_immediately">不使用时立即锁定</string>
+    <string name="pref_security_autolock_summary_5_minutes">不使用 5 分钟后锁定</string>
+    <string name="pref_security_autolock_summary_1_hour">不使用 1 小时后锁定</string>
+    <string name="pref_security_autolock_summary_1_day">不使用 1 天后锁定</string>
+
+    <string name="pref_security_block_screenshots">禁止截屏</string>
+    <string name="pref_security_block_screenshots_summary_off">已启用截屏</string>
+    <string name="pref_security_block_screenshots_summary_on">为了保护您的隐私，截屏已被禁止。</string>
+    <string name="pref_security_show_panic_button">显示应急开关</string>
+    <string name="pref_security_show_panic_button_on">在所有应用视图下显示图标</string>
+    <string name="pref_security_show_panic_button_off">不显示应急图标</string>
+    <string name="pref_security_panic_action">应急</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>触发时擦除应用内容</item>
+        <item>触发时卸载应用</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">自动同步</string>
+    <string name="pref_over_wifi">通过 wifi</string>
+    <string name="pref_over_data">通过流量</string>
+    <string name="pref_over_wifi_wizard_title">选择通过 wifi 同步的内容</string>
+    <string name="pref_over_data_wizard_title">选择通过流量同步的内容</string>
+    <string name="pref_media_rich">图片优先</string>
+    <string name="pref_media_rich_summary_on">先同步图片，再同步全文</string>
+    <string name="pref_media_rich_summary_off">先同步全文，再同步图片</string>
+    <string name="pref_save_keep_nothing">不保留任何内容</string>
+    <string name="pref_save_keep_nothing_summary">在阅读后即删除</string>
+    <string name="pref_save_keep_day">保留 1 天</string>
+    <string name="pref_save_keep_day_summary">移除超过 1 天的文章</string>
+    <string name="pref_save_keep_week">保留 1 周</string>
+    <string name="pref_save_keep_week_summary">移除超过 1 周的文章</string>
+    <string name="pref_save_info">如果未卸载应用或删除已收藏的文章，它们将永久保留。</string>
+    <string name="pref_sleep_if_below">当电量低于 %d%% 时休眠</string>
+    <string name="pref_sleep_if_below_summary_on">电量低时禁用新闻同步</string>
+    <string name="pref_sleep_if_below_summary_off">电量低时仍同步新闻</string>
+    <string name="pref_reset_optimized_defaults">恢复优化模式默认值</string>
+    <string name="pref_reset_everything_defaults">恢复全部模式默认值</string>
+
+    <string name="pref_language">语言</string>
+    <string name="pref_about">关于</string>
+    <string name="pref_terms">条款和许可</string>
+    <string name="pref_customize">自定义</string>
+    <string name="pref_done">完成</string>
+
+    <string name="pref_summary_x_and_y">%s 和 %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s、%s 和 %s</string>
+
+    <string name="pref_autolock_title">自动锁定</string>
+    <string name="pref_autolock_reset">重制自动锁定密码</string>
+    <string name="pref_cat_timeout">超时</string>
+    <string name="pref_cat_wrong_attempts">错误尝试次数</string>
+    <string name="pref_wrong_attempts">错误尝试次数</string>
+    <string name="pref_wrong_attempts_summary_wipedata">输入错误密码后移除应用内容</string>
+    <string name="pref_wrong_attempts_summary_uninstall">输入错误密码后卸载应用</string>
+    <string name="pref_wrong_attempts_summary_nothing">无操作</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 次尝试</string>
+    <string name="pref_wrong_password_limit_3">3 次尝试</string>
+    <string name="pref_wrong_password_limit_4">4 次尝试</string>
+
+    <string name="pref_cat_kill_password">销毁密码</string>
+    <string name="pref_kill_password">销毁密码</string>
+    <string name="pref_kill_password_summary">输入销毁密码后移除应用内容</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>文章摘要（文本）</item>
+        <item>文章全文（文本）</item>
+        <item>媒体</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>文章摘要</item>
+        <item>文章全文</item>
+        <item>媒体</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

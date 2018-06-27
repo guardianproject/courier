@@ -7,20 +7,20 @@
 
     <string name="pref_cat_mode">Modus</string>
     <string name="pref_mode_optimized">Geoptimaliseerd</string>
-    <string name="pref_mode_optimized_title">Optimalisatie Modus</string>
-    <string name="pref_mode_optimized_title_customized">Optimalisatie Modus: Aangepast</string>
+    <string name="pref_mode_optimized_title">Geoptimaliseerde modus</string>
+    <string name="pref_mode_optimized_title_customized">Geoptimaliseerde modus: aangepast</string>
     <string name="pref_mode_optimized_summary">Verminder energie, data en opslag. Aanbevolen als uw data beperkt is.</string>
     <string name="pref_mode_everything">Alles</string>
-    <string name="pref_mode_everything_title">Alles Modus</string>
-    <string name="pref_mode_everything_title_customized">Alles Modus: Aangepast</string>
-    <string name="pref_mode_everything_summary">Aanbevolen indien u onbeperkte data en goede verbinding heeft.</string>
+    <string name="pref_mode_everything_title">Alles-modus</string>
+    <string name="pref_mode_everything_title_customized">Alles-modus: aangepast</string>
+    <string name="pref_mode_everything_summary">Aanbevolen als u onbeperkte data en een goede verbinding heeft.</string>
     <string name="pref_mode_offline">Ga Offline</string>
 
     <string name="pref_cat_security">Beveiliging</string>
     <string name="pref_security_proxy">Proxy</string>
     <string name="pref_security_proxy_none">Gebruik geen proxy</string>
-    <string name="pref_security_proxy_tor">Sync nieuws over Tor</string>
-    <string name="pref_security_proxy_psiphon">Sync nieuws over Psiphon</string>
+    <string name="pref_security_proxy_tor">Sync nieuws via Tor</string>
+    <string name="pref_security_proxy_psiphon">Sync nieuws via Psiphon</string>
 
     <string-array name="pref_security_proxy_entries">
         <item>@string/pref_security_proxy_none</item>
@@ -33,31 +33,70 @@
         <item>@string/pref_key_security_proxy_psiphon</item>
     </string-array>
 
-    <string name="pref_security_autolock">Autovergrendelen</string>
+    <string name="pref_security_autolock">Automatisch vergrendelen</string>
     <string name="pref_security_autolock_immediately">Geen</string>
     <string name="pref_security_autolock_5_minutes">5 minuten</string>
     <string name="pref_security_autolock_1_hour">1 uur</string>
     <string name="pref_security_autolock_1_day">1 dag</string>
-    <string name="pref_security_autolock_summary_never">Niet vergrendelen</string>
-    <string name="pref_security_autolock_summary_immediately">Vergrendel onmiddelijk indien niet gebruikt</string>
-    <string name="pref_security_block_screenshots_summary_off">Screenshots toegelaten</string>
+    <string name="pref_security_autolock_summary_never">App niet vergrendelen</string>
+    <string name="pref_security_autolock_summary_immediately">Vergrendel onmiddellijk indien niet gebruikt</string>
+    <string name="pref_security_autolock_summary_5_minutes">Vergrendel na 5 minuten niet gebruikt</string>
+    <string name="pref_security_autolock_summary_1_hour">Vergrendel na 10 minuten niet gebruikt</string>
+    <string name="pref_security_autolock_summary_1_day">Vergrendel na 1 dag niet gebruikt</string>
+
+    <string name="pref_security_block_screenshots">Blokkeer screenshots</string>
+    <string name="pref_security_block_screenshots_summary_off">Screenshots zijn ingeschakeld</string>
+    <string name="pref_security_block_screenshots_summary_on">Omwille uw privacy te beschermen, zijn screenshots niet toegelaten.</string>
+    <string name="pref_security_show_panic_button">Toon de paniekknop</string>
+    <string name="pref_security_show_panic_button_on">Toon het icoon in elke app weergave</string>
+    <string name="pref_security_show_panic_button_off">De paniekknop niet tonen</string>
     <string name="pref_security_panic_action">Paniek</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Verwijder de inhoud van de app wanneer getriggerd</item>
+        <item>Verwijder de app wanneer getriggerd</item>
+    </string-array>
     <string-array name="pref_security_panic_action_values">
         <item>@string/pref_key_panic_action_wipedata</item>
         <item>@string/pref_key_panic_action_uninstall</item>
     </string-array>
 
     <string name="pref_auto_sync">Automatisch synchroniseren</string>
-    <string name="pref_over_wifi">Over WiFi</string>
-    <string name="pref_over_data">Over gegevens</string>
+    <string name="pref_over_wifi">Via WiFi</string>
+    <string name="pref_over_data">Via mobiele data</string>
+    <string name="pref_over_wifi_wizard_title">Kies wat er dient gesynchroniseerd te worden over WiFi</string>
+    <string name="pref_over_data_wizard_title">Kies wat er dient gesynchroniseerd te worden over het mobiele netwerk</string>
     <string name="pref_media_rich">Foto\'s eerst</string>
+    <string name="pref_media_rich_summary_on">Synchroniseer de foto\'s voor de volledige artikels</string>
+    <string name="pref_media_rich_summary_off">Synchroniseer de volledige artikels voor de foto\'s</string>
+    <string name="pref_save_keep_nothing">Bewaar niets</string>
+    <string name="pref_save_keep_nothing_summary">Vervalt na lezen</string>
+    <string name="pref_save_keep_day">Bewaar voor 1 dag</string>
+    <string name="pref_save_keep_day_summary">Verwijder artikelen na een dag</string>
+    <string name="pref_save_keep_week">Bewaar voor 1 week</string>
+    <string name="pref_save_keep_week_summary">Verwijder artikelen na een week</string>
+    <string name="pref_save_info">Artikels die als bladwijzer werden opgeslagen zullen voor altijd behouden worden, behalve als u ze verwijdert of de app opnieuw installeert.</string>
+    <string name="pref_sleep_if_below">In slaapstand zetten als batterij onder de %d%% is</string>
+    <string name="pref_sleep_if_below_summary_on">Synchroniseer geen artikelen als mijn batterij bijna leeg is</string>
+    <string name="pref_sleep_if_below_summary_off">Synchroniseer artikelen zelfs als mijn batterij bijna leeg is</string>
+    <string name="pref_reset_optimized_defaults">Herstel geoptimaliseerde standaarden</string>
+    <string name="pref_reset_everything_defaults">Herstel alles-standaarden</string>
+
     <string name="pref_language">Taal</string>
     <string name="pref_about">Over</string>
-    <string name="pref_customize">Pas aan</string>
+    <string name="pref_terms">Voorwaarden &amp; licenties</string>
+    <string name="pref_customize">Aanpassen</string>
     <string name="pref_done">Klaar</string>
 
-    <string name="pref_autolock_title">Autovergrendelen</string>
+    <string name="pref_summary_x_and_y">%s en %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s en %s</string>
+
+    <string name="pref_autolock_title">Automatisch vergrendelen</string>
+    <string name="pref_autolock_reset">Stel het automatisch vergrendelings-wachtwoord opnieuw in</string>
     <string name="pref_cat_timeout">Time-out</string>
+    <string name="pref_cat_wrong_attempts">Verkeerde pogingen</string>
+    <string name="pref_wrong_attempts">Verkeerde pogingen</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Verwijder de inhoud van de app als het verkeerde wachtwoord ingevuld wordt</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Verwijder de app wanneer het wachtwoord fout werd ingegeven</string>
     <string name="pref_wrong_attempts_summary_nothing">Doe niets</string>
 
     <string-array name="pref_wrong_password_action_entries">
@@ -72,12 +111,23 @@
         <item>@string/pref_wrong_attempts_summary_wipedata</item>
         <item>@string/pref_wrong_attempts_summary_uninstall</item>
     </string-array>
-    <string name="pref_cat_kill_password">Vernietig-wachtwoord</string>
-    <string name="pref_kill_password">Vernietig-wachtwoord</string>
+    <string name="pref_wrong_password_limit_2">2 pogingen</string>
+    <string name="pref_wrong_password_limit_3">3 pogingen</string>
+    <string name="pref_wrong_password_limit_4">4 pogingen</string>
+
+    <string name="pref_cat_kill_password">Vernietig wachtwoord</string>
+    <string name="pref_kill_password">Vernietig wachtwoord</string>
+    <string name="pref_kill_password_summary">Verwijder de inhoud van de app als het kill wachtwoord ingevuld wordt</string>
+
+
     <string-array name="pref_key_sync_entries">
+        <item>Artikelsamenvattingen (tekst)</item>
+        <item>Volledige artikelen (tekst)</item>
         <item>Media</item>
     </string-array>
     <string-array name="pref_key_sync_entries_summary">
+        <item>Samengevatte artikels</item>
+        <item>Volledige artikelen</item>
         <item>Media</item>
     </string-array>
     <string-array name="pref_key_sync_values">

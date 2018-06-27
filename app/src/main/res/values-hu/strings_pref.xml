@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Autoszink</string>
+    <string name="pref_cat_priority">Prioritás</string>
+    <string name="pref_cat_save_storage">Tárhely takarékosság</string>
+    <string name="pref_cat_preserve_power">Áram takarékosság</string>
+
+    <string name="pref_cat_mode">Mód</string>
+    <string name="pref_mode_optimized">Optimalizált</string>
+    <string name="pref_mode_optimized_title">Optimalizáls mód</string>
+    <string name="pref_mode_optimized_title_customized">Optimalizált mód: Egyéni</string>
+    <string name="pref_mode_optimized_summary">Csökkentse az áram, adat és tárhely felhasználást. Ajánlott, ha korlátozott adatforgalma van.</string>
+    <string name="pref_mode_everything">Minden</string>
+    <string name="pref_mode_everything_title">Minden mód</string>
+    <string name="pref_mode_everything_title_customized">Minden mód: Egyéni</string>
+    <string name="pref_mode_everything_summary">Ajánlott, ha korlátlan adatforgalma és jó kapcsolata van.</string>
+    <string name="pref_mode_offline">Legyen Offline</string>
+
+    <string name="pref_cat_security">Biztonság</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Ne használjon proxy-t</string>
+    <string name="pref_security_proxy_tor">Hírek szinkronizálása a Tor-on keresztül</string>
+    <string name="pref_security_proxy_psiphon">Hírek szinkronizálása a Psiphon-on keresztül</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Autózár</string>
+    <string name="pref_security_autolock_immediately">Nincs</string>
+    <string name="pref_security_autolock_5_minutes">5 perc</string>
+    <string name="pref_security_autolock_1_hour">1 óra</string>
+    <string name="pref_security_autolock_1_day">1 nap</string>
+    <string name="pref_security_autolock_summary_never">Ne zárolja az appot</string>
+    <string name="pref_security_autolock_summary_immediately">Lezárás azonnal, ha nincs használatban</string>
+    <string name="pref_security_autolock_summary_5_minutes">Lezárás 5 perc múlva, ha nincs használatban</string>
+    <string name="pref_security_autolock_summary_1_hour">Lezárás 1 óra múlva, ha nincs használatban</string>
+    <string name="pref_security_autolock_summary_1_day">Lezárás 1 nap múlva, ha nincs használatban</string>
+
+    <string name="pref_security_block_screenshots">Képernyőmentés blokkolása</string>
+    <string name="pref_security_block_screenshots_summary_off">A képernyőmentés engedélyezése</string>
+    <string name="pref_security_block_screenshots_summary_on">A védelme érdekében a képernyőmentés tiltott.</string>
+    <string name="pref_security_show_panic_button">Pánik gomb megjelenítése</string>
+    <string name="pref_security_show_panic_button_on">Az ikon megjelenítése minden app nézetben</string>
+    <string name="pref_security_show_panic_button_off">Ne mutassa a pánik gombot.</string>
+    <string name="pref_security_panic_action">Pánik</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Az alkalmazás tartalmának törlése, ha megnyomásra kerül</item>
+        <item>Az alkalmazás eltávolítása, ha megnyomásra kerül</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Autoszink</string>
+    <string name="pref_over_wifi">Wifin keresztül</string>
+    <string name="pref_over_data">Adatkapcsolaton keresztül</string>
+    <string name="pref_over_wifi_wizard_title">Válassza ki mit szinkronizáljon wifin</string>
+    <string name="pref_over_data_wizard_title">Válassza ki mit szinkronizáljon adatkapcsolaton keresztül</string>
+    <string name="pref_media_rich">Képek először</string>
+    <string name="pref_media_rich_summary_on">A képek szinkronizálása a teljes történeteket megelőzve</string>
+    <string name="pref_media_rich_summary_off">A teljes történetek szinkronizálása a képeket megelőzve</string>
+    <string name="pref_save_keep_nothing">Ne tartson meg semmit</string>
+    <string name="pref_save_keep_nothing_summary">Járjon le olvasás után</string>
+    <string name="pref_save_keep_day">Tartsa meg 1 napig</string>
+    <string name="pref_save_keep_day_summary">Cikkek eltávolítása 1 nap után</string>
+    <string name="pref_save_keep_week">Tartsa meg 1 hétig</string>
+    <string name="pref_save_keep_week_summary">Cikkek eltávolítása 1 hét után</string>
+    <string name="pref_save_info">A könyvjelzőzött történetek megmaradnak örökre, amíg nem törli őket, vagy telepíti újra az appot.</string>
+    <string name="pref_sleep_if_below">Alvás, ha az akkumulátor %d%% alatt</string>
+    <string name="pref_sleep_if_below_summary_on">Nincs történet szinkronizálás, ha az akkumulátor töltés alacsony </string>
+    <string name="pref_sleep_if_below_summary_off">Történetek szinkronizálása akkor is, ha az akkumulátor töltés alacsony </string>
+    <string name="pref_reset_optimized_defaults">Optimalizált alapértelmezések visszaállítása</string>
+    <string name="pref_reset_everything_defaults">Mindent visszaállítása alapértelmezésre</string>
+
+    <string name="pref_language">Nyelv</string>
+    <string name="pref_about">Rólunk...</string>
+    <string name="pref_terms">Feltételek &amp; Licencek</string>
+    <string name="pref_customize">Egyénisítés</string>
+    <string name="pref_done">Kész </string>
+
+    <string name="pref_summary_x_and_y">%s és %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s és %s</string>
+
+    <string name="pref_autolock_title">Autózár</string>
+    <string name="pref_autolock_reset">Autózár jelszó alaphelyzetbe</string>
+    <string name="pref_cat_timeout">Időtúllépés</string>
+    <string name="pref_cat_wrong_attempts">Hibás próbálkozások</string>
+    <string name="pref_wrong_attempts">Hibás próbálkozások</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Az alkalmazás tartalmának törlése, ha rossz jelszó kerül megadásara</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Az alkalmazás eltávolítása rossz jelszó megadása esetén</string>
+    <string name="pref_wrong_attempts_summary_nothing">Ne csináljon semmit</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 próbálkozás</string>
+    <string name="pref_wrong_password_limit_3">3 próbálkozás</string>
+    <string name="pref_wrong_password_limit_4">4 próbálkozás</string>
+
+    <string name="pref_cat_kill_password">Gyilkos jelszó</string>
+    <string name="pref_kill_password">Gyilkos jelszó</string>
+    <string name="pref_kill_password_summary">Az alkalmazás tartalmának törlése, ha a gyilkos jelszó kerül megadásara</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Történet összefoglalók (szöveg)</item>
+        <item>Teljes történet (szöveg)</item>
+        <item>Média</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Történet összefoglalók</item>
+        <item>Teljes történetek</item>
+        <item>Média</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

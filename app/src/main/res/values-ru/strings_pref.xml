@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="pref_cat_priority">Приоритет</string>
+    <string name="pref_cat_auto_sync">Автоматическая синхронизация</string>
+    <string name="pref_cat_priority">Приоритеты</string>
+    <string name="pref_cat_save_storage">Экономить место</string>
     <string name="pref_cat_preserve_power">Экономить заряд батареи</string>
 
     <string name="pref_cat_mode">Режим</string>
+    <string name="pref_mode_optimized">Оптимальный</string>
+    <string name="pref_mode_optimized_title">Оптимальный режим</string>
+    <string name="pref_mode_optimized_title_customized">Оптимальный режим: Настроен</string>
+    <string name="pref_mode_optimized_summary">Экономит зарядку, мобильного трафика и места на диске. Рекомендуется, если у вас не безлимитный тариф.</string>
+    <string name="pref_mode_everything">Полная синхронизация</string>
+    <string name="pref_mode_everything_title">Режим полной синхронизации</string>
+    <string name="pref_mode_everything_title_customized">Полная синхронизация: Настроено</string>
+    <string name="pref_mode_everything_summary">Рекомендуется, если у вас безлимитный мобильный трафик и стабильное подключение.</string>
+    <string name="pref_mode_offline">Перейти в автономный режим</string>
+
     <string name="pref_cat_security">Безопасность</string>
     <string name="pref_security_proxy">Прокси-сервер</string>
     <string name="pref_security_proxy_none">Не использовать прокси</string>
     <string name="pref_security_proxy_tor">Синхронизировать новости через Tor</string>
+    <string name="pref_security_proxy_psiphon">Синхронизировать новости через Psiphon</string>
+
     <string-array name="pref_security_proxy_entries">
         <item>@string/pref_security_proxy_none</item>
         <item>@string/pref_security_proxy_tor</item>
@@ -33,8 +47,9 @@
     <string name="pref_security_block_screenshots">Не допускать скриншоты</string>
     <string name="pref_security_block_screenshots_summary_off">Скриншоты разрешены</string>
     <string name="pref_security_block_screenshots_summary_on">Для вашей безопасности скриншоты запрещены</string>
-    <string name="pref_security_show_panic_button">Отображать кнопку паники</string>
-    <string name="pref_security_show_panic_button_off">Не отображать кнопку паники</string>
+    <string name="pref_security_show_panic_button">Отображать кнопку тревоги</string>
+    <string name="pref_security_show_panic_button_on">Отображать кнопку в любом виде приложения</string>
+    <string name="pref_security_show_panic_button_off">Не отображать кнопку тревоги</string>
     <string name="pref_security_panic_action">Тревога</string>
     <string-array name="pref_security_panic_action_entries">
         <item>Стирать данные приложения при активации</item>
@@ -46,20 +61,40 @@
     </string-array>
 
     <string name="pref_auto_sync">Автоматическая синхронизация</string>
-    <string name="pref_over_wifi">По Wi-Fi</string>
-    <string name="pref_over_data">По мобильной сети</string>
+    <string name="pref_over_wifi">По wifi</string>
+    <string name="pref_over_data">Через мобильный интернет</string>
     <string name="pref_over_wifi_wizard_title">Выберете, что синхронизировать по Wi-Fi</string>
     <string name="pref_over_data_wizard_title">Выберете, что синхронизировать через мобильный трафик</string>
+    <string name="pref_media_rich">Сначала изображения</string>
+    <string name="pref_media_rich_summary_on">Синхронизировать изображения перед загрузкой полного текста</string>
+    <string name="pref_media_rich_summary_off">Синхронизировать полный текст до загрузки изображений</string>
+    <string name="pref_save_keep_nothing">Ничего не сохранять</string>
+    <string name="pref_save_keep_nothing_summary">Удалять после прочтения</string>
+    <string name="pref_save_keep_day">Хранить 1 день</string>
+    <string name="pref_save_keep_day_summary">Удалять статьи через день</string>
+    <string name="pref_save_keep_week">Хранить 1 неделю</string>
+    <string name="pref_save_keep_week_summary">Удалять статьи через неделю</string>
+    <string name="pref_save_info">Отмеченные статьи будут храниться до их удаления либо до переустановки приложения. </string>
+    <string name="pref_sleep_if_below">Режим сна при уровне заряда ниже %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Не синхронизировать статьи при низком заряде аккумулятора</string>
+    <string name="pref_sleep_if_below_summary_off">Синхронизировать статьи даже при низком заряде аккумулятора</string>
+    <string name="pref_reset_optimized_defaults">Восстановить оптимальные настройки по умолчанию</string>
+    <string name="pref_reset_everything_defaults">Восстановить все настройки по умолчанию</string>
+
     <string name="pref_language">Язык</string>
     <string name="pref_about">О приложении</string>
     <string name="pref_terms">Условия и лицензии</string>
     <string name="pref_customize">Настроить</string>
     <string name="pref_done">Готово</string>
 
+    <string name="pref_summary_x_and_y">%s и %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s и %s</string>
+
     <string name="pref_autolock_title">Автоматическая блокировка</string>
-    <string name="pref_cat_timeout">Ожидание</string>
-    <string name="pref_cat_wrong_attempts">Неудачные попытки ввода фразы-пароля</string>
-    <string name="pref_wrong_attempts">Неудачные попытки ввода фразы-пароля</string>
+    <string name="pref_autolock_reset">Сброс пароля автоматической блокировки</string>
+    <string name="pref_cat_timeout">Время ожидания</string>
+    <string name="pref_cat_wrong_attempts">Неудачные попытки ввода пароля</string>
+    <string name="pref_wrong_attempts">Неудачные попытки ввода пароля</string>
     <string name="pref_wrong_attempts_summary_wipedata">Стереть данные приложения при вводе неверного пароля</string>
     <string name="pref_wrong_attempts_summary_uninstall">Удалить приложение при вводе неверного пароля</string>
     <string name="pref_wrong_attempts_summary_nothing">Нет действий</string>
@@ -76,11 +111,24 @@
         <item>@string/pref_wrong_attempts_summary_wipedata</item>
         <item>@string/pref_wrong_attempts_summary_uninstall</item>
     </string-array>
+    <string name="pref_wrong_password_limit_2">2 попытки</string>
+    <string name="pref_wrong_password_limit_3">3 попытки</string>
+    <string name="pref_wrong_password_limit_4">4 попытки</string>
+
+    <string name="pref_cat_kill_password">Пароль для принудительного закрытия</string>
+    <string name="pref_kill_password">Пароль для принудительного закрытия</string>
+    <string name="pref_kill_password_summary">Удалить данные приложения при вводе пароля для принудительного закрытия.</string>
+
+
     <string-array name="pref_key_sync_entries">
-        <item>Средства информации</item>
+        <item>Резюме статьи (текст)</item>
+        <item>Полная версия статьи (текст)</item>
+        <item>Медиа-файлы</item>
     </string-array>
     <string-array name="pref_key_sync_entries_summary">
-        <item>Средства информации</item>
+        <item>Резюме статьи</item>
+        <item>Полные статьи</item>
+        <item>Медиа</item>
     </string-array>
     <string-array name="pref_key_sync_values">
         <item>@string/pref_key_sync_summaries</item>

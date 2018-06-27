@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Auto-synkroniser</string>
+    <string name="pref_cat_priority">Prioritet</string>
+    <string name="pref_cat_save_storage">Lagring</string>
+    <string name="pref_cat_preserve_power">Spar på strømbruken</string>
+
+    <string name="pref_cat_mode">Modus</string>
+    <string name="pref_mode_optimized">Optimalisert</string>
+    <string name="pref_mode_optimized_title">Optimaliseringsmodus</string>
+    <string name="pref_mode_optimized_title_customized">Optimaliseringsmodus: Tilpasset</string>
+    <string name="pref_mode_optimized_summary">Reduser strømbruk, databruk, og lagringsplassbruk. Anbefalt hvis du har begrenset med dataplass.</string>
+    <string name="pref_mode_everything">Alt</string>
+    <string name="pref_mode_everything_title">Modus for alt</string>
+    <string name="pref_mode_everything_title_customized">Modus for alt: Tilpasset</string>
+    <string name="pref_mode_everything_summary">Anbefalt hvis du har ubegrenset med mobildata og en god tilkobling.</string>
+    <string name="pref_mode_offline">Koble fra internettet</string>
+
+    <string name="pref_cat_security">Sikkerhet</string>
+    <string name="pref_security_proxy">Mellomtjener</string>
+    <string name="pref_security_proxy_none">Ikke bruk en mellomtjener</string>
+    <string name="pref_security_proxy_tor">Synkroniser nyheter over Tor</string>
+    <string name="pref_security_proxy_psiphon">Synkroniser nyheter over Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Auto-låsing</string>
+    <string name="pref_security_autolock_immediately">Ingen</string>
+    <string name="pref_security_autolock_5_minutes">5 minutter</string>
+    <string name="pref_security_autolock_1_hour">1 time</string>
+    <string name="pref_security_autolock_1_day">1 dag</string>
+    <string name="pref_security_autolock_summary_never">Ikke lås appen</string>
+    <string name="pref_security_autolock_summary_immediately">Lås umiddelbart når den ikke er i bruk</string>
+    <string name="pref_security_autolock_summary_5_minutes">Lås etter 5 minutter når den ikke er i bruk</string>
+    <string name="pref_security_autolock_summary_1_hour">Lås etter 1 time når den ikke er i bruk</string>
+    <string name="pref_security_autolock_summary_1_day">Lås etter 1 dag når den ikke er i bruk</string>
+
+    <string name="pref_security_block_screenshots">Steng for skjermklipping</string>
+    <string name="pref_security_block_screenshots_summary_off">Skjermklipping er skrudd på</string>
+    <string name="pref_security_block_screenshots_summary_on">For å beskytte ditt privatliv, har skjermklipping blitt skrudd av.</string>
+    <string name="pref_security_show_panic_button">Vis panikknappen</string>
+    <string name="pref_security_show_panic_button_on">Vis ikonet i alle appvisningene</string>
+    <string name="pref_security_show_panic_button_off">Ikke vis panikkikonet</string>
+    <string name="pref_security_panic_action">Panikk</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Slett appens innhold når knappen blir trykket på</item>
+        <item>Avinstaller appen når knappen blir trykket på</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Auto-synkroniser</string>
+    <string name="pref_over_wifi">Over Wi-Fi</string>
+    <string name="pref_over_data">Over movildata</string>
+    <string name="pref_over_wifi_wizard_title">Velg hva som skal synkroniseres over Wi-Fi</string>
+    <string name="pref_over_data_wizard_title">Velg hva som skal synkroniseres over mobildata</string>
+    <string name="pref_media_rich">Bilder først</string>
+    <string name="pref_media_rich_summary_on">Synkroniser bildene før resten av historiene</string>
+    <string name="pref_media_rich_summary_off">Synkroniser historiene før bildene</string>
+    <string name="pref_save_keep_nothing">Ikke behold noe</string>
+    <string name="pref_save_keep_nothing_summary">Utløper etter å ha blitt lest</string>
+    <string name="pref_save_keep_day">Behold i 1 dag</string>
+    <string name="pref_save_keep_day_summary">Fjern artikler etter én dag</string>
+    <string name="pref_save_keep_week">Behold i 1 uke</string>
+    <string name="pref_save_keep_week_summary">Fjern artikler etter en uke</string>
+    <string name="pref_save_info">Bokmerkede historier vil bli beholdt for alltid, bortsett fra hvis du sletter dem eller reinstallerer appen.</string>
+    <string name="pref_sleep_if_below">Gå i hvilemodus hvis batterinivået er under %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Ikke synkroniser historier når batterinivået mitt er lavt</string>
+    <string name="pref_sleep_if_below_summary_off">Synkroniser historier selv når batterinivået mitt er lavt</string>
+    <string name="pref_reset_optimized_defaults">Gjenopprett Optimalisert-standardene</string>
+    <string name="pref_reset_everything_defaults">Gjenopprett Alt-standardene</string>
+
+    <string name="pref_language">Språk</string>
+    <string name="pref_about">Om</string>
+    <string name="pref_terms">Vilkår og lisenser</string>
+    <string name="pref_customize">Tilpass</string>
+    <string name="pref_done">Ferdig</string>
+
+    <string name="pref_summary_x_and_y">%s og %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s, og %s</string>
+
+    <string name="pref_autolock_title">Auto-låsing</string>
+    <string name="pref_autolock_reset">Tilbakestill auto-låsingspassordet</string>
+    <string name="pref_cat_timeout">Tidsutløping</string>
+    <string name="pref_cat_wrong_attempts">Gale forsøk</string>
+    <string name="pref_wrong_attempts">Gale forsøk</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Fjern appens innhold dersom feil passord blir skrevet inn</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Avinstaller appen dersom feil passord blir skrevet inn</string>
+    <string name="pref_wrong_attempts_summary_nothing">Gjør ingenting</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 forsøk</string>
+    <string name="pref_wrong_password_limit_3">3 forsøk</string>
+    <string name="pref_wrong_password_limit_4">4 forsøk</string>
+
+    <string name="pref_cat_kill_password">Selvdestruksjonspassord</string>
+    <string name="pref_kill_password">Selvdestruksjonspassord</string>
+    <string name="pref_kill_password_summary">Fjern appens innhold dersom kreperingspassordet blir skrevet inn</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Historieoppsummeringer (tekst)</item>
+        <item>De fulle historiene (tekst)</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Historieoppsummeringer</item>
+        <item>De fulle historiene</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">स्वतः सिंक</string>
+    <string name="pref_cat_priority">प्राथमिकता</string>
+    <string name="pref_cat_save_storage">भंडारण बचाओ</string>
+    <string name="pref_cat_preserve_power">शक्ति बचाओ</string>
+
+    <string name="pref_cat_mode">मोड</string>
+    <string name="pref_mode_optimized">अनुकूलित</string>
+    <string name="pref_mode_optimized_title">अनुकूलित मोड</string>
+    <string name="pref_mode_optimized_title_customized">अनुकूलित मोड: अनुकूलित</string>
+    <string name="pref_mode_optimized_summary">बिजली, डेटा और भंडारण के उपयोग को कम करें। यदि आपके पास सीमित डेटा है तो अनुशंसित।</string>
+    <string name="pref_mode_everything">सब कुछ</string>
+    <string name="pref_mode_everything_title">सब कुछ मोड</string>
+    <string name="pref_mode_everything_title_customized">सब कुछ मोड: अनुकूलित</string>
+    <string name="pref_mode_everything_summary">यदि आपके पास असीमित डेटा और अच्छी कनेक्टिविटी है तो अनुशंसित।</string>
+    <string name="pref_mode_offline">ऑफ़ लाइन हो जाओ</string>
+
+    <string name="pref_cat_security">सुरक्षा </string>
+    <string name="pref_security_proxy">प्रोक्सी:</string>
+    <string name="pref_security_proxy_none">प्रॉक्सी का प्रयोग न करें</string>
+    <string name="pref_security_proxy_tor">टोर पर समाचार सिंक करें</string>
+    <string name="pref_security_proxy_psiphon">साइफॉन पर समाचार सिंक करें</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">ऑटो लॉक</string>
+    <string name="pref_security_autolock_immediately">कुछ भी नहीं</string>
+    <string name="pref_security_autolock_5_minutes">5 मिनट</string>
+    <string name="pref_security_autolock_1_hour">1 घंटा</string>
+    <string name="pref_security_autolock_1_day">1 दिन</string>
+    <string name="pref_security_autolock_summary_never">ऐप लॉक न करें</string>
+    <string name="pref_security_autolock_summary_immediately">उपयोग में नहीं होने पर तुरंत लॉक करें</string>
+    <string name="pref_security_autolock_summary_5_minutes">उपयोग में नहीं होने पर 5 मिनट के बाद लॉक करें</string>
+    <string name="pref_security_autolock_summary_1_hour">उपयोग में नहीं होने पर 1 घंटे के बाद लॉक करें</string>
+    <string name="pref_security_autolock_summary_1_day">उपयोग में नहीं होने पर 1 दिन के बाद लॉक करें</string>
+
+    <string name="pref_security_block_screenshots">स्क्रीनशॉट ब्लॉक करें</string>
+    <string name="pref_security_block_screenshots_summary_off">स्क्रीनशॉट सक्षम हैं</string>
+    <string name="pref_security_block_screenshots_summary_on">आपको गोपनीयता की सुरक्षा के लिए, स्क्रीनशॉट अक्षम हैं।</string>
+    <string name="pref_security_show_panic_button">आतंक बटन दिखाएं</string>
+    <string name="pref_security_show_panic_button_on">प्रत्येक ऐप व्यू में आइकन दिखाएं</string>
+    <string name="pref_security_show_panic_button_off">आतंक आइकन मत दिखाओ</string>
+    <string name="pref_security_panic_action">आतंक</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>ट्रिगर होने पर ऐप सामग्री को वाइप करें</item>
+        <item>ट्रिगर होने पर ऐप अनइंस्टॉल करें</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">स्वतः सिंक</string>
+    <string name="pref_over_wifi">वाईफ़ाई से अधिक</string>
+    <string name="pref_over_data">डेटा से अधिक</string>
+    <string name="pref_over_wifi_wizard_title">वाईफाई पर सिंक करने के लिए चुनें</string>
+    <string name="pref_over_data_wizard_title">डेटा पर सिंक करने के लिए चुनें</string>
+    <string name="pref_media_rich">पहले तस्वीरें</string>
+    <string name="pref_media_rich_summary_on">पूर्ण कहानियों से पहले फोटो सिंक करें</string>
+    <string name="pref_media_rich_summary_off">तस्वीरों से पहले पूर्ण कहानियों को सिंक करें</string>
+    <string name="pref_save_keep_nothing">कुछ भी नहीं रखो</string>
+    <string name="pref_save_keep_nothing_summary">पढ़ने के बाद समाप्त हो गया</string>
+    <string name="pref_save_keep_day">1 दिन के लिए रखें</string>
+    <string name="pref_save_keep_day_summary">एक दिन के बाद लेख निकालें</string>
+    <string name="pref_save_keep_week">1 सप्ताह के लिए रखें</string>
+    <string name="pref_save_keep_week_summary">एक सप्ताह के बाद लेख निकालें</string>
+    <string name="pref_save_info">बुकमार्क की गई कहानियां हमेशा के लिए रखी जाएंगी, जब तक कि आप उन्हें हटा दें या ऐप को दोबारा इंस्टॉल न करें।</string>
+    <string name="pref_sleep_if_below">अगर बैटरी नीचे है तो सो जाओ %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">मेरी बैटरी कम होने पर कहानियों को सिंक न करें</string>
+    <string name="pref_sleep_if_below_summary_off">मेरी बैटरी कम होने पर भी कहानियां सिंक करें</string>
+    <string name="pref_reset_optimized_defaults">अनुकूलित डिफ़ॉल्ट पुनर्स्थापित करें</string>
+    <string name="pref_reset_everything_defaults">सबकुछ डिफ़ॉल्ट को पुनर्स्थापित करें</string>
+
+    <string name="pref_language">भाषा</string>
+    <string name="pref_about">के बारे में</string>
+    <string name="pref_terms">नियम और amp; लाइसेंस</string>
+    <string name="pref_customize">अनुकूलित करें</string>
+    <string name="pref_done">सम्पन्न</string>
+
+    <string name="pref_summary_x_and_y">%sतथा%s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s तथा %s</string>
+
+    <string name="pref_autolock_title">ऑटो लॉक</string>
+    <string name="pref_autolock_reset">ऑटो लॉक पासवर्ड रीसेट करें</string>
+    <string name="pref_cat_timeout">समय समाप्त</string>
+    <string name="pref_cat_wrong_attempts">गलत प्रयास</string>
+    <string name="pref_wrong_attempts">गलत प्रयास</string>
+    <string name="pref_wrong_attempts_summary_wipedata">गलत पासवर्ड दर्ज होने पर ऐप सामग्री निकालें</string>
+    <string name="pref_wrong_attempts_summary_uninstall">गलत पासवर्ड दर्ज होने पर अनइंस्टॉल करें</string>
+    <string name="pref_wrong_attempts_summary_nothing">कुछ मत करो</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 प्रयास</string>
+    <string name="pref_wrong_password_limit_3">3 प्रयास</string>
+    <string name="pref_wrong_password_limit_4">4 प्रयास</string>
+
+    <string name="pref_cat_kill_password">पासवर्ड मारो</string>
+    <string name="pref_kill_password">पासवर्ड मारो</string>
+    <string name="pref_kill_password_summary">अगर हत्या पासवर्ड दर्ज किया गया है तो ऐप सामग्री हटाएं</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>कहानी सारांश (पाठ)</item>
+        <item>पूर्ण कहानियां (पाठ)</item>
+        <item>मीडिया</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>कहानी सारांश</item>
+        <item>पूर्ण कहानियां</item>
+        <item>मीडिया</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

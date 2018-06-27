@@ -3,8 +3,8 @@
     <string name="app_name">Courier</string>
     <string name="app_description">Courier gelişmiş güvenlik özellikleri, çevrimdışı okuma ve paylaşma özelliğine sahip bir mobil RSS haber okuyucudur.</string>
     <string name="title_activity_httpd_app_sender">UYGULAMAYI PAYLAŞ</string>
-    <string name="title_activity_import_opml">OPML İçe Al</string>
-    <string name="menu_tag">Etikete Göre Ara</string>
+    <string name="title_activity_import_opml">OPML İçe Aktar</string>
+    <string name="menu_tag">Etikete göre Ara</string>
     <string name="menu_share">Paylaş</string>
     <string name="menu_panic">Panik</string>
     <string name="menu_favorite">Yer İmi</string>
@@ -15,14 +15,14 @@
     <string name="feed_filter_all_feeds">Tüm Beslemeler</string>
     <string name="feed_filter_add_new">Beslemeleri Yönet</string>
     <string name="feed_share_popup_title">Beslemeyi paylaş</string>
-    <string name="story_list_hint_add_favorite_text1">Bir hikayedeki \"yer imi\" seçeneğine dokunarak bura en iyi hikayelerinizin bir listesini yapın</string>
+    <string name="story_list_hint_add_favorite_text1">Bir hikayedeki \"yer imi\" seçeneğine dokunarak en iyi hikayelerinizin bir listesini burada oluşturun</string>
     <string name="story_list_hint_add_favorite_text2">İşte size yardımcı olmak için diğer okuyucuların bazı yer imleri:</string>
     <string name="story_list_hint_no_shared_text1">Courier’ın Yakındaki özelliği kullanılarak sizinle paylaşılan hikayeler burada listelenir.</string>
     <string name="story_list_hint_no_shared_text2">Arkadaştan bir paylaşım almak için, yan menüden \'Paylaşım Al\' ekranına gidin.</string>
     <string name="about_guardian_title">Guardian Project Hakkında</string>
     <string name="about_guardian_content">Guardian Project, kullanımı kolay uygulamalar, açık kaynaklı yazılım kütüphaneleri, işletim sistemi değişiklikleri, kişilerin iletişim yollarını ve kişisel verilerini haksız yere ele geçirilmesini ve izlenmelerini korumak isteyen kişiler için kullanışlı özelleştirilmiş mobil cihazlar yapar. https://guardianproject.info adresinden bizi ziyaret edin</string>
     <string name="help_terms_title">Kullanım Koşulları ve Lisanslar</string>
-    <string name="help_terms_content">Yazılım lisansları ve daha fazla bilgi çevrimiçi olarak: https://guardianproject.info/apps/courier</string>
+    <string name="help_terms_content">Yazılım lisansları ve daha fazla bilgi çevrimiçi olarak şu adreste bulunabilir: https://guardianproject.info/apps/courier</string>
     <string name="downloads_title">Ortam İndirmeleri</string>
     <string name="downloads_complete">TAMAMLANDI</string>
     <string name="downloads_in_progress">İŞLEMDE</string>
@@ -55,7 +55,7 @@
     <string name="panic_settings">Panik Ayarları</string>
     <string name="panic_hint">Uygulamayı silmek için aşağı kaydırın</string>
     <string name="panic_hint_wipe_content">Kişisel verileri silmek için aşağı kaydırın</string>
-    <string name="panic_test_successful">İyi iş çıkardın! Gerçer bir senaryo olsaydı başarılı bir şekilde silme işlemi yapacaktınız.</string>
+    <string name="panic_test_successful">İyi iş çıkardın! Gerçek bir senaryo olsaydı başarılı bir şekilde silme işlemi yapmış olacaktınız.</string>
     <string name="add_feed_add">Ekle</string>
     <string name="add_feed_manual_label">RSS Besleme Bağlantısını Girin:</string>
     <string name="add_feed_manual_hint">figandquince.com/feed/</string>
@@ -87,16 +87,16 @@
     <string name="lock_screen_wrong_password">Hay aksi! Yeniden deneyin.</string>
     <string name="httpd_app_sender_instructions">Courier uygulamasını veya desteklediği uygulamaları (Orbot ve ChatSecure) yerel olarak paylaşmak için aşağıdaki adımları uygulayın:</string>
     <string name="httpd_app_sender_sender">Paylaşmak için</string>
-    <string name="httpd_app_sender_sender_title">1. Bir \"Taşınabilir Kablosuz Erişim Noktası \" Etkinleştir</string>
-    <string name="httpd_app_sender_sender_part1">Erişim noktasını (hotspot) telefon ayarlarınızdan etkinleştirebilirsiniz. Bu uygulamayı paylaşmanın en güvenli yoludur.\n\nBir hotspot etkinleştiremiyorsanız, güvendiğiniz halka açık bir kablosuz ağına bağlanabilirsiniz.</string>
+    <string name="httpd_app_sender_sender_title">1. \"Taşınabilir Kablosuz Erişim Noktası\" Etkinleştir</string>
+    <string name="httpd_app_sender_sender_part1">Erişim noktasını (hotspot) telefon ayarlarınızdan etkinleştirebilirsiniz. Bu uygulamayı paylaşmanın en güvenli yoludur.\n\nBir hotspot etkinleştiremiyorsanız, güvendiğiniz herkese açık bir kablosuz ağa bağlanabilirsiniz.</string>
     <string name="httpd_app_sender_receiver">Almak için</string>
     <string name="httpd_app_sender_receiver_part1">2. Taşınabilir Kablosuz Erişim Noktasına Katılın</string>
-    <string name="httpd_app_sender_receiver_part2">Bir erişim noktası kullanmıyorsanız, uygulamayı arkadaşınızla paylaşmak için aynı kablosuz ağa bağlanın.</string>
+    <string name="httpd_app_sender_receiver_part2">Bir erişim noktası kullanmıyorsanız, uygulamayı paylaşan arkadaşınızla aynı kablosuz ağa bağlanın.</string>
     <string name="httpd_app_sender_receiver_part3">3. Bir web tarayıcıda bu bağlantıyı açın:</string>
     <string name="httpd_app_sender_receiver_part4">Web sayfası açıldığında yüklemek istediğiniz uygulamalara dokunun.</string>
     <string name="share_via_secure_bluetooth">Yakındaki</string>
     <string name="bluetooth_send_title">Arkadaşınızın cihazını seçin:</string>
-    <string name="bluetooth_send_info">Arkadaşınızın Courier uygulamasını açarak yan menüden \'Paylaşım Al\' ekranına gitmesi gerekir.</string>
+    <string name="bluetooth_send_info">Arkadaşınız Courier uygulamasının yan menüsünden \'Paylaşım Al\' ekranını açmalı.</string>
     <string name="bluetooth_send_scan">Daha fazla cihaz ara&#8230;</string>
     <string name="bluetooth_send_scanning">Cihazlar aranıyor&#8230;</string>
     <string name="bluetooth_no_devices_found">Cihaz Bulunamadı</string>
@@ -126,7 +126,7 @@
     <string name="onboarding_welcome_title">Courier\'a</string>
     <string name="onboarding_welcome_text">Hoş Geldiniz</string>
     <string name="onboarding_proxy_title">Gizlilik önemlidir</string>
-    <string name="onboarding_proxy_psiphon_info">İnternet\'teki her şeye <b>Psiphon</b> ile erişin.</string>
+    <string name="onboarding_proxy_psiphon_info"><b>Psiphon</b> ile internetteki herşeye erişin.</string>
     <string name="onboarding_proxy_psiphon_connect">PSIPHON KULLANIN</string>
     <string name="onboarding_proxy_psiphon_connected">Psiphon\'a bağlandı!</string>
     <string name="onboarding_proxy_tor_info"><b>Tor</b> ile her şeye erişin ve kimliğinizi saklayın.</string>
@@ -149,8 +149,8 @@
     <string name="media_loading_video">Video yükleniyor</string>
     <string name="import_opml_import">Seçili beslemeleri içe aktar</string>
     <string name="fetch_full_story">Tüm hikayeyi getir</string>
-    <string name="fetch_full_story_queued">Sıradakini indir…</string>
+    <string name="fetch_full_story_queued">İndirme sıraya eklendi…</string>
     <string name="fetch_full_story_downloading">İndiriliyor…</string>
-    <string name="optimization_info_text">Deneyiminizi eniyileştirin</string>
+    <string name="optimization_info_text">Deneyiminizi iyileştirin</string>
     <string name="optimization_info_more">Daha fazla</string>
 </resources>

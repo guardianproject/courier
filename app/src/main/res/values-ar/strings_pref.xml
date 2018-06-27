@@ -95,7 +95,7 @@
     <string name="pref_cat_timeout">المهلة</string>
     <string name="pref_cat_wrong_attempts">محاولات خاطئة</string>
     <string name="pref_wrong_attempts">محاولات خاطئة</string>
-    <string name="pref_wrong_attempts_summary_wipedata">أزل محتويات التطبيق إذا أُدخلت كلمة سر خاطئة</string>
+    <string name="pref_wrong_attempts_summary_wipedata">إزالة محتويات التطبيق إذا أُدخلت كلمة سر خاطئة</string>
     <string name="pref_wrong_attempts_summary_uninstall">إزالة التطبيق إذا أُدخلت كلمة سر خاطئة</string>
     <string name="pref_wrong_attempts_summary_nothing">‮لا تفعل شيئا</string>
 

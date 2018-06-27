@@ -2,14 +2,20 @@
 <resources>
     <string name="pref_cat_auto_sync">Automatische Synchronisation</string>
     <string name="pref_cat_priority">Priorität</string>
-    <string name="pref_cat_save_storage">Speicher sparen</string>
+    <string name="pref_cat_save_storage">Speicherplatz sparen</string>
     <string name="pref_cat_preserve_power">Energie sparen</string>
 
     <string name="pref_cat_mode">Modus</string>
     <string name="pref_mode_optimized">Optimiert</string>
     <string name="pref_mode_optimized_title">Optimierter Modus</string>
     <string name="pref_mode_optimized_title_customized">Optimierter Modus: Angepasst</string>
+    <string name="pref_mode_optimized_summary">Leistung, Daten- und Speicherverbrauch reduzieren. Empfohlen bei eingeschränktem Datenvolumen.</string>
     <string name="pref_mode_everything">Alles</string>
+    <string name="pref_mode_everything_title">Alles-Modus</string>
+    <string name="pref_mode_everything_title_customized">Alles-Modus: Angepasst</string>
+    <string name="pref_mode_everything_summary">Empfohlen bei unbeschränktem Datenvolumen und guter Netzwerkverbindung.</string>
+    <string name="pref_mode_offline">Offline gehen</string>
+
     <string name="pref_cat_security">Sicherheit</string>
     <string name="pref_security_proxy">Proxy</string>
     <string name="pref_security_proxy_none">Proxy nicht verwenden</string>
@@ -40,27 +46,44 @@
 
     <string name="pref_security_block_screenshots">Bildschirmfotos blockieren</string>
     <string name="pref_security_block_screenshots_summary_off">Bildschirmfotos sind aktiviert</string>
+    <string name="pref_security_block_screenshots_summary_on">Zum Schutz Ihrer Privatsphäre sind Screenshots deaktiviert.</string>
     <string name="pref_security_show_panic_button">Panik-Knopf anzeigen</string>
     <string name="pref_security_show_panic_button_on">Symbol in jeder App-Ansicht anzeigen</string>
     <string name="pref_security_show_panic_button_off">Panik-Symbol nicht anzeigen</string>
     <string name="pref_security_panic_action">Panik</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>App-Inhalte beim Drücken auslöschen</item>
+        <item>App beim Drücken deinstallieren</item>
+    </string-array>
     <string-array name="pref_security_panic_action_values">
         <item>@string/pref_key_panic_action_wipedata</item>
         <item>@string/pref_key_panic_action_uninstall</item>
     </string-array>
 
-    <string name="pref_auto_sync">Auto-Synchronisation</string>
+    <string name="pref_auto_sync">Automatische Synchronisation</string>
     <string name="pref_over_wifi">Über WiFi</string>
     <string name="pref_over_data">Über Daten</string>
+    <string name="pref_over_wifi_wizard_title">Auswählen, was über WLAN synchronisiert wird</string>
+    <string name="pref_over_data_wizard_title">Auswählen, was über das Datennetz synchronisiert wird</string>
     <string name="pref_media_rich">Fotos zuerst</string>
+    <string name="pref_media_rich_summary_on">Synchronisiere Fotos vor ganzen Artikeln</string>
+    <string name="pref_media_rich_summary_off">Synchronisiere ganze Artikel vor Fotos</string>
     <string name="pref_save_keep_nothing">Nichts behalten</string>
+    <string name="pref_save_keep_nothing_summary">Nach dem Lesen abgelaufen</string>
     <string name="pref_save_keep_day">Für 1 Tag behalten</string>
     <string name="pref_save_keep_day_summary">Artikel nach einem Tag entfernen</string>
     <string name="pref_save_keep_week">Für 1 Woche behalten</string>
     <string name="pref_save_keep_week_summary">Artikel nach einer Woche entfernen</string>
+    <string name="pref_save_info">Artikel mit Lesezeichen werden dauerhaft gespeichert, es sei denn, Sie löschen sie oder installieren die App neu.</string>
+    <string name="pref_sleep_if_below">In Ruhezustand gehen, wenn der Batteriestand unter %d%%fällt</string>
+    <string name="pref_sleep_if_below_summary_on">Bei niedrigem Batteriestand keine Artikel synchronisieren</string>
+    <string name="pref_sleep_if_below_summary_off">Artikel auch bei niedrigem Batteriestand synchronisieren</string>
     <string name="pref_reset_optimized_defaults">Optimierte Standardeinstellungen wiederherstellen</string>
+    <string name="pref_reset_everything_defaults">Standardwerte des Alles-Modus wiederherstellen</string>
+
     <string name="pref_language">Sprache</string>
-    <string name="pref_about">Infos</string>
+    <string name="pref_about">Über</string>
+    <string name="pref_terms">Nutzungsbedingungen</string>
     <string name="pref_customize">Anpassen</string>
     <string name="pref_done">Fertig</string>
 
@@ -68,9 +91,12 @@
     <string name="pref_summary_x_and_y_and_z">%s, %s und %s</string>
 
     <string name="pref_autolock_title">Automatische Sperre</string>
+    <string name="pref_autolock_reset">Passwort für automatische Sperre zurücksetzen</string>
     <string name="pref_cat_timeout">Zeitüberschreitung</string>
     <string name="pref_cat_wrong_attempts">Falsche Versuche</string>
     <string name="pref_wrong_attempts">Falsche Versuche</string>
+    <string name="pref_wrong_attempts_summary_wipedata">App-Inhalte entfernen, wenn ein falsches Passwort eingegeben wird.</string>
+    <string name="pref_wrong_attempts_summary_uninstall">App deinstallieren, wenn ein falsches Passwort eingegeben wird</string>
     <string name="pref_wrong_attempts_summary_nothing">Nichts machen</string>
 
     <string-array name="pref_wrong_password_action_entries">
@@ -89,11 +115,18 @@
     <string name="pref_wrong_password_limit_3">3 Versuche</string>
     <string name="pref_wrong_password_limit_4">4 Versuche</string>
 
+    <string name="pref_cat_kill_password">Lösch-Passwort</string>
+    <string name="pref_kill_password">Lösch-Passwort</string>
+    <string name="pref_kill_password_summary">App-Inhalte entfernen, wenn das Lösch-Passwort eingegeben wird</string>
+
+
     <string-array name="pref_key_sync_entries">
+        <item>Zusammenfassung der Artikel (Text)</item>
         <item>Komplette Geschichten (Text)</item>
         <item>Medien</item>
     </string-array>
     <string-array name="pref_key_sync_entries_summary">
+        <item>Zusammenfassung der Geschichte</item>
         <item>Komplette Geschichten</item>
         <item>Medien</item>
     </string-array>

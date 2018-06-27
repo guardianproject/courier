@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Avtomatik sinxronlaşdırma</string>
+    <string name="pref_cat_priority">Üstünlük</string>
+    <string name="pref_cat_save_storage">Saxlanan arxiv</string>
+    <string name="pref_cat_preserve_power">Güc ehtiyatı</string>
+
+    <string name="pref_cat_mode">Rejim</string>
+    <string name="pref_mode_optimized">Optimallaşdırılıb</string>
+    <string name="pref_mode_optimized_title">Optimallaşdırılmış rejim</string>
+    <string name="pref_mode_optimized_title_customized">Optimallaşdırılmış rejim: Xüsusi quraşdırılıb</string>
+    <string name="pref_mode_optimized_summary">Güc, məlumat və arxivdən istifadəni azalt. Bu, məlumatınız məhduddursa, məsləhətdir.  </string>
+    <string name="pref_mode_everything">Hər şey</string>
+    <string name="pref_mode_everything_title">Hər şey Rejimi</string>
+    <string name="pref_mode_everything_title_customized">Hər şey Rejimi: Xüsusi quraşdırılıb</string>
+    <string name="pref_mode_everything_summary">Bu, məlumatınız məhdud deyilsə və yaxşı əlaqəniz varsa məsləhətdir.</string>
+    <string name="pref_mode_offline">Oflayn işləyin</string>
+
+    <string name="pref_cat_security">Təhlükəsizlik</string>
+    <string name="pref_security_proxy">Proksi</string>
+    <string name="pref_security_proxy_none">Proksidən istifadə etmə</string>
+    <string name="pref_security_proxy_tor">Xəbərləri Tor üzərindən sinxronlaşdır</string>
+    <string name="pref_security_proxy_psiphon">Xəbərləri Psiphon üzərindən sinxronlaşdır</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Avtomatik kilid</string>
+    <string name="pref_security_autolock_immediately">Heç biri</string>
+    <string name="pref_security_autolock_5_minutes">5 dəqiqə</string>
+    <string name="pref_security_autolock_1_hour">1 saat</string>
+    <string name="pref_security_autolock_1_day">1 gün</string>
+    <string name="pref_security_autolock_summary_never">Tətbiqetməni kilidləmə</string>
+    <string name="pref_security_autolock_summary_immediately">İstifadə olunmursa, dərhal kilidlə</string>
+    <string name="pref_security_autolock_summary_5_minutes">İstifadə olunmursa, 5 dəqiqə sonra kilidlə</string>
+    <string name="pref_security_autolock_summary_1_hour">İstifadə olunmursa, 1 saat sonra kilidlə</string>
+    <string name="pref_security_autolock_summary_1_day">İstifadə olunmursa, 1 gün sonra kilidlə</string>
+
+    <string name="pref_security_block_screenshots">Ekran görüntüsünü blokla</string>
+    <string name="pref_security_block_screenshots_summary_off">Ekran görüntüsü aktivləşdirilib</string>
+    <string name="pref_security_block_screenshots_summary_on">Məxfiliyinizi qorumaq üçün ekran görüntüsü söndürülüb. </string>
+    <string name="pref_security_show_panic_button">Həyəcan düyməsini göstər</string>
+    <string name="pref_security_show_panic_button_on">Hər dəfə tətbiqetmə görünəndə işarəni göstər</string>
+    <string name="pref_security_show_panic_button_off">Həyəcan işarəsini göstərmə</string>
+    <string name="pref_security_panic_action">Həyəcan</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Tətikləndiyində tətbiq məzmununu sil</item>
+        <item>Tətikləndiyində tətbiq quraşdırılmasını ləğv et</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Avtomatik sinxronlaşdırma</string>
+    <string name="pref_over_wifi">WiFi üzərindən</string>
+    <string name="pref_over_data">Məlumat üzərindən</string>
+    <string name="pref_over_wifi_wizard_title">WiFi üzərindən nəyi sinxronlaşdıracağınızı seçin</string>
+    <string name="pref_over_data_wizard_title">Məlumat üzərindən nəyi sinxronlaşdıracağınızı seçin</string>
+    <string name="pref_media_rich">Əvvəlcə şəkillər</string>
+    <string name="pref_media_rich_summary_on">Bütöv hekayələrdən əvvəl şəkilləri sinxronlaşdırın</string>
+    <string name="pref_media_rich_summary_off">Şəkillərdən əvvəl bütöv hekayələri sinxronlaşdırın</string>
+    <string name="pref_save_keep_nothing">Heç nəyi saxlama</string>
+    <string name="pref_save_keep_nothing_summary">Oxuduqdan sonra ləğv et</string>
+    <string name="pref_save_keep_day">1 gün saxla</string>
+    <string name="pref_save_keep_day_summary">Məqalələri 1 gündən sonra sil</string>
+    <string name="pref_save_keep_week">1 həftə saxla</string>
+    <string name="pref_save_keep_week_summary">Məqalələri bir həftədən sonra sil</string>
+    <string name="pref_save_info">Seçilmiş məqalələr silinənə və ya tətbiqetmə yenidən yüklənənə qədər saxlanılır. </string>
+    <string name="pref_sleep_if_below">Batareya azdırsa,  %d%% deyilsə, gözlə</string>
+    <string name="pref_sleep_if_below_summary_on">Batareyam az olanda məqalələri sinxronlaşdırma</string>
+    <string name="pref_sleep_if_below_summary_off">Batareyam az olsa da, məqalələri sinxronlaşdır</string>
+    <string name="pref_reset_optimized_defaults">Optimallaşdırılmış standartları bərpa et</string>
+    <string name="pref_reset_everything_defaults">Hər şey standartlarını bərpa et</string>
+
+    <string name="pref_language">Dil</string>
+    <string name="pref_about">Haqqında</string>
+    <string name="pref_terms">Şərtlər və Lisenziyalar</string>
+    <string name="pref_customize">Xüsusiləşdir</string>
+    <string name="pref_done">Oldu</string>
+
+    <string name="pref_summary_x_and_y">%svə %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s və %s</string>
+
+    <string name="pref_autolock_title">Avtomatik kilid</string>
+    <string name="pref_autolock_reset">Avtomatik kilid şifrəsini sıfırla</string>
+    <string name="pref_cat_timeout">Tənəffüs</string>
+    <string name="pref_cat_wrong_attempts">Yanlış Cəhdlər</string>
+    <string name="pref_wrong_attempts">Yanlış Cəhdlər</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Yanlış şifrə daxil edilibsə, tətbiq məzmunlarını sil</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Yanlış şifrə daxil edilibsə, tətbiqin quraşdırılmasını ləğv et</string>
+    <string name="pref_wrong_attempts_summary_nothing">Heç nə etmə</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 cəhd</string>
+    <string name="pref_wrong_password_limit_3">3 cəhd</string>
+    <string name="pref_wrong_password_limit_4">4 cəhd</string>
+
+    <string name="pref_cat_kill_password">Məhv parolu</string>
+    <string name="pref_kill_password">Məhv parolu</string>
+    <string name="pref_kill_password_summary">Məhv parolu daxil edilibsə, tətbiq məzmununu sil </string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Hekayə xülasələri (mətn)</item>
+        <item>Bütöv hekayələr (mətn)</item>
+        <item>Mətbuat</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Hekayə xülasələri</item>
+        <item>Bütöv hekayələr</item>
+        <item>Mətbuat</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_auto_sync">Sincronizzazione automatica</string>
+    <string name="pref_cat_priority">Priorità</string>
+    <string name="pref_cat_save_storage">Gestione dello spazio</string>
+    <string name="pref_cat_preserve_power">Riparmio energia</string>
+
+    <string name="pref_cat_mode">Modalità</string>
+    <string name="pref_mode_optimized">Ottimizzata</string>
+    <string name="pref_mode_optimized_title">Modalità ottimizzata</string>
+    <string name="pref_mode_optimized_title_customized">Modalità ottimizzata: personalizzata</string>
+    <string name="pref_mode_optimized_summary">Riduce il consumo di energia, dati e spazio in memoria. Raccomandata se si dispone di una connessione dati limitata.</string>
+    <string name="pref_mode_everything">Completa</string>
+    <string name="pref_mode_everything_title">Modalità completa</string>
+    <string name="pref_mode_everything_title_customized">Modalità completa: personalizzata</string>
+    <string name="pref_mode_everything_summary">Raccomandata se si dispone di una connessione dati illimitata e di buona connettività.</string>
+    <string name="pref_mode_offline">Vai offline</string>
+
+    <string name="pref_cat_security">Sicurezza</string>
+    <string name="pref_security_proxy">Proxy</string>
+    <string name="pref_security_proxy_none">Non usare alcun proxy</string>
+    <string name="pref_security_proxy_tor">Sincronizza usando Tor</string>
+    <string name="pref_security_proxy_psiphon">Sincronizza usando Psiphon</string>
+
+    <string-array name="pref_security_proxy_entries">
+        <item>@string/pref_security_proxy_none</item>
+        <item>@string/pref_security_proxy_tor</item>
+        <item>@string/pref_security_proxy_psiphon</item>
+    </string-array>
+    <string-array name="pref_security_proxy_values">
+        <item>@string/pref_key_security_proxy_none</item>
+        <item>@string/pref_key_security_proxy_tor</item>
+        <item>@string/pref_key_security_proxy_psiphon</item>
+    </string-array>
+
+    <string name="pref_security_autolock">Blocco automatico</string>
+    <string name="pref_security_autolock_immediately">Nessuno</string>
+    <string name="pref_security_autolock_5_minutes">5 minuti</string>
+    <string name="pref_security_autolock_1_hour">1 ora</string>
+    <string name="pref_security_autolock_1_day">1 giorno</string>
+    <string name="pref_security_autolock_summary_never">Non bloccare l\'app</string>
+    <string name="pref_security_autolock_summary_immediately">Blocca immediatamente quando inutilizzata</string>
+    <string name="pref_security_autolock_summary_5_minutes">Blocca dopo 5 minuti di inutilizzo</string>
+    <string name="pref_security_autolock_summary_1_hour">Blocca dopo 1 ora di inutilizzo</string>
+    <string name="pref_security_autolock_summary_1_day">Blocca dopo 1 giorno di inutilizzo</string>
+
+    <string name="pref_security_block_screenshots">Blocca acquisizione schermate</string>
+    <string name="pref_security_block_screenshots_summary_off">Acquisizione schermate abilitata</string>
+    <string name="pref_security_block_screenshots_summary_on">Per proteggere la privacy, l\'acquisizione schermate è disabilitata</string>
+    <string name="pref_security_show_panic_button">Mostra pulsante antipanico</string>
+    <string name="pref_security_show_panic_button_on">Mostra icona in ogni schermata</string>
+    <string name="pref_security_show_panic_button_off">Non mostrare l\'icona del pulsante antipanico</string>
+    <string name="pref_security_panic_action">Antipanico</string>
+    <string-array name="pref_security_panic_action_entries">
+        <item>Rimuovi contenuti dell\'app quando attivato</item>
+        <item>Disinstalla l\'app quando attivato</item>
+    </string-array>
+    <string-array name="pref_security_panic_action_values">
+        <item>@string/pref_key_panic_action_wipedata</item>
+        <item>@string/pref_key_panic_action_uninstall</item>
+    </string-array>
+
+    <string name="pref_auto_sync">Sincronizzazione automatica</string>
+    <string name="pref_over_wifi">Su rete Wi-Fi</string>
+    <string name="pref_over_data">Su rete dati</string>
+    <string name="pref_over_wifi_wizard_title">Scegli cosa sincronizzare tramite rete Wi-Fi</string>
+    <string name="pref_over_data_wizard_title">Scegli cosa sincronizzare tramite rete dati</string>
+    <string name="pref_media_rich">Prima le foto</string>
+    <string name="pref_media_rich_summary_on">Sincronizza foto prima delle storie complete</string>
+    <string name="pref_media_rich_summary_off">Sincronizza storie complete prima delle foto</string>
+    <string name="pref_save_keep_nothing">Non conservare nulla</string>
+    <string name="pref_save_keep_nothing_summary">Cancella dopo la lettura</string>
+    <string name="pref_save_keep_day">Conserva per 1 giorno</string>
+    <string name="pref_save_keep_day_summary">Rimuovi articoli dopo un giorno</string>
+    <string name="pref_save_keep_week">Conserva per 1 settimana</string>
+    <string name="pref_save_keep_week_summary">Cancella articoli dopo una settimana</string>
+    <string name="pref_save_info">Le storie aggiunte ai segnalibri verranno mantenute in memoria per sempre, a meno che non vengano eliminate manualmente oppure l\'app venga reinstallata.</string>
+    <string name="pref_sleep_if_below">Sospendi se la batteria è inferiore a %d%%</string>
+    <string name="pref_sleep_if_below_summary_on">Non sincronizzare storie quando il livello della batteria è basso</string>
+    <string name="pref_sleep_if_below_summary_off">Sincronizza storie anche quando il livello della batteria è basso</string>
+    <string name="pref_reset_optimized_defaults">Ripristina valori predefiniti modalità ottimizzata</string>
+    <string name="pref_reset_everything_defaults">Ripristina valori predefiniti modalità completa</string>
+
+    <string name="pref_language">Lingua</string>
+    <string name="pref_about">Informazioni</string>
+    <string name="pref_terms">Termini e licenze</string>
+    <string name="pref_customize">Personalizza</string>
+    <string name="pref_done">Fatto</string>
+
+    <string name="pref_summary_x_and_y">%s e %s</string>
+    <string name="pref_summary_x_and_y_and_z">%s, %s e %s</string>
+
+    <string name="pref_autolock_title">Blocco automatico</string>
+    <string name="pref_autolock_reset">Ripristina Password di blocco</string>
+    <string name="pref_cat_timeout">Durata</string>
+    <string name="pref_cat_wrong_attempts">Tentativi errati</string>
+    <string name="pref_wrong_attempts">Tentativi errati</string>
+    <string name="pref_wrong_attempts_summary_wipedata">Rimuovi contenuti dell\'app se viene inserita la password errata</string>
+    <string name="pref_wrong_attempts_summary_uninstall">Disinstalla l\'app se viene inserita la password errata</string>
+    <string name="pref_wrong_attempts_summary_nothing">Non fare nulla</string>
+
+    <string-array name="pref_wrong_password_action_entries">
+        <item>@string/settings_panic_wipe_content</item>
+        <item>@string/settings_panic_wipe_app</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_values">
+        <item>@string/pref_key_wrong_password_action_wipedata</item>
+        <item>@string/pref_key_wrong_password_action_uninstall</item>
+    </string-array>
+    <string-array name="pref_wrong_password_action_summaries">
+        <item>@string/pref_wrong_attempts_summary_wipedata</item>
+        <item>@string/pref_wrong_attempts_summary_uninstall</item>
+    </string-array>
+    <string name="pref_wrong_password_limit_2">2 tentativi</string>
+    <string name="pref_wrong_password_limit_3">3 tentativi</string>
+    <string name="pref_wrong_password_limit_4">4 tentativi</string>
+
+    <string name="pref_cat_kill_password">Password di sicurezza</string>
+    <string name="pref_kill_password">Password di sicurezza</string>
+    <string name="pref_kill_password_summary">Rimuovi i contenuti dell\'app se viene inserita la password di sicurezza</string>
+
+
+    <string-array name="pref_key_sync_entries">
+        <item>Riepiloghi delle storie (testo)</item>
+        <item>Storie complete (testo)</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_entries_summary">
+        <item>Riepiloghi delle storie</item>
+        <item>Storie complete</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="pref_key_sync_values">
+        <item>@string/pref_key_sync_summaries</item>
+        <item>@string/pref_key_sync_full_text</item>
+        <item>@string/pref_key_sync_media</item>
+    </string-array>
+
+</resources>

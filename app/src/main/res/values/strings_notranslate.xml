@@ -11,4 +11,14 @@
     <string name="settings_language_english_nt" translatable="false">English</string>
     <string name="settings_language_spanish_nt" translatable="false">Español</string>
     <string name="settings_language_spanish_us_nt" translatable="false">Español (Estados Unidos)</string>
+    <string name="settings_language_ar_nt" translatable="false">ar</string>
+    <string name="settings_language_br_nt" translatable="false">br</string>
+    <string name="settings_language_de_nt" translatable="false">de</string>
+    <string name="settings_language_fa_nt" translatable="false">fa</string>
+    <string name="settings_language_fr_nt" translatable="false">fr</string>
+    <string name="settings_language_nl_nt" translatable="false">nl</string>
+    <string name="settings_language_ru_nt" translatable="false">ru</string>
+    <string name="settings_language_tr_nt" translatable="false">tr</string>
+    <string name="settings_language_uk_nt" translatable="false">uk</string>
+    <string name="settings_language_zh_TW_nt" translatable="false">zh TW</string>
 </resources>

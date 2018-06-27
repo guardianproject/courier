@@ -14,7 +14,17 @@ public class SupportedLanguage {
     public static SupportedLanguage[] allLanguages = new SupportedLanguage[] {
             new SupportedLanguage("en", R.string.settings_language_english_nt),
             new SupportedLanguage("es", R.string.settings_language_spanish_nt),
-            new SupportedLanguage("es_US", R.string.settings_language_spanish_us_nt)
+            new SupportedLanguage("es_US", R.string.settings_language_spanish_us_nt),
+            new SupportedLanguage("ar", R.string.settings_language_ar_nt),
+            new SupportedLanguage("br", R.string.settings_language_br_nt),
+            new SupportedLanguage("de", R.string.settings_language_de_nt),
+            new SupportedLanguage("fa", R.string.settings_language_fa_nt),
+            new SupportedLanguage("fr", R.string.settings_language_fr_nt),
+            new SupportedLanguage("nl", R.string.settings_language_nl_nt),
+            new SupportedLanguage("ru", R.string.settings_language_ru_nt),
+            new SupportedLanguage("tr", R.string.settings_language_tr_nt),
+            new SupportedLanguage("uk", R.string.settings_language_uk_nt),
+            new SupportedLanguage("zh_TW", R.string.settings_language_zh_TW_nt)
     };
     private static Map<String, SupportedLanguage> languageMapAll = new HashMap<>();
     private static Map<String, SupportedLanguage> languageMapSupported = new HashMap<>();

@@ -37,28 +37,48 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.google.common.hash.HashCode;
+import com.google.common.hash.Hashing;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Request;
 import com.squareup.picasso.RequestHandler;
 import com.tinymission.rss.Feed;
 import com.tinymission.rss.Item;
 import com.tinymission.rss.MediaContent;
+import com.tinymission.rss.Reader;
 
 import net.etuldan.sparss.utils.ArticleTextExtractor;
 import net.etuldan.sparss.utils.HtmlUtils;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
+import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+import java.util.TimeZone;
+import java.util.concurrent.Exchanger;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
+import java.util.zip.ZipInputStream;
 
 import info.guardianproject.iocipher.File;
 import info.guardianproject.iocipher.FileInputStream;
@@ -71,6 +91,7 @@ import info.guardianproject.securereaderinterface.adapters.DrawerMenuRecyclerVie
 import info.guardianproject.securereaderinterface.installer.HTTPDAppSender;
 import info.guardianproject.securereaderinterface.installer.SecureBluetoothReceiverFragment;
 import info.guardianproject.securereaderinterface.models.FeedSelection;
+import info.guardianproject.securereaderinterface.models.ItemViewModel;
 import info.guardianproject.securereaderinterface.models.MediaItemViewModel;
 import info.guardianproject.securereaderinterface.ui.ContentFormatter;
 import info.guardianproject.securereaderinterface.ui.ProxyMediaStreamServer;
@@ -81,6 +102,9 @@ import info.guardianproject.securereaderinterface.widgets.CustomFontButton;
 import info.guardianproject.securereaderinterface.widgets.CustomFontEditText;
 import info.guardianproject.securereaderinterface.widgets.CustomFontRadioButton;
 import info.guardianproject.securereaderinterface.widgets.CustomFontTextView;
+import okio.Buffer;
+import okio.BufferedSource;
+import okio.Source;
 
 public class App extends Application implements OnSharedPreferenceChangeListener, SocialReaderLockListener, SocialReader.SocialReaderFeedPreprocessor, SocialReader.SocialReaderFullTextPreprocessor {
 	public static final String LOGTAG = "App";
@@ -637,12 +661,79 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 
 	@Override
 	public String onGetFeedURL(Feed feed) {
+		String fidelity = getSettings().getCurrentMode().mediaRich() ? "full-fidelity" : "text-only";
+		String language = "en";
+		String prefix = feed.getFeedURL() + language + fidelity;
+		String timeMarker = midnightToday();
+		String postfix = "5c70419b1afe6"; // shared secret
+
+		final HashCode hashCode = Hashing.sha1().hashString(prefix + timeMarker + postfix, Charset.defaultCharset());
+		String fileName = hashCode.toString() + ".zip";
+
+		Log.d("ZIP", "Filename is " + fileName);
 		return null;
 	}
 
+	private String midnightToday() {
+		TimeZone timeZone = TimeZone.getTimeZone("UTC");
+		Calendar calendar = Calendar.getInstance(timeZone);
+		calendar.set(Calendar.HOUR, 0);
+		calendar.set(Calendar.MINUTE, 0);
+		calendar.set(Calendar.SECOND, 0);
+		SimpleDateFormat simpleDateFormat =
+				new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.US);
+		simpleDateFormat.setTimeZone(timeZone);
+		return simpleDateFormat.format(calendar.getTime());
+	}
+
 	@Override
-	public InputStream onFeedDownloaded(Feed feed, InputStream content, Map<String, String> headers) {
-		return null;
+	public InputStream onFeedDownloaded(Feed feed, InputStream in, Map<String, String> headers) {
+		InputStream returnStream = null;
+		synchronized(this) {
+			try {
+				ZipInputStream zipStream = new ZipInputStream(in);
+
+				ZipEntry ze = null;
+				while ((ze = zipStream.getNextEntry()) != null) {
+					String filename = ze.getName();
+					if (!ze.isDirectory() && !filename.contains("MACOSX")) {
+						if (filename.endsWith("index.rss")) {
+							ByteArrayOutputStream baos = new ByteArrayOutputStream();
+							byte[] buffer = new byte[8096];
+							int count;
+							while ((count = zipStream.read(buffer)) != -1) {
+								baos.write(buffer, 0, count);
+							}
+							byte[] bytes = baos.toByteArray();
+							returnStream = new ByteArrayInputStream(bytes);
+							baos.close();
+						} else if (
+								filename.startsWith("enc/") ||
+										filename.startsWith("img/")) {
+
+							// Copy to VFS
+							filename = "file://" + filename;
+							File targetFile = new File(socialReader.getFileSystemDir(), "temp_" + filename.hashCode());
+							if (!targetFile.exists()) {
+								OutputStream out = new info.guardianproject.iocipher.FileOutputStream(targetFile);
+
+								// Transfer bytes from in to out
+								byte[] buffer = new byte[8096];
+								int count;
+								while ((count = zipStream.read(buffer)) != -1) {
+									out.write(buffer, 0, count);
+								}
+								out.close();
+							}
+						}
+					}
+					zipStream.closeEntry();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return returnStream;
 	}
 
 	@Override
@@ -650,6 +741,9 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 		if (LOGGING) {
 			Log.v(LOGTAG, String.format("onFeedParsed: %s : %s", feed.getTitle(), feed.getFeedURL()));
 		}
+
+		socialReader.setFeedAndItemData(feed);
+
 		// Sort media items on size and group and remove unused ones.
 		for (Item item : feed.getItems()) {
 			if (item.getNumberOfMediaContent() > 0) {
@@ -724,6 +818,17 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 						mediaContents.remove(i);
 						if (LOGGING) {
 							Log.v(LOGTAG, String.format("Item %s removing media from group", item.getTitle()));
+						}
+					}
+				}
+
+				// Need to copy any files?
+				for (MediaContent mc : mediaContents) {
+					if (mc.getDatabaseId() != MediaContent.DEFAULT_DATABASE_ID) {
+						File targetFile = new File(socialReader.getFileSystemDir(), SocialReader.MEDIA_CONTENT_FILE_PREFIX + mc.getDatabaseId());
+						File sourceFile = new File(socialReader.getFileSystemDir(), "temp_" + mc.getUrl().hashCode());
+						if (!targetFile.exists() && sourceFile.exists()) {
+							sourceFile.renameTo(targetFile);
 						}
 					}
 				}

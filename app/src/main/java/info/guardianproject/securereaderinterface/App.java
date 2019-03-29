@@ -1,7 +1,6 @@
 package info.guardianproject.securereaderinterface;
 		
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,7 +13,7 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.Color;
+import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -24,13 +23,11 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Parcelable;
 import android.os.StatFs;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.ContextThemeWrapper;
 import android.view.Display;
 import android.view.Menu;
 import android.view.View;
@@ -40,7 +37,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.facebook.device.yearclass.YearClass;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Request;
 import com.squareup.picasso.RequestHandler;
@@ -63,7 +59,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.Exchanger;
 
 import info.guardianproject.iocipher.File;
 import info.guardianproject.iocipher.FileInputStream;
@@ -140,7 +135,8 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 					@Override
 					public Result load(Request request, int networkPolicy) throws IOException {
 						FileInputStream is = new FileInputStream(request.uri.toString());
-						return new Result(is, Picasso.LoadedFrom.NETWORK);
+						Bitmap bmp = BitmapFactory.decodeStream(is);
+						return new Result(bmp, Picasso.LoadedFrom.NETWORK);
 					}
 				})
 				//.indicatorsEnabled(true)

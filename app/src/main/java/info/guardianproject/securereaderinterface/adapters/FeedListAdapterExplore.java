@@ -97,7 +97,7 @@ public class FeedListAdapterExplore extends FeedListAdapter
 		if (feedIcon != null) {
 			File feedIconFile = new File(App.getInstance().socialReader.getFileSystemDir(), SocialReader.FEED_ICON_FILE_PREFIX + feed.getDatabaseId());
 			ViewGroup.LayoutParams size = feedIcon.getLayoutParams();
-			Picasso.with(mContext).load(Uri.parse(feedIconFile.getAbsolutePath()))
+			Picasso.get().load(Uri.parse(feedIconFile.getAbsolutePath()))
 					.resize(0, size.height)
 					.placeholder(R.drawable.ic_filter_logo_placeholder)
 					.into(feedIcon);

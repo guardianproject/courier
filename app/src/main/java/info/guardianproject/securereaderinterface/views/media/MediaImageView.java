@@ -8,12 +8,12 @@ import android.view.MotionEvent;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import info.guardianproject.iocipher.File;
 import info.guardianproject.securereaderinterface.R;
-import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class MediaImageView extends FrameLayout
 {
@@ -48,7 +48,7 @@ public class MediaImageView extends FrameLayout
 	public void setDataSource(File mediaFile)
 	{
 		if (mediaFile != null && imageView != null) {
-			Picasso.with(getContext())
+			Picasso.get()
 					.load(Uri.parse(mediaFile.getAbsolutePath()))
 					.into(imageView, new Callback() {
 						@Override
@@ -57,7 +57,7 @@ public class MediaImageView extends FrameLayout
 						}
 
 						@Override
-						public void onError() {
+						public void onError(Exception ignored) {
 
 						}
 					});

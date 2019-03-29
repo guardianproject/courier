@@ -201,7 +201,7 @@ public class ViewHolderItem extends RecyclerView.ViewHolder implements View.OnCl
             if (item.getFeedId() >= 0) {
                 File feedIconFile = new File(App.getInstance().socialReader.getFileSystemDir(), SocialReader.FEED_ICON_FILE_PREFIX + item.getFeedId());
                 ViewGroup.LayoutParams size = feedIcon.getLayoutParams();
-                Picasso.with(getContext()).load(Uri.parse(feedIconFile.getAbsolutePath()))
+                Picasso.get().load(Uri.parse(feedIconFile.getAbsolutePath()))
                         .resize(0, size.height)
                         .placeholder(R.drawable.ic_filter_logo_placeholder)
                         .into(feedIcon);

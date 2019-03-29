@@ -82,7 +82,7 @@ public class DrawerMenuRecyclerViewAdapterBase extends RecyclerView.Adapter<Recy
             ViewHolderMenuItem viewHolder = (ViewHolderMenuItem) holder;
             if (e.uriIcon != null) {
                 ViewGroup.LayoutParams size = viewHolder.icon.getLayoutParams();
-                Picasso.with(mContext).load(e.uriIcon)
+                Picasso.get().load(e.uriIcon)
                             .resize(0, size.height)
                             .placeholder(e.resIdIcon)
                             .into(viewHolder.icon);

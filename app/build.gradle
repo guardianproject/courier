@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     flavorDimensions 'default'
 
     defaultConfig {
         applicationId "info.guardianproject.securereaderinterface"
         minSdkVersion 17
-        targetSdkVersion 27
-        multiDexEnabled false
+        targetSdkVersion 28
+        multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         buildConfigField "boolean", "UI_ENABLE_TAGS", "true"
         buildConfigField "boolean", "UI_ENABLE_CREATE_PASSPHRASE", "true"
@@ -59,7 +59,7 @@ android {
 }
 
 ext {
-    supportLibVersion = '27.1.1'
+    supportLibVersion = '28.0.0'
 }
 
 dependencies {
@@ -72,10 +72,11 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${supportLibVersion}"
     implementation "com.android.support:design:${supportLibVersion}"
     implementation "com.android.support:preference-v14:${supportLibVersion}"
-    implementation 'com.squareup.okhttp:okhttp:2.5.0'
-    implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'com.squareup.picasso:picasso:2.5.3-SNAPSHOT'
-    implementation 'com.github.chrisbanes:PhotoView:1.3.1'
+    implementation 'com.caverock:androidsvg-aar:1.3'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
     implementation group: 'org.jsoup', name: 'jsoup', version: '1.11.2'
     implementation 'com.facebook.device.yearclass:yearclass:2.0.0'
 }

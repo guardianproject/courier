@@ -65,7 +65,7 @@ public class MediaImagePreviewView extends ImageView implements MediaPreviewView
 		int h = getHeight();
 		if (mMediaFile != null && w > 0 && h > 0 && !mHasSetDrawable) {
 			mHasSetDrawable = true;
-			Picasso.with(getContext())
+			Picasso.get()
 					.load(Uri.parse(mMediaFile.getAbsolutePath()))
 					.centerCrop()
 					.resize(w, h)

@@ -41,6 +41,17 @@ android {
             buildConfigField "String[]", "UI_LANGUAGES",'{"en","es","es_US"}'
             manifestPlaceholders = ["launcherActivity" : "info.guardianproject.securereaderinterface.SplashActivity"]
         }
+        zip {
+            dimension 'default'
+            applicationId = "info.guardianproject.courier.zip"
+            versionName = "2.0.0"
+            versionCode = 50
+            buildConfigField "boolean", "UI_ENABLE_TAGS", "true"
+            buildConfigField "boolean", "UI_ENABLE_CREATE_PASSPHRASE", "false"
+            buildConfigField "String[]", "UI_LANGUAGES",'{"en"}'
+            manifestPlaceholders = ["launcherActivity" : "info.guardianproject.securereaderinterface.SplashActivity"]
+        }
+
     }
 
     dexOptions {

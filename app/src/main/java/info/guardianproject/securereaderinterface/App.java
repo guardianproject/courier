@@ -661,7 +661,7 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 
 	@Override
 	public String onGetFeedURL(Feed feed) {
-		String fidelity = getSettings().getCurrentMode().mediaRich() ? "full-fidelity" : "text-only";
+		String fidelity = getSettings().getCurrentMode().syncData().contains(ModeSettings.Sync.Media) ? "full-fidelity" : "text-fidelity";
 		String language = "en";
 		String prefix = feed.getFeedURL() + language + fidelity;
 		String timeMarker = midnightToday();
@@ -671,7 +671,8 @@ public class App extends Application implements OnSharedPreferenceChangeListener
 		String fileName = hashCode.toString() + ".zip";
 
 		Log.d("ZIP", "Filename is " + fileName);
-		return null;
+
+		return "https://s3.amazonaws.com/d2018f8b5382ea/" + fileName;
 	}
 
 	private String midnightToday() {
